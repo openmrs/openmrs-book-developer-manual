@@ -1,9 +1,7 @@
-# Welcome to OpenMRS!
-********************************************
-
-  ![OpenMRS logo][logo] 
-
-
+![OpenMRS logo][logo] 
+******************************************** 
+# Welcome to OpenMRS! 
+--------------------------------------------
 
 
 Thank you for your interest in the OpenMRS Community! We have created this book for people who are curious about becoming a developer using our software. This book serves as a quick guide for you to learn more about our history, what [OpenMRS does,](http://openmrs.org/about/mission/) and understand more about how our community works.
@@ -39,9 +37,9 @@ Regardless of what you know or how much you need to know, this book is designed 
 
 What you will gain
 
-This book is designed to give you the knowledge, tools, and confidence to be an OpenMRS developer, no matter from which point you're starting. We'll give you a background and brief history of OpenMRS. We'll also talk about where we are now, and how we are working together to change the world.
+This book is designed to give you the knowledge, tools, and confidence to be an OpenMRS developer, no matter from which point you're starting. We'll give you a background and brief [history of OpenMRS](https://en.wikipedia.org/wiki/OpenMRS#History). We'll also talk about where we are now, and how we are working together to change the world.
 
-At the end of this book, you should:
+**At the end of this book, you should:**
 
 Understand how the OpenMRS community interacts and communicates
 Have a development environment setup
@@ -51,8 +49,6 @@ Know where to go to get started with your first contributions to the community.
 By the end of this book, you'll be an OpenMRS developer, contributor, and community member!
 
  
-
-We want to know what you think about this book! After you take a look, fill out our brief survey and let us know what you think: http://go.openmrs.org/newdev-survey 
+We want to know what you think about this book! After you take a look, fill out our brief survey and let us know what you think: [Click Here for Survey](http://om.rs/newdev-survey)
 
 [logo]: openmrs-logo-200.png
-
