@@ -1,5 +1,10 @@
 # Welcome to OpenMRS!
 
+   ![OpenMRS_Logo](openmrs-logo-200.png)
+
+
+
+
 Thank you for your interest in the OpenMRS Community! We have created this book for people who are curious about becoming a developer using our software. This book serves as a quick guide for you to learn more about our history, what [OpenMRS does,](http://openmrs.org/about/mission/) and understand more about how our community works.
 
 If you find yourself eager to get started, we've also included some practical advice on specific steps you can take right away to start doing development with the OpenMRS platform.
