@@ -1,6 +1,7 @@
 # Welcome to OpenMRS!
+********************************************
 
-   ![OpenMRS_Logo](openmrs-logo-200.png)
+  ![OpenMRS logo][logo] 
 
 
 
@@ -53,5 +54,5 @@ By the end of this book, you'll be an OpenMRS developer, contributor, and commun
 
 We want to know what you think about this book! After you take a look, fill out our brief survey and let us know what you think: http://go.openmrs.org/newdev-survey 
 
-
+[logo]: openmrs-logo-200.png
 
