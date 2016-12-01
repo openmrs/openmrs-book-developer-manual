@@ -1,5 +1,5 @@
 # Summary
 
-* [Introduction](Introduction.md)
+* [Introduction](README.md)
 * [Defining Methods](methods.md)
 
