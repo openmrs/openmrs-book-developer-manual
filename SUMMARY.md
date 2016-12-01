@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](welcome_to_openmrs.md)
-   * [Welcome To OpenMRS](welcome_to_openmrs.md)
+* [Introduction](README.md)
 * [Defining Methods](methods.md)
 
