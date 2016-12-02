@@ -51,4 +51,4 @@ By the end of this book, you'll be an OpenMRS developer, contributor, and commun
  
 We want to know what you think about this book! After you take a look, fill out our brief survey and let us know what you think: [Click Here for Survey](http://om.rs/newdev-survey)
 
-[logo]: openmrs-logo-200.png
+[logo]: images/openmrs-logo-200.png
