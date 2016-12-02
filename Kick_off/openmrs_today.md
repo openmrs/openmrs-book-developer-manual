@@ -1,6 +1,7 @@
 <center><h2> OpenMRS Today
 
 <center> ![](/images/openmrsatlas.png)
+*** OpenMRS Atlas, October 2013 ***
 
 ### A snapshot
 
