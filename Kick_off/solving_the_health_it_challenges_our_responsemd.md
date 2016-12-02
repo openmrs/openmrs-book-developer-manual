@@ -1,6 +1,6 @@
 <center><h2> Solving the Health IT Challenges (Our Response) </h2>
 <center>
-![image](/images/AMPATH-2004.png)
+![AMPATH 2004](/images/AMPATH-2004.png)
 
 OpenMRS was conceived in 2004 specifically to solve the problem of managing health care information in the developing world. Today, connectivity and accessibility are critical pieces for health information systems. In most countries, this information is still in silos and is not accessible to those who need it—patients, clinicians, researchers, epidemiologists, and planners. Based on best practices and institutional knowledge from founding partners **Regenstrief Institute & Partners In Health**.
 The goal of OpenMRS was to become a platform that could be flexible enough for use in a variety of contexts in settings that had very different requirements.
