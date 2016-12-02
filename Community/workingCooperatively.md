@@ -1,6 +1,6 @@
 <center><h1>Working Cooperatively
 <center> 
-![WorkingCooperatively](images/WorkingCooperatively.jpg)
+![WorkingCooperatively](/images/WorkingCooperatively.jpg)
 
 ## Getting things done
 
