@@ -8,7 +8,8 @@ For many years, Health IT applications have been created and used to effectively
 Over the past several decades, several commercial and open source EMR tools have been developed and implemented with varied levels of success. OpenMRS is one of them!
 
  
-![OpenMRS Story](images/story-of-openmrs.jpg)
+![OpenMRS Story](/images/story-of-openmrs.jpg)
+
 *Patient registration clerks using OpenMRS*
 
 ## Improving health care quality
@@ -52,6 +53,4 @@ It's necessary to ensure that entering data into an EMR is efficient and easy, s
 ### 4. Integration of multiple health IT applications
 
 Consistent with other efforts to ensure meaningful use of Health IT systems, data stored in the EMR system should be easily exchangeable to and from other medical applications. For example, the integration of separate health applications into a regional or national health Information Exchange (HIE) requires that an EMR is capable of easily exchanging data with these external systems.
-
-[<< Introduction](README.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Solving the Health IT Challenge >>](Solving_the_Health_IT_Challenge.md)      
 
