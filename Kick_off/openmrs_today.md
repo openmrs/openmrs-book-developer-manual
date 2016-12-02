@@ -44,7 +44,7 @@ In line with recent efforts to improve the meaningful use of healthcare, OpenMRS
 
 Examples of our efforts include interoperability between OpenMRS and OpenELIS (a Laboratory Information System) as well as between OpenMRS to DHIS2 (District Health Information System 2) using the SDMX-HD standard.
 
-Additionally, OpenMRS is also involved in efforts to promote the development of regional and national level Health Information Exchanges (HIE). This initiative sees the collaboration between multiple health applications to enable connectivity between piecemeal implementations. In this capacity, OpenMRS been adopted as the Shared Health Record (SHR) of the openHIE collaboration initiative emerging to assist in the strengthening of national health information exchanges for the underserved.
+Additionally, OpenMRS is also involved in efforts to promote the development of regional and national level **Health Information Exchanges** (HIE). This initiative sees the collaboration between multiple health applications to enable connectivity between piecemeal implementations. In this capacity, OpenMRS been adopted as the **Shared Health Record** (SHR) of the openHIE collaboration initiative emerging to assist in the strengthening of national health information exchanges for the underserved.
 
 ## Where you fit in
 
