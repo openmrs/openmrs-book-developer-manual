@@ -1,6 +1,8 @@
+<center>
 ![OpenMRS logo][logo] 
+
 ******************************************** 
-# Welcome to OpenMRS! 
+# Welcome to OpenMRS!  
 --------------------------------------------
 
 
