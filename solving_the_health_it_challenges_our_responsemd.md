@@ -1,2 +1,2 @@
-# Solving the Health IT Challenges (Our Response).md
+# Solving the Health IT Challenges (Our Response)
 
