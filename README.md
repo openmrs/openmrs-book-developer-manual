@@ -1,8 +1,9 @@
 <center>
 ![OpenMRS logo][logo] 
 
+<center> <h2> Write Code, Save Lives
 ******************************************** 
-# Welcome to OpenMRS!  
+<center><h2> Welcome to OpenMRS!  </h2>
 --------------------------------------------
 
 
