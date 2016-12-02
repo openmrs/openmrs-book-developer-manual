@@ -1,5 +1,4 @@
-<center>
-<h2> Solving the Health IT Challenges (Our Response) </h2>
+<center><h2> Solving the Health IT Challenges (Our Response) </h2>
 <center>
 ![image](images/AMPATH-2004.png)
 
