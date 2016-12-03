@@ -33,7 +33,7 @@ To complete the ```omrs-create-module``` workflow, you will be prompted to enter
 
 * **```Module name```:** Enter the name of your module as you would like it to appear. For this example use the name ```Hello World```.
 * **```Do you want to add an admin page link (y/n)```** : Yes, most likely you want your module to be accessible from the OpenMRS admin page.
-"Do you want to add a service layer (y/n)": Yes, the default, creates a module with a ```Service, ServiceImpl, DAO, HibernateDAO, POJO, Hibernate mapping, liquibase.xml``` and ```sqldiff.xml,``` which will work together to allow your module to access the OpenMRS database.
+* **```Do you want to add a service layer (y/n)```**: Yes, the default, creates a module with a ```Service, ServiceImpl, DAO, HibernateDAO, POJO, Hibernate mapping, liquibase.xml``` and ```sqldiff.xml,``` which will work together to allow your module to access the OpenMRS database.
 * Entering this data and clicking ```Enter``` will allow the OpenMRS SDK to complete the module creation for you.
 
 
