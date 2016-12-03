@@ -13,6 +13,6 @@
    * [Data Model](Technology/dataModel.md)
    * [Development Process](Technology/developmentProcess.md)
    * [Get Set Up](Technology/getSetUp.md)
-* Case Study
+* [Case Study](case study.md)
    * [Making Your First Module](Case_study/yourFirstModule.md)
 
