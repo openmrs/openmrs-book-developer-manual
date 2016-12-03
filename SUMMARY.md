@@ -13,4 +13,5 @@
    * [Data Model](Technology/dataModel.md)
    * [Development Process](Technology/developmentProcess.md)
    * [Get Set Up](Technology/getSetUp.md)
+* Case Study
 
