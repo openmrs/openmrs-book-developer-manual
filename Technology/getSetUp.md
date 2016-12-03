@@ -206,7 +206,6 @@ export MAVEN_OPTS="-Xmx1024m -Xms1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 
 Then run Jetty again using the command above. This should increase the effective memory of the running Java Virtual Machine, thereby preventing the re-occurrence of this error.
 
-
 ## Conclusion
 
 You've now installed OpenMRS on your computer. You're ready to learn about developing.
