@@ -10,11 +10,11 @@
                 },
                 {
                     "lang": "java",
-                    "name": "Java",
+                    "name": "Java"
                 },
                 {
                     "lang": "sh",
-                    "name": "Shell",
+                    "name": "Shell"
                 },
                 {
                     "lang": "go",
