@@ -18,5 +18,5 @@
 * [What's Next](what_next.md)
    * [Get Involved](What_next/getInvolved.md)
    * [Get Support](What_next/getSupport.md)
-   * Developer Checklist
+   * [Developer Checklist](What_next/devChecklist.md)
 
