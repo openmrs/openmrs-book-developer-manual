@@ -105,7 +105,7 @@ Now that you have a basic module running, you want to add your own features whic
 
 Let's assume that your hello world task involves adding a new field titled '```name```' to your data model. 
 
-In ```department/api/src/main/java/org/openmrs/module/department/Department.java```, add new fields called name and description along with appropriate getters and setters for them. The file should now look as follows: 
+In```department/api/src/main/java/org/openmrs/module/department/Department.java```, add new fields called name and description along with appropriate getters and setters for them. The file should now look as follows: 
 ```java
 public class Department extends BaseOpenmrsObject implements Serializable {
 	private static final long serialVersionUID = 1L;
