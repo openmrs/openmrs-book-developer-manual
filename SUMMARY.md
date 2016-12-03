@@ -17,4 +17,5 @@
    * [Making Your First Module](Case_study/yourFirstModule.md)
 * What's Next
    * [Get Involved](What_next/getInvolved.md)
+   * Get Support
 
