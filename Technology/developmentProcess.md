@@ -12,114 +12,154 @@ You may also want to work on issues or limitations that you identified yourself.
 
 If you are selecting an existing ticket to work on, please make sure that:
 
-The issue is marked as "Ready for Work".
-The issue is not "In Progress" and claimed by someone else.
-The issue is not "blocked" waiting for the completion of another issue.
-Beginning work 
+* The issue is marked as "Ready for Work".
+* The issue is not "In Progress" and claimed by someone else.
+* The issue is not "blocked" waiting for the completion of another issue.
+
+##Beginning work 
 
 We assume that you have already installed git on your computer, and that you are able to access it using the command line, which is often easier to interact with than IDE integration plugins.
 
-Log in to JIRA with your OpenMRS credentials, and then claim the ticket by clicking on the "Claim Issue" button. This will indicate to others that you are working on this issue, so that they do not duplicate your work. You should also identify the OpenMRS version affected by this particular issue, and make sure to check out the appropriate version of the source code to complete your task. For most cases, you will need to check out the master branch. If you are not sure, just put a comment on the ticket asking for guidance. 
+[See https://www.atlassian.com/git/tutorials/ to learn git] 
+
+Log in to JIRA with your OpenMRS credentials, and then claim the ticket by clicking on the **"Claim Issue"** button. This will indicate to others that you are working on this issue, so that they do not duplicate your work. You should also identify the OpenMRS version affected by this particular issue, and make sure to check out the appropriate version of the source code to complete your task. For most cases, you will need to check out the master branch. If you are not sure, just put a comment on the ticket asking for guidance. 
 
 Use the following steps to check out source code onto your local machine:
 
-Step 1: If you don't have a GitHub account, create one here: https://github.com/signup/free 
+**Step 1:** If you don't have a GitHub account, create one here: https://github.com/
 
-Step 2: On GitHub, fork a project you want to work on. You may use the tutorial http://help.github.com/fork-a-repo
+**Step 2:** On GitHub, fork a project you want to work on. You may use the tutorial http://help.github.com/fork-a-repo
 
-Step 3: Clone the project repository from your fork
+**Step 3:** Clone the project repository from your fork.
+Fire up Terminal and enter the command:
 
-git clone https://github.com/{yourusername}/openmrs-core.git 
-Step 4: Now, go into the folder just created and set up the "upstream" remote so you can eventually pull changes from the main repository.
+```shell  
+  git clone https://github.com/{yourusername}/openmrs-core.git
+``` 
+**Step 4:** Now, go into the folder just created and set up the **"upstream"** remote so you can eventually pull changes from the main repository.
 
-git remote add upstream https://github.com/openmrs/openmrs-core.git 
-Using Git to manage your work
+``` shell
+    git remote add upstream https://github.com/openmrs/openmrs-core.git 
+ ```
+## Using Git to manage your work
 
 You should use a separate branch for your development work on each JIRA issue. The following steps describe how to do so.
 
-Step 1: Check out out a new local branch based on your master/tag recommended for the fix and update it to the latest. The convention is to name the branch after the JIRA issue key, for example, "TRUNK-123". 
+**Step 1:** Check out out a new local branch based on your master/tag recommended for the fix and update it to the latest. The convention is to name the branch after the JIRA issue key, for example, **"TRUNK-123"**. 
 
  To create a new branch, use the following commands:
-
-git checkout -b TRUNK-123 master
-git clean -df
-git pull --rebase upstream master
-Step 2: Push the branch to your fork:
-
-git push origin TRUNK-123
+```shell
+  git checkout -b TRUNK-123 master
+  git clean -df
+  git pull --rebase upstream master
+```
+**Step 2:** Push the branch to your fork:
+```shell
+  git push origin TRUNK-123
+```
 Now you may begin work on your task on the newly created branch.
 
-Coding conventions
+## Coding conventions
 
 In addition to basic Java coding conventions, use the following steps to ensure the quality of your code:
 
-Managing deprecation:
+##### Managing deprecation:
 
-Deprecate public methods instead of changing/deleting them in order to preserve backwards compatibility. We will delete all deprecated methods when we release a new major version (e.g., from 1.x to 2.0). 
-Use both the @Deprecated annotation and the @deprecated javadoc comment.
+* Deprecate public methods instead of changing/deleting them in order to preserve backwards compatibility. We will delete all deprecated methods when we release a new major version (e.g., from 1.x to 2.0). 
+Use both the **@Deprecated** annotation and the **@deprecated javadoc comment**.
 The @deprecated javadoc annotation should point to the new method that is replacing the current one.
 DAO methods do not have to go through a deprecation cycle. They can be changed/deleted outright.
- Security:
+ ##### Security:
 
-To enforce security, avoiding XSS scripting by using StringEscapeUtils.escapeJavaScript() and StringEscapeUtils.escapeHtml() to escape any user-generated data in pages.
-Code formatting style:
+* To enforce security, avoiding XSS scripting by using 
+``` StringEscapeUtils.escapeJavaScript() ``` 
+and ```StringEscapeUtils.escapeHtml()``` to escape any user-generated data in pages.
 
-OpenMRS uses Eclipse auto-formatting features for managing the style of your code. These formatting rules are included in the OpenMRSFormatter.xml file which can either be downloaded from http://go.openmrs.org/newdev-formatter or the source code checked out from GitHub. To apply these guidelines, use the command Control+Alt+F. 
+##### Code formatting style:
+
+* OpenMRS uses Eclipse auto-formatting features for managing the style of your code. These formatting rules are included in the OpenMRSFormatter.xml file which can either be downloaded from http://om.rs/newdev-formatter or the source code checked out from GitHub. To apply these guidelines, use the command ```Ctrl+Alt+F. ```
 Running the command mvn clean install will also enforce these formatting stylistics on your code.
-Quality Assurance efforts
 
+## Quality Assurance efforts
 
-Meaningful use of comments: Provide enough comments to cover the specific work you have undertaken in your code.
-Javadoc comments for each method: Provide a Javadoc comment for each new method you introduce. Also, you should update existing Javadoc comments to indicate any modifications you have made.
-Unit testing: Write proper unit tests to cover each alternative scenario introduced or modified by your changes. Your changes to the code may inadvertently affect other program code as well. Therefore, you should always be sure to run all the unit tests to validate your work.
-Evaluating performance: In the event that your changes may affect performance, we recommend that you evaluate its impact using a profiler such as YourKit. 
-Maintaining your code
+* **Meaningful use of comments:** Provide enough comments to cover the specific work you have undertaken in your code.
+* **Javadoc comments for each method:** Provide a Javadoc comment for each new method you introduce. Also, you should update existing Javadoc comments to indicate any modifications you have made.
+* **Unit testing:** Write proper unit tests to cover each alternative scenario introduced or modified by your changes. Your changes to the code may inadvertently affect other program code as well. Therefore, you should always be sure to run all the unit tests to validate your work.
+* **Evaluating performance:** In the event that your changes may affect performance, we recommend that you evaluate its impact using a profiler such as YourKit. 
 
+## Maintaining your code
 
 To identify which files you have changed, run the following command:
-git status
+```shell
+  git status
+```
 This will return a list of all new or modified files which you can review to ensure that no unintentional changes made it into your commit.
 
-Stage and commit your changes
+**Stage and commit your changes**
 
 As you work on your code, you may want to periodically stage and commit your changes into your branch. To stage all changed and new files into your commit, use the command:
-
-git add -A
+```shell
+  git add -A
+  #alternatively 
+  git stage .
+```
 To pick only some files, use:
 
-git add -i
+``` shell
+  git add -i
+  #alternatively 
+  git add {filename}
+```
 Using this command displays a summary of changed and new files along with a list of options which you can carry out. To stage selected files, you need to choose the 'update' option. Choose the files which you want to stage, marking them either by entering their file id (as listed in the console). You may also specify a file range such as 1-3, or simply enter * to select all. Confirm your selections by pressing the ENTER key twice. Choose option '7' (quit) to complete the process.
 
-Now these files are staged, and ready to be committed. To commit your code into your branch, use the command:
+Now these files are staged, and ready to be committed. 
 
+**To commit your code into your branch, use the command:**
+```shell
 git commit -m "TRUNK-123: Put change summary here (can be a ticket title)"
+```
 Please remember to specify the current JIRA issue number in your commit message. The use of meaningful commit messages is important.
-Pushing your code and requesting a review
+
+## Pushing your code and requesting a review
+
 
 
 After multiple iterations of making changes to your code and committing them into your branch, push your code into your fork by running the following commands.
 
-Step 1: Update your branch to the latest code using the following command:
-git pull --rebase upstream master 
-Step 2: If you have made many commits, squash them into atomic units of work. Most JIRA issues, especially bug fixes, should have one commit only, making them easier to back-port. To do so, use the instructions at: http://go.openmrs.org/newdev-squash
-Step 3: Make sure all unit tests still pass by running:
+**Step 1:** Update your branch to the latest code using the following command:
+```shell
+  git pull --rebase upstream master 
+```
+**Step 2:** If you have made many commits, squash them into atomic units of work. Most JIRA issues, especially bug fixes, should have one commit only, making them easier to back-port. To do so, use the instructions at: http://om.rs/newdev-squash
 
-mvn clean install
-Step 4: Push your changes into your fork:
+**Step 3:** Make sure all unit tests still pass by running:
+```shell
+  mvn clean install
+```
+**Step 4:** Push your changes into your fork:
+```shell
 git push
-Running this command will prompt you to authenticate into GitHub. After doing so, it will upload the changes into your fork. You may now visit your push on GitHub at a URL like http://github.org/{yourgithubname}/{fork}/ where "fork" will be something like "openmrs-core". Create a pull request using the create pull request link on GitHub.
+```
+Running this command will prompt you to authenticate into GitHub. After doing so, it will upload the changes into your fork. You may now visit your push on GitHub at a URL like
+```
+  http://github.org/{yourgithubname}/{fork}/ 
+```
+where "fork" will be something like "openmrs-core". Create a pull request using the create pull request link on GitHub.
 
 After you make your pull request, go to the relevant JIRA issue and click the button to request a code review on that ticket. When doing so, add a comment to the ticket with a link to your pull request. This will automatically schedule the ticket to be reviewed by a core developer. Your code will not be reviewed until you follow this process in JIRA.
-About attribution
+
+### About attribution
 
 In OpenMRS, attribution is done via commit comments only. When a committer applies a patch, the author or authors of the patch are attributed within the commit comment itself. Attribution (either author or contributing authors) will not be placed into the source code. OpenMRS will graciously refuse contributions from volunteers who require attribution of their work within source code.
-About Subversion and OpenMRS
+
+## About Subversion and OpenMRS
 
 OpenMRS migrated from Subversion to GitHub in mid-2012. Before that time, we used Subversion for version control for over seven years. As a result, some of our older and infrequently-used modules are still be hosted in our Subversion repository.
 
 We encourage the hosting and migration of OpenMRS modules into GitHub, although your module's source code may be hosted wherever you prefer. If you are planning to work on a legacy module hosted in Subversion, you will need appropriate knowledge to use this version control system.
 
-Code review
+
+## Code review
 
 A senior developer will review your code, and may suggest revisions. You may be asked to make changes to your patch, and re-submit it for review. Code review is an iterative process, and multiple review cycles may be required. Additional changes made to your patch can be built on the same branch used previously.
 
@@ -131,13 +171,15 @@ Ultimately, once all reviews have been completed, a patch will be accepted and m
 
 Closing a JIRA issue ends the official workflow, and now you are free to begin work on other tickets. Sit back, relax, and find a new ticket!
 
-Reopening issues
+
+### Reopening issues
 
 A closed JIRA issue might be reopened if it causes the current build to fail, needs more work, or triggers a significant disruption of the existing system.
 
 If further improvements to your work are identified at a later stage, these will be listed under a separate ticket which would be linked to the previous one. In such a case, you are welcome to either claim or ignore the new ticket. You may be contacted for your thoughts.
 
-How to get help
+
+## How to get help
 
 General questions regarding the task you are working on can be asked by adding comments to the issue on JIRA. Such comments are seen by the issue's requester and other people who specifically are "watching" the issue. You may also request help for your work by asking questions using the community discussion channels discussed previously in this book. The OpenMRS community is very extensive, and greatly encourages and assists newcomers, so feel free to ask constructive questions.
 
