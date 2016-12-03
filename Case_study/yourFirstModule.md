@@ -56,11 +56,11 @@ The ```omrs-create-module``` command creates the basic module structure and comp
            * [messages_*.properties files](https://wiki.openmrs.org/display/docs/Module+messages.properties+Files)
            * [modulesApplicationContext.xml](https://wiki.openmrs.org/display/docs/Module+Application+Context+File)
            * log4j.xml - optional file to control logging in your module
-       * webapp - jsp and html files included in the omod
-portlets -
-resources - image, js, and css files that your jsp files reference
-target - Contains the distributable omod file
-pom.xml - Maven build file.  Delegates to pom.xml files in the omod and api project
+       * **webapp** - jsp and html files included in the omod
+         * [portlets](https://wiki.openmrs.org/display/docs/Module+Portlets) -
+         * [resources](https://wiki.openmrs.org/display/docs/Module+Resources) - image, js, and css files that your jsp files reference
+  * **target** - Contains the distributable omod file
+* **pom.xml** - Maven build file.  Delegates to pom.xml files in the omod and api project
 You can read more about module conventions at: https://wiki.openmrs.org/display/docs/Module+Conventions 
 
 Compiling your module 
