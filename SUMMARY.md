@@ -8,7 +8,7 @@
 * [Community](Community.md)
    * [Working Cooperatively](Community/workingCooperatively.md)
    * [Collaboration tools](Community/collaborationTools.md)
-* [Technology](Technology)
+* [Technology](Technology.md)
    * [Architecture](Technology/architecture.md)
    * [Data Model](Technology/dataModel.md)
    * [Development Process](Technology/developmentProcess.md)
