@@ -14,4 +14,5 @@
    * [Development Process](Technology/developmentProcess.md)
    * [Get Set Up](Technology/getSetUp.md)
 * Case Study
+   * yourFirstModule.md
 
