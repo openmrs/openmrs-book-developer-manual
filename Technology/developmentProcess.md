@@ -1,10 +1,11 @@
-<center><h1>Development Process
+<center><h1>Development Process</h1>
+************************************
 
 ## Selecting development work
 
 Selecting your initial task depends on your personal preferences and expertise. We recommend you work on at least a few introductory tickets so that you can better understand our development workflow when you start.
 
-OpenMRS uses Atlassian's JIRA software for issue tracking purposes. The OpenMRS JIRA installation can be found at https://tickets.openmrs.org/.
+OpenMRS uses [Atlassian's JIRA](https://www.atlassian.com/software/jira) software for issue tracking purposes. The OpenMRS JIRA installation can be found at https://tickets.openmrs.org/.
 
 JIRA allows you to search for suitable tickets using a number of criteria. When choosing a ticket, identify one based on a programming language or task that you are already familiar with to reducing the learning curve involved.
 
