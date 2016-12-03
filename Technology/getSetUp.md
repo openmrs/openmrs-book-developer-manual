@@ -129,76 +129,84 @@ Be careful not to delete or rename folders after decompressing the standalone pa
 
 **Step 4:** After running the standalone jar, it will take you to the OpenMRS log in web page where you can log in with the following default username and password:
 
+* Username: **admin**
+* Password: **Admin123**
  
-
-Username: admin
-Password: Admin123 or test
- 
-
 The MySQL database has these credentials by default:
 
- 
+* MySQL username: **openmrs**
+* MySQL password: Randomly generated during initial startup. 
 
-MySQL username: openmrs
-MySQL password: Randomly generated during initial startup. Look in the openmrs-runtime.properties file for the value of connection.password.
+Look in the ```openmrs-runtime.properties``` file for the value of ```connection.password.```
  
 
 You now have a local copy of OpenMRS running with both an embedded database and a web server! At any time, you can upgrade the standalone version. Check out the wiki for details on how to do this: https://wiki.openmrs.org/display/docs/Upgrading+OpenMRS 
 
-Manual Installation
 
-Set up MySQL
+## Manual Installation
+
+
+#### Set up MySQL
 
 You must have a MySQL database set up for OpenMRS to be installed successfully. To point your OpenMRS project to the database, should either know your MySQL root password, or have a database schema pre-configured and ready with a username and password to provide during the OpenMRS setup. More information about installing and setting up MySQL is available at: http://dev.mysql.com/usingmysql/get_started.html
 
-Set up Maven
+
+#### Set up Maven
 
 Ensure that you have Maven installed and configured to support building OpenMRS software. You can use the instructions at: http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
-Set up Git
+#### Set up Git
 
 Ensure that you have installed and configured Git for source code management. You can use one of the following relevant instruction pages:
 
-http://help.github.com/mac-set-up-git/
-http://help.github.com/win-set-up-git/
-http://help.github.com/linux-set-up-git/
-http://git-scm.com/book/en/Getting-Started-Installing-Git
+* https://atlassian.com/git/tutorials/
+* http://help.github.com/mac-set-up-git/
+* http://help.github.com/win-set-up-git/
+* http://help.github.com/linux-set-up-git/
+* http://git-scm.com/book/en/Getting-Started-Installing-Git
+
 OpenMRS developers generally agree that the command line is the best way to interact with GIT, and we recommend that you set up your Git instance to be able to do so. 
 
-Get the core source code
+#### Get the core source code
 
 You must clone the openmrs-core repository on GitHub using your Git client in order to start working on the project. In a directory that you keep your code in, run the following:
-
+```shell
 git clone https://github.com/openmrs/openmrs-core.git 
 cd openmrs-core 
-
+```
 You are now in the main working source code directory for OpenMRS.
 
 More detailed steps are necessary if you are checking out OpenMRS code to fix a particular ticket. Please refer to Git instructions listed under the Development process on how to check out the required source code. 
 
-Compiling your code
+
+#### Compiling your code
 
 Compile the source code to be able to run it. First make sure that you are in the top-level openmrs-core directory, then run:
 
-mvn clean install 
+```mvn clean install ```
+
 This will take a few minutes, while it downloads dependencies and builds OpenMRS. Make sure you are connected to the Internet so Maven can download the necessary dependencies from our repositories.
 
-Start the OpenMRS Webapp
+##### Start the OpenMRS Webapp
 
 To run the code, you have to start the webapp. The OpenMRS source code contains a dependency to the Jetty server, so you can start the application by running a simple command. to do so, complete the following steps:
 
-cd webapp
-mvn jetty:run 
+```
+  cd webapp 
+  mvn jetty:run
+```
 
-Now you may access OpenMRS using the url http://localhost:8080/openmrs. This should let you run a wizard which will guide you through setting up your database. The Wizard will allow you to configure you instance in a number of ways, and offers multiple options to help you point to what datbase you want to use, and what data you wish to include by default.
+Now you may access OpenMRS using the url ```http://localhost:8080/openmrs```. This should let you run a wizard which will guide you through setting up your database. The Wizard will allow you to configure you instance in a number of ways, and offers multiple options to help you point to what datbase you want to use, and what data you wish to include by default.
 
-NOTE: If you run into issues with Out of Memory exceptions from Java, try running:
 
+> **NOTE:** If you run into issues with Out of Memory exceptions from Java, try running:
+```
 export MAVEN_OPTS="-Xmx1024m -Xms1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
- 
+ ```
 
 Then run Jetty again using the command above. This should increase the effective memory of the running Java Virtual Machine, thereby preventing the re-occurrence of this error.
 
-Conclusion
+
+## Conclusion
 
 You've now installed OpenMRS on your computer. You're ready to learn about developing.
