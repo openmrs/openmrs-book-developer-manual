@@ -22,4 +22,5 @@
 * Appendices
    * Appendix A: Learning Resources
    * Appendix B: OpenMRS Glossary
+   * Appendix C: Troubleshooting 
 
