@@ -254,7 +254,7 @@ The use of CI has brought OpenMRS a number of benefits including:
 
 * Automating the process to ensure that regression doesn't occur with new code changes. Often a change in the API or module results in 'breaking' other dependent modules. A CI System will rebuild OpenMRS after a change is committed, thereby providing information on how that change affects other dependent code.
 * Providing an easily comprehensible user interface that provides statistics/status of successful and failing tests
-* Providing an easy method of monitoring work done on different branches and modules.
+* Providing an easy method of monitoring work done on different branches and modules. 
 * Allowing users to easily identify 'test fails only for me' vs. 'test fails for everyone' scenarios. 
 The OpenMRS continuous integration tools can be accessed at http://ci.openmrs.org/.
 
