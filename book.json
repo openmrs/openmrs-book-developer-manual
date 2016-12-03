@@ -9,6 +9,14 @@
                     "default": true
                 },
                 {
+                    "lang": "java",
+                    "name": "Java",
+                },
+                {
+                    "lang": "sh",
+                    "name": "Shell",
+                },
+                {
                     "lang": "go",
                     "name": "Go"
                 }
