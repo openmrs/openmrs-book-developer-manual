@@ -97,4 +97,6 @@ For more information about our repositories: https://wiki.openmrs.org/display/do
 
 All OpenMRS modules are available on GitHub at: https://github.com/openmrs
 
+## Let's Get Started 
+As you've read in this section, there are many tools to help you work with other community members, so dive right in and introduce yourself on IRC and create your personal wiki space. You now have the tools you need to start working as a developer, so in the next section we'll guide you through that process. We're excited to meet you. **Welcome to our community!**
 
