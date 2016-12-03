@@ -1,7 +1,7 @@
 {
-    "plugins": [ "theme-api" ],
+    "plugins": [ "theme-default" ],
     "pluginsConfig": {
-        "theme-api": {
+        "theme-default": {
             "languages": [
                 {
                     "lang": "js",
