@@ -1,4 +1,6 @@
 <center> <h1> Data Model </h1>
+*****************************
+<center>
 ![](http://write.flossmanuals.net/openmrs-developers-guide/data-model/static/openmrs_data_model_1.9.0.png)
 *OpenMRS data model version 1.9. Details at http://go.openmrs.org/newdev-data*
 
