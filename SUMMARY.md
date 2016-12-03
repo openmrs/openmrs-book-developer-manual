@@ -12,5 +12,5 @@
    * [Architecture](Technology/architecture.md)
    * [Data Model](Technology/dataModel.md)
    * [Development Process](Technology/developmentProcess.md)
-   * Get Set Up
+   * [Get Set Up](Technology/getSetUp.md)
 
