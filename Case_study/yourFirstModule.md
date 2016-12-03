@@ -369,16 +369,19 @@ public class DepartmentServiceImpl extends BaseOpenmrsService implements Departm
 } 
 ```
 
-Coding conventions and standards
+
+## Coding conventions and standards
 
 When editing the DAO and service layer classes, don't forget to ensure that your code adheres to our general standards. Refer to the 'Development process' chapter, which will give you detailed instructions on how to ensure this.
 
-Also, don't forget to add Junit Unit tests to validate that the methods you introduced behave exactly as they should. 
+Also, don't forget to add ```Junit Unit tests``` to validate that the methods you introduced behave exactly as they should. 
 
-Creating the web interface for your module
 
-To make these changes to be accessible to users, you need to make changes to the module controller. You will also need to introduce a new file named addDepartment.jsp into the /omod/src/main/webapp directory. This will contain the jsp page that lets you edit your name. The general contents of this class will be as follows: 
+### Creating the web interface for your module
 
+To make these changes to be accessible to users, you need to make changes to the module controller. You will also need to introduce a new file named ```addDepartment.jsp``` into ```the /omod/src/main/webapp``` directory. This will contain the ```.jsp``` page that lets you edit your name. The general contents of this class will be as follows: 
+
+```jsp
 <form method="post">
 <fieldset>
 <table>
@@ -405,8 +408,11 @@ To make these changes to be accessible to users, you need to make changes to the
 <input type="submit" value="<openmrs:message code="department.save"/>" name="save">
 </fieldset>
 </form>
-Once the JSP is complete, don't forget to modify the controller to point to this. It is also useful to add validations to asses user input when the controller is triggered.
+```
 
+Once the ```.jsp``` is complete, don't forget to modify the controller to point to this. It is also useful to add validations to asses user input when the controller is triggered.
+
+```java
  @RequestMapping(value = "/module/department/departmentForm.form", method = RequestMethod.POST)
     public String submitDepartment(WebRequest request, HttpSession httpSession, ModelMap model,
                                    @RequestParam(required = false, value = "action") String action,
@@ -433,14 +439,17 @@ Once the JSP is complete, don't forget to modify the controller to point to this
         }
         return "redirect:departmentList.list";
     }
+ ```
+ 
 Now that your module is completed, it is the perfect time to go ahead and test it. First test it yourself to make sure that there are no obvious mistakes before asking a target end user to try it out. The end user's feedback may result in further design discussions or reviews. Once these have been completed, the module can be implemented at the clinic, and also made available publicly. Refer to the guidelines specified in the 'Development Process' chapter to find out the best way to do this.
 
-Once your module is released, you may think that your work is over. However, there is no such thing. As health systems, requirements, and technology change, so must the software.This makes medical informatics a viable career option, but does not mean you are responsible for maintaining Hello World for the rest of its life with OpenMRS.
+Once your module is released, you may think that your work is over. However, there is no such thing. As health systems, requirements, and technology change, so must the software.This makes medical informatics a viable career option, but does not mean you are responsible for maintaining ```Hello World``` for the rest of its life with OpenMRS.
 
-Sharing your module 
 
-When done with developing and testing your module, you can release it for developers by deploying to the Maven repository using instructions at: http://go.openmrs.org/newdev-tagging
+### Sharing your module 
 
-For end users, you can upload it to the module repository http://modules.openmrs.org which is available to everyone. Read more about our rules and regulations for it here: http://go.openmrs.org/newdev-modrepo 
+When done with developing and testing your module, you can release it for developers by deploying to the Maven repository using instructions at: http://om.rs/newdev-tagging
+
+For end users, you can upload it to the module repository http://modules.openmrs.org which is available to everyone. Read more about our rules and regulations for it here: http://om.rs/newdev-modrepo 
 
  
