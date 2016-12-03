@@ -51,16 +51,16 @@ The ```omrs-create-module``` command creates the basic module structure and comp
         * **java** - web specific java files like controllers, servlets, and filters 
         * **resources** - 
            * [config.xml](https://wiki.openmrs.org/display/docs/Module+Config+File)
-           * \[*.hbm.xml files](https://wiki.openmrs.org/display/docs/Module+Hibernate+Mapping+Files)
+           * [*.hbm.xml files](https://wiki.openmrs.org/display/docs/Module+Hibernate+Mapping+Files)
            * [liquibase.xml](https://wiki.openmrs.org/display/docs/Module+liquibase+File) (or the old [sqldiff.xml](https://wiki.openmrs.org/display/docs/Module+sqldiff+File) )
            * [messages_*.properties files](https://wiki.openmrs.org/display/docs/Module+messages.properties+Files)
            * [modulesApplicationContext.xml](https://wiki.openmrs.org/display/docs/Module+Application+Context+File)
            * log4j.xml - optional file to control logging in your module
-       * **webapp** - jsp and html files included in the omod
+      * **webapp** - jsp and html files included in the ```omod```
          * [portlets](https://wiki.openmrs.org/display/docs/Module+Portlets) -
          * [resources](https://wiki.openmrs.org/display/docs/Module+Resources) - image, js, and css files that your jsp files reference
   * **target** - Contains the distributable omod file
-* **pom.xml** - Maven build file.  Delegates to pom.xml files in the omod and api project
+* **pom.xml** - Maven build file.  Delegates to ```pom.xml``` files in the omod and api project
 
 You can read more about module conventions at: https://wiki.openmrs.org/display/docs/Module+Conventions 
 
@@ -87,7 +87,7 @@ To install your module go to the Admin interface of OpenMRS.
 * Near the top, you will see an Add or Upgrade Module button, click it.
 * Under the **Add Module** heading, click the **Browse...** button.
 * In the file browser, select your ```omod``` file from ```basicexample/omod/target/basicexmaple-1.0-SNAPSHOT.omod```
-* Click Upload.
+* **Click Upload**.
 
 
 You should now see your module under the Manage Modules heading.
