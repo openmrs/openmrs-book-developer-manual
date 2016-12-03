@@ -20,4 +20,5 @@
    * [Get Support](What_next/getSupport.md)
    * [Developer Checklist](What_next/devChecklist.md)
 * Appendices
+   * Appendix A: Learning Resources 
 
