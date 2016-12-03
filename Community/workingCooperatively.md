@@ -1,6 +1,6 @@
 <center><h1>Working Cooperatively
 <center> 
-![](images/WorkingCooperatively.jpg)
+![](http://write.flossmanuals.net/openmrs-developers-guide/working-cooperatively/static/Working%20Cooperatively.jpg)
 
 ## Getting things done
 
