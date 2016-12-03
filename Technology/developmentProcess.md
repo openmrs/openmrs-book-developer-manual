@@ -189,70 +189,75 @@ In the event that you feel that you are unable to complete a JIRA issue that you
 Suggesting process changes
 
 Often, developers may wish to suggest changes to existing process. These discussions usually begin on the OpenMRS developers mailing list, and may be carried over to our weekly design meetings based on the significance or impact of the suggested changes. Code reviews performed on a given ticket may also result in the need for more detailed design discussions. In this case, the discussion should be moved over to a mailing list, and if necessary, into the weekly design meetings.
-Publicizing your work
+
+### Publicizing your work
 
 We highly encourage developers to publicize their work so other community members are able to learn from and re-use their work. You should do so using one or more of these methods:
 
-Make your work publicly accessible via GitHub.
-Add appropriate documentation to the OpenMRS Wiki.
-Email the OpenMRS developers mailing list.
-Create and submit example videos to be published on the OpenMRS YouTube channel.
-Request time on in the weekly developers forum or university calls to showcase your work.
-Requesting tool licenses for your development work
+* Make your work publicly accessible via GitHub.
+* Add appropriate documentation to the OpenMRS Wiki.
+* Email the OpenMRS developers mailing list.
+* Create and submit example videos to be published on the OpenMRS YouTube channel.
+* Request time on in the weekly developers forum or university calls to showcase your work.
+* Requesting tool licenses for your development work
 
 OpenMRS encourages the use of open source tools for development work. However, in certain cases, you may require licenses to use some commercial tools.
-OpenMRS provides contributor licenses to community members in good standing who can demonstrate need for using these tools. Licenses may be available for a number of tools including IntelliJ IDEA and the YourKit profiler, among others. If you are able to demonstrate sufficient need to obtain such a license, please contact the OpenMRS help desk at http://go.openmrs.org/helpdesk.
+OpenMRS provides contributor licenses to community members in good standing who can demonstrate need for using these tools. Licenses may be available for a number of tools including IntelliJ IDEA and the YourKit profiler, among others. If you are able to demonstrate sufficient need to obtain such a license, please contact the OpenMRS help desk at https://help.openmrs.org
 
-Understanding OpenMRS releases
 
-What goes into a release?
+## Understanding OpenMRS releases
+
+**What goes into a release?**
 
 Release timelines and supported features are largely decided upon by the OpenMRS leadership group. Larger goals are discussed, agreed upon, and documented under the OpenMRS technical road-map, which is a set of predefined milestones for the core OpenMRS platform and sponsored modules.
 
-More detailed on the release process can be found at: http://go.openmrs.org/newdev-release
+More detailed on the release process can be found at: https://om.rs/newdev-release
 
-The latest technical road-map can be found at: http://go.openmrs.org/newdev-techmap    
+The latest technical road-map can be found at: https://om.rs/newdev-techmap    
 
 The release process is managed by a release manager who is responsible for getting the source code stabilized, packaged, and released to the general public. 
 
-OpenMRS release types 
 
-Alpha release
+# OpenMRS release types 
+
+
+#### Alpha release
 
 An alpha release is a feature-complete release which has not yet been verified as bug free.
 
-Beta release
+#### Beta release
 
 A beta release is made after obvious bugs found in the alpha release have been fixed. Therefore, a beta release is ready to be tested by a larger group of people. 
 
-Release candidate
+#### Release candidate
 
 A release candidate is only needed when non-trivial changes were required during the beta phase. If the beta release was tested and no significant changes were detected, developers may proceed directly to a full release.
 
-Major release
+#### Major release
 
 A major release is deemed tested and worthy of production environments.
 
-Maintenance release 
+#### Maintenance release 
 
 A maintenance release contains bug fixes and security patches for use between major releases, e.g., from 1.8.0 to 1.8.1. For maintenance releases, no additional branches are created. Developers simply begin where development work was left off in the current minor version series release branch. 
 
-Release branch
+#### Release branch
 
 A new release branch is created for each new major and minor release. As an example, a new release branch is created when preparing to release version 2.0.0, or version 1.3.0. However, when preparing to release 1.3.1 (a maintenance-version increment), the release branch created at the time of 1.3.0 is simply re-used. 
 
-Continuous Integration (CI) for OpenMRS
+
+##  Continuous Integration (CI) for OpenMRS
 
 Continuous Integration Systems play an integral role in software development. OpenMRS adopted the CI tool Bamboo following our shift into the agile development process.
 
 The use of CI has brought OpenMRS a number of benefits including:
 
-Automating the process to ensure that regression doesn't occur with new code changes. Often a change in the API or module results in 'breaking' other dependent modules. A CI System will rebuild OpenMRS after a change is committed, thereby providing information on how that change affects other dependent code.
-Providing an easily comprehensible user interface that provides statistics/status of successful and failing tests
-Providing an easy method of monitoring work done on different branches and modules.
-Allowing users to easily identify 'test fails only for me' vs. 'test fails for everyone' scenarios. 
+* Automating the process to ensure that regression doesn't occur with new code changes. Often a change in the API or module results in 'breaking' other dependent modules. A CI System will rebuild OpenMRS after a change is committed, thereby providing information on how that change affects other dependent code.
+* Providing an easily comprehensible user interface that provides statistics/status of successful and failing tests
+* Providing an easy method of monitoring work done on different branches and modules.
+* Allowing users to easily identify 'test fails only for me' vs. 'test fails for everyone' scenarios. 
 The OpenMRS continuous integration tools can be accessed at http://ci.openmrs.org/.
 
-Summary
+## Summary
 
 You should now have an understanding of how to develop with OpenMRS. In the next chapter we will put these skills to use by getting your local development environment set up.
