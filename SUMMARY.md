@@ -9,5 +9,5 @@
    * [Working Cooperatively](Community/workingCooperatively.md)
    * [Collaboration tools](Community/collaborationTools.md)
 * Technology
-   * Architecture
+   * [Architecture](Technology/architecture.md)
 
