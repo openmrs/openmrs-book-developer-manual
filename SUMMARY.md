@@ -14,5 +14,5 @@
    * [Development Process](Technology/developmentProcess.md)
    * [Get Set Up](Technology/getSetUp.md)
 * Case Study
-   * Making Your First Module
+   * [Making Your First Module](Case_study/yourFirstModule.md)
 
