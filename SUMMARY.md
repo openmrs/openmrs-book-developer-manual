@@ -16,5 +16,5 @@
 * [Case Study](case study.md)
    * [Making Your First Module](Case_study/yourFirstModule.md)
 * What's Next
-   * Get Involved
+   * [Get Involved](What_next/getInvolved.md)
 
