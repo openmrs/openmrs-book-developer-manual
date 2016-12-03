@@ -1,5 +1,5 @@
 <center><h1> OpenMRS Today </h1>
-----------------------------------------------------------------------------
+********************************************************
 
 <center> ![](http://write.flossmanuals.net/openmrs-developers-guide/openmrs-today/static/openmrsatlas.png)
 _ OpenMRS Atlas, October 2013 _
