@@ -15,7 +15,7 @@
    * [Get Set Up](Technology/getSetUp.md)
 * [Case Study](case study.md)
    * [Making Your First Module](Case_study/yourFirstModule.md)
-* What's Next
+* [What's Next](what_next.md)
    * [Get Involved](What_next/getInvolved.md)
    * [Get Support](What_next/getSupport.md)
 
