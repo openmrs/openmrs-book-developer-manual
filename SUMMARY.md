@@ -10,7 +10,6 @@
    * [Collaboration tools](Community/collaborationTools.md)
 * Technology
    * [Architecture](Technology/architecture.md)
-       * Get Set Up
    * Data Model
    * Development Process
 
