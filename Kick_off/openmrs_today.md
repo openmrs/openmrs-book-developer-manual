@@ -1,6 +1,6 @@
 <center><h1> OpenMRS Today
 
-<center> ![](/images/openmrsatlas.png)
+<center> ![](http://write.flossmanuals.net/openmrs-developers-guide/openmrs-today/static/openmrsatlas.png)
 _ OpenMRS Atlas, October 2013 _
 
 ## A snapshot
