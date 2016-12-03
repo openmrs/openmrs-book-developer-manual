@@ -13,6 +13,10 @@
                     "name": "Java"
                 },
                 {
+                    "lang": "html",
+                    "name": "HTML"
+                },
+                {
                     "lang": "sh",
                     "name": "Shell"
                 },
