@@ -2,7 +2,7 @@
 ********************************************
 <center> 
 ![](http://write.flossmanuals.net/openmrs-developers-guide/working-cooperatively/static/Working%20Cooperatively.jpg)
-
+<center> _OpenMRS design brainstorming session, October 2013_
 ## Getting things done
 
 Regardless of whether or not you've participated in large software development projects, if you're new to open source projects you may be in for some surprises. The leadership of such projects is very "flat" -- meaning that there isn't a lot of bureaucracy to deal with. On the other hand, you'll find that as a developer, you're given great freedom in finding interesting work and designing what gets built. The more code and ideas you contribute, the more you'll become a leader in the project.
