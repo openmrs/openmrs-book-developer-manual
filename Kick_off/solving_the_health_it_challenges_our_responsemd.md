@@ -1,4 +1,5 @@
 <center><h2> Solving the Health IT Challenges (Our Response) </h2>
+------------------------------------------------------------------
 <center>
 ![](http://write.flossmanuals.net/openmrs-developers-guide/our-response/static/AMPATH-2004.png)
  _ AMPATH Clinic, Eldoret, Kenya, ca. 2004 _
