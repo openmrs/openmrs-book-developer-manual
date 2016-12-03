@@ -64,41 +64,49 @@ The ```omrs-create-module``` command creates the basic module structure and comp
 
 You can read more about module conventions at: https://wiki.openmrs.org/display/docs/Module+Conventions 
 
-Compiling your module 
 
-The basic module structure comes ready to be compiled and installed onto the OpenMRS framework. To do this, navigate into the helloworld directory and execute the following command:
+## Compiling your module 
 
- mvn clean install   
-This creates a jar file, and then package that jar into a omod file. The omod file is what you need to care about. It will be named basicexample-1.0-SNAPSHOT.omod, and located under the helloworld/omod/target/ folder. The omod file is the module binary, which you will install into your OpenMRS application.
+The basic module structure comes ready to be compiled and installed onto the OpenMRS framework. To do this, navigate into the ```helloworld``` directory and execute the following command:
+
+ ```mvn clean install```
+ 
+This creates a ```jar``` file, and then package that jar into a ```omod``` file. The omod file is what you need to care about. It will be named ```basicexample-1.0-SNAPSHOT.omod```, and located under the ```helloworld/omod/target/ folder```. The omod file is the module binary, which you will install into your OpenMRS application.
 
 Executing the maven clean install command also runs any unit tests. If you want to skip unit tests, use the following command instead:
 
-mvn clean install -Dmaven.test.skip=true 
-Try out your module
+```mvn clean install -Dmaven.test.skip=true ```
+
+
+## Try out your module
 
 To install your module go to the Admin interface of OpenMRS.
 
-Go to http://localhost:8080/openmrs/admin/index.htm. 
-On the right side, is a Modules section. Click the Manage Modules link.
-Near the top, you will see an Add or Upgrade Module button, click it.
-Under the Add Module heading, click the Browse... button.
-In the file browser, select your omod file from basicexample/omod/target/basicexmaple-1.0-SNAPSHOT.omod
-Click Upload.
+* Go to ```http://localhost:8080/openmrs/admin/index.htm```. 
+* On the right side, is a **Modules section**. Click the **Manage Modules** link.
+* Near the top, you will see an Add or Upgrade Module button, click it.
+* Under the **Add Module** heading, click the **Browse...** button.
+* In the file browser, select your ```omod``` file from ```basicexample/omod/target/basicexmaple-1.0-SNAPSHOT.omod```
+* Click Upload.
+
+
 You should now see your module under the Manage Modules heading.
-Another alternative would be to drop the compiled omod file into the ~/.OpenMRS/modules folder.  (Where ~/.OpenMRS is assumed to be the Application Data Directory that the running openmrs is currently using.)  After putting the file in there simply restart OpenMRS and the module will be loaded and started.
+Another alternative would be to drop the compiled omod file into the``` ~/.OpenMRS/modules``` folder.  (Where ```~/.OpenMRS``` is assumed to be the Application Data Directory that the running openmrs is currently using.)  After putting the file in there simply restart OpenMRS and the module will be loaded and started.
 
 When you navigate back to the main Administration page, you should see your module listed with a Basic Example Module heading, and a single sub-option of Manage module.
 
-Customize your module 
 
-Now that you have a basic module running, you want to add your own features which would allow it to Hello World. Where to start?
+## Customize your module 
 
-Add a new field to your data model
+Now that you have a basic module running, you want to add your own features which would allow it to ```Hello World```, or what ever you want! Where to start?
 
-Let's assume that your hello world task involves adding a new field titled 'name' to your data model. 
 
-In department/api/src/main/java/org/openmrs/module/department/Department.java, add new fields called name and description along with appropriate getters and setters for them. The file should now look as follows: 
+### Add a new field to your data model
 
+Let's assume that your hello world task involves adding a new field titled '```name```' to your data model. 
+
+In ```department/api/src/main/java/org/openmrs/module/department/Department.java```, add new fields called name and description along with appropriate getters and setters for them. The file should now look as follows: 
+```java
 public class Department extends BaseOpenmrsObject implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Integer departmentId;
@@ -131,10 +139,13 @@ public class Department extends BaseOpenmrsObject implements Serializable {
 		this.description = description;
 	}
 }
-Update Hibernate ORM file to work with your new field
+``` 
 
-In department/api/src/main/resources/Department.hbm.xml, uncomment the central block of code add new properties as shown below anywhere in the file. This lets Hibernate knows about the name and description fields you just created. Your file should look like the following:
 
+#### Update Hibernate ORM file to work with your new field
+
+In ```department/api/src/main/resources/Department.hbm.xm```l, uncomment the central block of code add new properties as shown below anywhere in the file. This lets Hibernate knows about the name and description fields you just created. Your file should look like the following:
+```xml
  <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
@@ -151,8 +162,10 @@ In department/api/src/main/resources/Department.hbm.xml, uncomment the central b
 		<property name="description" type="java.lang.String" column="description" length="255" />	
 	</class>
 </hibernate-mapping>
-To reflect this change in the existing database, add an appropriate change set into the department/api/src/main/resources/liquibase.xml. This is the code that actually changes the database for your project to reflect your name field. A sample changeset will generally look like this:
+```
 
+To reflect this change in the existing database, add an appropriate change set into the ```department/api/src/main/resources/liquibase.xml```. This is the code that actually changes the database for your project to reflect your name field. A sample changeset will generally look like this:
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -174,12 +187,22 @@ To reflect this change in the existing database, add an appropriate change set i
         </createTable>
     </changeSet>
 </databaseChangeLog>
-Modify DAO and service layer classes support end to end interactions
+```
 
-The Module Maven Archetype or SDK option to add a service layer gives the module four files that make up the service layer: DAO (data access interface), HibernateDAO, Service, and ServiceImpl. The HibernateDAO is home to the sessionFactory, which actually connects to the database. The ServiceImpl will instantiate a DAO and then the module controller is free to instantiate a Service. Here is the code you will add to each file:
+#### Modify DAO and service layer classes support end to end interactions
 
-DAO:
+The Module Maven Archetype or SDK option to add a service layer gives the module four files that make up the service layer: 
+```
+* DAO (data access interface)
+* HibernateDAO
+* Service and 
+* ServiceImpl. 
+```
 
+The ```HibernateDAO``` is home to the ```sessionFactory```, which actually connects to the database. The ```ServiceImpl``` will instantiate a DAO and then the module controller is free to instantiate a Service. Here is the code you will add to each file:
+
+**DAO:**
+```java
 /**
  * Database methods for {@link DepartmentService}.
  */
@@ -201,8 +224,10 @@ public interface DepartmentDAO {
 	 */
 	void purgeDepartment(Department department);
 }
-HibernateDAO:
+```
 
+**HibernateDAO:**
+```java
 /**
  * The default implementation of {@link DepartmentDAO}.
  */
@@ -251,8 +276,11 @@ public class HibernateDepartmentDAO implements DepartmentDAO {
 		sessionFactory.getCurrentSession().delete(department);
 	}
 }
-Service:
+```
 
+**Service:**
+
+```java
 /**
  * The service for managing departments.
  */
@@ -287,8 +315,11 @@ public interface DepartmentService extends OpenmrsService {
 	 */
 	void purgeDepartment(Department department);
 }
-ServiceImpl:
+```
 
+**ServiceImpl:**
+
+```java
 /**
  * It is a default implementation of {@link DepartmentService}.
  */
@@ -335,7 +366,9 @@ public class DepartmentServiceImpl extends BaseOpenmrsService implements Departm
 	public void purgeDepartment(Department department) {
 		dao.purgeDepartment(department);
 	}
-}  
+} 
+```
+
 Coding conventions and standards
 
 When editing the DAO and service layer classes, don't forget to ensure that your code adheres to our general standards. Refer to the 'Development process' chapter, which will give you detailed instructions on how to ensure this.
