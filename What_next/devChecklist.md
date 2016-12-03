@@ -6,7 +6,7 @@ The following checklist signifies potential milestones which a developer may fol
 
 <center><h4> OpenMRS Developer Checklist 
 
-|ID| Goal |
+|#| Goal |
 |--|:-----|
 |1.|Join the OpenMRS community. Get an OpenMRS ID. Introduce yourself to others. Begin contributing to introductory tickets.
 |2.|ain more knowledge of the OpenMRS, and begin to participate in mailing list discussions.
