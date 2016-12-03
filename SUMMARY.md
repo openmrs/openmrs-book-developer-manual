@@ -7,5 +7,5 @@
    * [OpenMRS Today](Kick_off/openmrs_today.md)
 * Community
    * [Working Cooperatively](Community/workingCooperatively.md)
-   * [Collaboration tools](Community/collaboration_tools.md)
+   * [Collaboration tools](Community/collaborationTools.md)
 
