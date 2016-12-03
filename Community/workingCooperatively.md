@@ -1,4 +1,5 @@
-<center><h1>Working Cooperatively
+<center><h1>Working Cooperatively</h1>
+-----------------------------------------------------------------------------------
 <center> 
 ![](http://write.flossmanuals.net/openmrs-developers-guide/working-cooperatively/static/Working%20Cooperatively.jpg)
 
