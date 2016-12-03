@@ -47,19 +47,21 @@ The OpenMRS Wiki is available at: http://wiki.openmrs.org/
 
 Another great resource for posting and searching for questions and answers is OpenMRS Talk, our online question-and-answer site. If you have specific problems or need help troubleshooting, this is a great space to browse others' questions and answers, and seek out help from other developers. You can answer questions on the site as you learn more about OpenMRS and become an experienced developer, earning points and badges along the way. 
 
-OpenMRS Answers can be found online at: https://talk.openmrs.org/c/ask
+OpenMRS Talk can be found online at: https://talk.openmrs.org/c/ask
 
 ### 4. IRC
 
 [Internet Relay Chat](https://en.wikipedia.org/wiki/Internet_Relay_Chat) is a form of real time chat and conferencing. IRC is a great way to chat with other people in the OpenMRS community in real-time. IRC is a good place to ask questions, get help with a problem, discuss ideas, or just chat! Keep in mind that there are not always people actively watching the IRC channel, so if your question or comment isn't answered, it might be useful to send out an email to the mailing list as well. 
 
-We use the #OpenMRS channel on the Freenode network. You can visit our chat room directly from the web, or use an IRC client. We recommend **X-Chat** or **mIRC** for Windows; **X-Chat** or **Irssi** for Linux; and **Textual**, **Colloquy** or **Adium** for Mac. Or the web interface on https://webchat.freenode.net/ 
+We use the #OpenMRS channel on the Freenode network. You can visit our chat room directly from the web, or use an IRC client. We recommend 
+* **X-Chat** or **mIRC** for Windows
+* **X-Chat** or **Irssi** for Linux and 
+* **Textual**, **Colloquy** or **Adium** for Mac. 
+* Or the web interface on https://webchat.freenode.net/ 
 
-We keep up-to-date logs from our IRC channel on the OpenMRS Wiki. They are fully searchable, and can be a great place to check if you problem or question that someone might have already addressed. View the logs here: 
-
-https://wiki.openmrs.org/display/IRC/Logs+-+OpenMRS
-
-For more information on the IRC channel: http://om.rs/irc 
+We keep up-to-date logs from our IRC channel on the OpenMRS Wiki. They are fully searchable, and can be a great place to check if you problem or question that someone might have already addressed. 
+* View the logs here:  https://wiki.openmrs.org/display/IRC/Logs+-+OpenMRS
+* For more information on the IRC channel: http://om.rs/irc 
 
 ### 5. Telegram 
 [Telegram](https://telegram.org) is an open source messenger that syncs with our IRC channel and is great for communication. The sync in made possible by two Telegram Bots: OpenMRS Bot and our Telegram Bot. Telegram Messenger can be downloaded from the official website and supported is on Windows, Mac, Linux, iOS, &amp; Android.
@@ -70,7 +72,9 @@ We have several different mailing lists for groups of people within the communit
 
 You can subscribe to the list by sending a blank e-mail to dev+subscribe@openmrs.org, or by updating your profile at http://id.openmrs.org/.
 After subscribing, you can e-mail the list at dev@openmrs.org. 
-There are other mailing lists you might be interested in, such as the implementers mailing list. More information about this and other lists are available online: http://om.rs/lists
+There are other mailing lists you might be interested in, such as the implementers mailing list. 
+
+More information about this and other lists are available online: http://om.rs/lists
 We also keep archives of all of our mailing lists. This is a great resource to check if something has been discussed in the past. You can view all the logs before 2012 at http://listarchives.openmrs.org/ and everything beyond that date is available on each list's Google Groups page, such as:http:/om.rs/dev. The address for each list's archive is included at the bottom of every message to the list. 
 
 ### 7. JIRA Issue Tracker
@@ -89,13 +93,10 @@ You should also use JIRA to create a new issue if you start a new project. As a 
 
 Writing good commit messages is an important part of letting other developers know what you've been working on. Make sure that your commit messages are specific and concise. Each commit should address one ticket change. Don't combine multiple issues into one commit. Make sure the commit contains the ticket number. When in doubt, look at what other people have written in their commit messages! Reading through commit messages from other developers is also important to know what has been done and what is being done.
 
-For more in-depth training on how to use Git for OpenMRS, see: https://www.atlassian.com/git/tutorials/
-
-To learn more about OpenMRS coding conventions, see: https://wiki.openmrs.org/display/docs/Coding+Conventions
-
-For more information about our repositories: https://wiki.openmrs.org/display/docs/Core+Modules
-
-All OpenMRS modules are available on GitHub at: https://github.com/openmrs
+* For more in-depth training on how to use Git for OpenMRS, see: https://www.atlassian.com/git/tutorials/
+* To learn more about OpenMRS coding conventions, see: https://wiki.openmrs.org/display/docs/Coding+Conventions
+* For more information about our repositories: https://wiki.openmrs.org/display/docs/Core+Modules
+* All OpenMRS modules are available on GitHub at:*  https://github.com/openmrs
 
 ## Let's Get Started 
 As you've read in this section, there are many tools to help you work with other community members, so dive right in and introduce yourself on IRC and create your personal wiki space. You now have the tools you need to start working as a developer, so in the next section we'll guide you through that process. We're excited to meet you. **Welcome to our community!**
