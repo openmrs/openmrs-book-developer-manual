@@ -47,16 +47,16 @@ The ```omrs-create-module``` command creates the basic module structure and comp
    * **target** - folder built at runtime that will contain the distributable jar file for the module
 * **omod**
    * **src**
-     * main
-        * java - web specific java files like controllers, servlets, and filters 
-        * resources - 
+     * **main**
+        * **java** - web specific java files like controllers, servlets, and filters 
+        * **resources** - 
            * [config.xml](https://wiki.openmrs.org/display/docs/Module+Config+File)
            * \[*.hbm.xml files](https://wiki.openmrs.org/display/docs/Module+Hibernate+Mapping+Files)
            * [liquibase.xml](https://wiki.openmrs.org/display/docs/Module+liquibase+File) (or the old [sqldiff.xml](https://wiki.openmrs.org/display/docs/Module+sqldiff+File) )
            * [messages_*.properties files](https://wiki.openmrs.org/display/docs/Module+messages.properties+Files)
-modulesApplicationContext.xml
-log4j.xml - optional file to control logging in your module
-webapp - jsp and html files included in the omod
+           * [modulesApplicationContext.xml](https://wiki.openmrs.org/display/docs/Module+Application+Context+File)
+           * log4j.xml - optional file to control logging in your module
+       * webapp - jsp and html files included in the omod
 portlets -
 resources - image, js, and css files that your jsp files reference
 target - Contains the distributable omod file
