@@ -61,6 +61,7 @@ The ```omrs-create-module``` command creates the basic module structure and comp
          * [resources](https://wiki.openmrs.org/display/docs/Module+Resources) - image, js, and css files that your jsp files reference
   * **target** - Contains the distributable omod file
 * **pom.xml** - Maven build file.  Delegates to pom.xml files in the omod and api project
+
 You can read more about module conventions at: https://wiki.openmrs.org/display/docs/Module+Conventions 
 
 Compiling your module 
