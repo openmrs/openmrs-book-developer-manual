@@ -381,7 +381,7 @@ Also, don't forget to add ```Junit Unit tests``` to validate that the methods yo
 
 To make these changes to be accessible to users, you need to make changes to the module controller. You will also need to introduce a new file named ```addDepartment.jsp``` into ```the /omod/src/main/webapp``` directory. This will contain the ```.jsp``` page that lets you edit your name. The general contents of this class will be as follows: 
 
-```jsp
+```html
 <form method="post">
 <fieldset>
 <table>
