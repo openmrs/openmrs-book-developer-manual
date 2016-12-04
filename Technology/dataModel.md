@@ -22,7 +22,7 @@ However, other domains may also be added to the data model via the use of module
 
 [Metadata](https://en.wikipedia.org/wiki/Metadata) is 'data about data'. In OpenMRS, metadata represents system and descriptive data such as data types. Metadata are generally referenced by clinical data, but do not represent any patient-specific data.
 
-##### Significant OpenMRS metadata types include:
+##### Significant OpenMRS Metadata Types Include:
 
 1. Drugs
 2. EncounterRole
