@@ -1,7 +1,7 @@
 <center><h2> Appendix A: Learning Resources</h2>
 ***************************************
 
-We've compiled these following list to give you more resources for some of the tools, technologies, and other aspects of working on OpenMRS. If you find a resource you'd like to add to this list, please let us know using comments or send an e-mail to community@openmrs.org.
+We've compiled these following list to give you more resources for some of the tools, technologies, and other aspects of working on OpenMRS. If you find a resource you'd like to add to this list, please let us know using comments or send an e-mail to [community@openmrs.org](mailto:community@openmrs.org).
 
 **AngularJS:** http://docs.angularjs.org/misc/started
 
