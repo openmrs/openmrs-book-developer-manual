@@ -26,7 +26,8 @@ Be sure to check if your question has already been answered. This section will h
 
 OpenMRS community members meet online during the weekly OpenMRS developers forum. This forum is a fine opportunity to learn more about the project, share experiences, give feedback about where they want the future of OpenMRS to be, and more. You can see more details on calls and topics on the upcoming topics wiki page. Periodically, the meeting will be open to Q&A with experienced developers. This is a great place to get questions answered! 
 
-OpenMRS Talk
+
+## OpenMRS Talk
 
 Our Q&A site at [OpenMRS Talk](http://talk.openmrs.org/) is used for clearly answerable questions that have anything to do with OpenMRS. If your question is more likely to start a discussion than get a clear answer, post it to the Developers Mailing List instead. If your question is actually a bug or feature request, use JIRA. Also don't use OpenMRS Talk if your question is unrelated to OpenMRS, or directed to a single person.
 
