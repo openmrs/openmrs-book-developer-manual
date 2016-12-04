@@ -3,7 +3,7 @@
 <center> 
 ![](http://write.flossmanuals.net/openmrs-developers-guide/working-cooperatively/static/Working%20Cooperatively.jpg)
 <center> _OpenMRS design brainstorming session, October 2013_
-## Getting things done
+## Getting Things Done
 
 Regardless of whether or not you've participated in large software development projects, if you're new to open source projects you may be in for some surprises. The leadership of such projects is very "flat" -- meaning that there isn't a lot of bureaucracy to deal with. On the other hand, you'll find that as a developer, you're given great freedom in finding interesting work and designing what gets built. The more code and ideas you contribute, the more you'll become a leader in the project.
 
@@ -14,7 +14,7 @@ Free and open source software projects offer an ideal setting for coordination a
 
 One of the easiest ways to build functionality in the OpenMRS ecosystem is to use our modular architecture, which is covered in more detail later in this book. Add-on modules allow you to try lots of different ideas to solve problems. Modules also let you to build upon the work of others through dependencies.
 
-## Play nicely
+## Play Nicely
 
 The OpenMRS community has established a [Code of Conduct.](https://wiki.openmrs.org/display/docs/Code+of+Conduct) It's less of a list of rules as much as it is some useful guidance about ways to work in the community to help each other and be successful. You should take a moment to read it and be familiar with the values mentioned there, which include:
 
@@ -43,7 +43,7 @@ Cooperation happens when looking at the different teams who develop OpenMRS modu
 
 
 
-### Find mentors
+### Find Mentors
 
 Mentors are a great way for new developers to learn about participating in the OpenMRS community. We're a very friendly group of people, and there are plenty of people who, not too long ago, were new to our project just like you. They can help you find interesting work, answer questions about getting your environment set up, or help connect you to other people in the community who share your interests.
 
@@ -57,13 +57,13 @@ One of the greatest things about a free and open source software project is the 
 
 Our project has been around many years, so there is a lot of reference material available to understand why certain design decisions were made. Some of this material is current and much of it can be useful for a historical perspective. When developing questions to ask others in the community, it's important to do some background research first to make sure that there isn't already a readily-available answer. 
 
-### Communicate publicly &amp; productively
+### Communicate Publicly &amp; Productively
 
 In an open source project, all decisions happen in public. This means you should avoid private conversations such as instant messages, phone calls, and face-to-face meetings -- particularly when brainstorming or making decisions about software design. We have many different public tools available for our community to support these conversations, and those tools are described in detail elsewhere in this book. Ensuring that decisions are made in public venues maximizes participation and exposes those decisions to as many brilliant minds as possible. Try not to make decisions in private, or you might miss out on interesting ideas.
 
 Because we're a large project, much written communication gets generated every day for other developers to read. To help, try to do your part in maintaining a high signal-to-noise ratio on mailing lists or other communication tools. Think before you post a message, and make sure what you're writing adds value to the conversation. Responses like "me too!" or "+1" are rarely productive. 
 
-### Avoid bikeshedding
+### Avoid Bikeshedding
 
 Although we encourage public discussions about our software design, it's also important to avoid non-productive conversations about trivial details. This type of anti-pattern best described by the concept of [bikeshedding](https://en.wiktionary.org/wiki/bikeshedding), which gets its name from a 1960s book about management. In the book, C. Northcote Parkinson described how it might be often easier to get approval for an expensive nuclear power plant than it could be to discuss what color to paint a bike shed. Everyone feels they have a valid opinion of what color to paint the bike shed, but only certain qualified people can comment on the design of a reactor. Don't let yourself fall into this trap -- avoid these wasteful conversations on trivial topics.
 
@@ -79,7 +79,7 @@ One of the biggest (and often most difficult) lessons for open source developers
 
 * Don't be afraid that your work appears "not ready". After all, it probably isn't ready yet! In free &amp; open source projects, one of the most important practices is to share your work in progress. Make sure you do your part. 
 
-### Share &amp; license your work
+### Share &amp; License Your Work
 
 We recommend naming your source code repository to include the word "OpenMRS" so others can more easily find your work. For example, if you're creating the FooBar module, you might name your repository "openmrs-module-foobar". Similarly, when you're at a point that you want to introduce your project or projects to others in the community, we strongly encourage you to do so! The easiest way to do this is to write a short description of your project along with links to more information, 
 
