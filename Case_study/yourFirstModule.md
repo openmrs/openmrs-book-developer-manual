@@ -5,7 +5,7 @@
 
 To put this book in perspective, we'll walk through a fictional scenario that reflects the real world process of identifying the need for, designing, and building a module. Maintaining a modular architecture allows developers to add and remove special functionality into OpenMRS without having to modify the core project.
 
-Lets get started!
+**Lets get started!**
 
 ## Overview
 
@@ -25,7 +25,7 @@ While you may be ready to begin development right away, it is important to take 
 
 It is best not to begin development until you have discussed your design plans with other community developers, and made sure that your plans meet our requirements. 
 
-## Creating a Basic Module
+## Creating A Basic Module
 
 The OpenMRS SDK, as explained in the Technology Chapter, allows you to get started with a basic module in a few minutes. The ```omrs-create-module``` command helps you execute the maven archetype, creating a module directory with a framework of all the necessary module files by prompting you for specific information.
 
@@ -38,7 +38,7 @@ To complete the ```omrs-create-module``` workflow, you will be prompted to enter
 * Entering this data and clicking ```Enter``` will allow the OpenMRS SDK to complete the module creation for you.
 
 
-## Basic Module structure 
+## Basic Module Structure 
 
 The ```omrs-create-module``` command creates the basic module structure and components that it requires for use. Below is detailed overview of these components, their structure and how they can be used.
 
@@ -66,7 +66,7 @@ The ```omrs-create-module``` command creates the basic module structure and comp
 You can read more about module conventions at: https://wiki.openmrs.org/display/docs/Module+Conventions 
 
 
-## Compiling your module 
+## Compiling Your Module 
 
 The basic module structure comes ready to be compiled and installed onto the OpenMRS framework. To do this, navigate into the ```helloworld``` directory and execute the following command:
 
@@ -79,7 +79,7 @@ Executing the maven clean install command also runs any unit tests. If you want 
 ```mvn clean install -Dmaven.test.skip=true ```
 
 
-## Try out your module
+## Try Out Your Module
 
 To install your module go to the Admin interface of OpenMRS.
 
@@ -97,12 +97,12 @@ Another alternative would be to drop the compiled omod file into the``` ~/.OpenM
 When you navigate back to the main Administration page, you should see your module listed with a Basic Example Module heading, and a single sub-option of Manage module.
 
 
-## Customize your module 
+## Customize Your Module 
 
 Now that you have a basic module running, you want to add your own features which would allow it to ```Hello World```, or what ever you want! Where to start?
 
 
-### Add a new field to your data model
+### Add a New Field To Your Data Model
 
 Let's assume that your hello world task involves adding a new field titled '```name```' to your data model. 
 
@@ -143,7 +143,7 @@ public class Department extends BaseOpenmrsObject implements Serializable {
 ``` 
 
 
-#### Update Hibernate ORM file to work with your new field
+#### Update Hibernate ORM File to Work With Your New Field
 
 In ```department/api/src/main/resources/Department.hbm.xm```l, uncomment the central block of code add new properties as shown below anywhere in the file. This lets Hibernate knows about the name and description fields you just created. Your file should look like the following:
 ```xml
@@ -190,7 +190,7 @@ To reflect this change in the existing database, add an appropriate change set i
 </databaseChangeLog>
 ```
 
-#### Modify DAO and service layer classes support end to end interactions
+#### Modify DAO And Service Layer Classes Support End to End Interactions
 
 The Module Maven Archetype or SDK option to add a service layer gives the module four files that make up the service layer: 
 ```
@@ -371,14 +371,14 @@ public class DepartmentServiceImpl extends BaseOpenmrsService implements Departm
 ```
 
 
-## Coding conventions and standards
+## Coding Conventions And Standards
 
 When editing the DAO and service layer classes, don't forget to ensure that your code adheres to our general standards. Refer to the 'Development process' chapter, which will give you detailed instructions on how to ensure this.
 
 Also, don't forget to add ```Junit Unit tests``` to validate that the methods you introduced behave exactly as they should. 
 
 
-### Creating the web interface for your module
+### Creating The Web Interface For Your Module
 
 To make these changes to be accessible to users, you need to make changes to the module controller. You will also need to introduce a new file named ```addDepartment.jsp``` into ```the /omod/src/main/webapp``` directory. This will contain the ```.jsp``` page that lets you edit your name. The general contents of this class will be as follows: 
 
@@ -447,7 +447,7 @@ Now that your module is completed, it is the perfect time to go ahead and test i
 Once your module is released, you may think that your work is over. However, there is no such thing. As health systems, requirements, and technology change, so must the software.This makes medical informatics a viable career option, but does not mean you are responsible for maintaining ```Hello World``` for the rest of its life with OpenMRS.
 
 
-### Sharing your module 
+### Sharing Your Module 
 
 When done with developing and testing your module, you can release it for developers by deploying to the Maven repository using instructions at: http://om.rs/newdev-tagging
 
