@@ -14,7 +14,7 @@
 * [Get Involved](What_next/getInvolved.md)
 * [Get Support](What_next/getSupport.md)
 * [Developer Checklist](What_next/devChecklist.md)
-* [Appendices](Appendices)
+* Appendices
    * [Appendix A: Learning Resources](Appendices/appendixA.md)
    * [Appendix B: OpenMRS Glossary](Appendices/appendixB.md)
    * [Appendix C: Troubleshooting](Appendices/appendixC.md)
