@@ -1,24 +1,24 @@
 <center><h1> Get Involved </h1>
 ******************************
 <center> ![](http://write.flossmanuals.net/openmrs-developers-guide/get-involved/static/OpenMRS%20Community.jpg)
-*The OpenMRS Community, circa 2013*
+*The OpenMRS Community, Circa 2013*
 
 Now that you understand the basics of OpenMRS development, you can do a lot or you can do a little. How deep you dive into the OpenMRS community is up to you! Keep in mind that someone may want to pick up your work where you leave off, so be sure to document everything as you go along. 
 
 
-## Finding JIRA issues
+## Finding JIRA Issues
 
 If you don't know where to begin putting your development skills to good use, start with JIRA's Issue Navigator to view Introductory Issues. These are Ready for Work and have been deemed the right amount of complexity for a new OpenMRS developer.
 
 Read https://wiki.openmrs.org/display/ISM/JIRA+Issue+Tracking+System for introductory issues and other tips on getting started working with JIRA issues.
 
 
-## Community development Swim Lane
+## Community Development Swim Lane
 
 The **"Community Development"** swim lane has two objectives. The first is working on high-priority bugs and long-standing issues, and the second is providing accessible mentorship to new developers. There are always experienced developers leading this swim lane. This leadership role entails serving as a mentor to new developers, including guidance on anything from which introductory issues the new developer should choose to helping with troubleshooting as you work on those issues, or providing tips for your own OpenMRS-related projects. To help you find this person, read our Wiki page on the community development swim lane and calendar at http://om.rs/newdev-swimlane.
 
 
-## Mentoring programs 
+## Mentoring Programs 
 
 See if there is an official mentoring program coming up. OpenMRS is one of many open source projects that has successfully participated in 
 * [Google Summer of Code](https://summerofcode.withgoogle.com) for university students
@@ -26,7 +26,7 @@ See if there is an official mentoring program coming up. OpenMRS is one of many 
 *  [FOSS Outreach Program](https://gnome.org/opw/) for Women.
 
 
-## Community gatherings online 
+## Community Gatherings Online 
 
 The [weekly online Developers Forum](https://wiki.openmrs.org/display/RES/Developers+Forum), the [daily scrum meeting ](https://wiki.openmrs.org/display/RES/Daily+Scrum+Meeting) and [OpenMRS University](https://wiki.openmrs.org/display/RES/OpenMRS+University) meetings are great places to learn, as well as share. When you make significant progress on a project, volunteer to present your work on one of these calls. That may seem scary now, but you are among friends. Hopefully you are working on a project that will be used in implementations. That makes it interesting to others in the community.
 
