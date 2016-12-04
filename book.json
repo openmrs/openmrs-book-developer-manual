@@ -1,7 +1,7 @@
 {
     "plugins": [
-        "theme-default",
-        "theme-brl"
+        "theme-brl",
+        "theme-default"
     ],
     "pluginsConfig": {
         "theme-brl": {
