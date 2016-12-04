@@ -28,7 +28,7 @@ If you do not have similar output to what is shown above, it means that you are 
  	 
  	  
 
-## Choosing an approach
+## Choosing An Approach
 
 There are several options for installation, so reach through each one and decide which is best for you.
 
@@ -39,14 +39,14 @@ There are several options for installation, so reach through each one and decide
 * If you want to develop code for the OpenMRS core application, you should use a manual install. The SDK and Standalone only include binary versions of the code, so getting your own development environment set up is necessary if you want to be a core developer.
 
 
-## OpenMRS SDK installation
+## OpenMRS SDK Installation
 
-### Set up Maven
+### Set Up Maven
 
 Ensure that you have Maven installed and configured to support building OpenMRS software. You can use the instructions at: http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
 
-### Download and install
+### Download and Install
 
 
 It's time to install the SDK. Open up a terminal window or command line console and type the following (for the most recent instructions on using the SDK, see http://om.rs/sdk): 
@@ -72,7 +72,7 @@ If that is the case, you have successfully installed the OpenMRS SDK!
 If you're having trouble, take a look at the SDK documenation on the OpenMRS Wiki at http://om.rs/sdk for more assistance, or join the #OpenMRS IRC channel for help. 
 
 
-## Create OpenMRS instance
+## Create OpenMRS Instance
 
 You need to start from creating a new OpenMRS server. Run the following command and follow the wizard:
 
@@ -83,7 +83,7 @@ mvn openmrs-sdk:setup
 * Choose ```Platform``` to setup the OpenMRS Platform without any modules to start with.
 
 
-## Create OpenMRS module
+## Create OpenMRS Module
 
 You can customize and extend OpenMRS by creating your own module. You can create a module by running:
 ```
@@ -91,7 +91,7 @@ mvn openmrs-sdk:create-project
 ```
 Choose ```Platform module``` or ```Reference Application module``` depending on what kind of server you setup in the previous step.
 
-Run OpenMRS locally
+## Run OpenMRS Locally
 
 Within the module that you just created, you can choose to run OpenMRS to test the module you are working on. This command will build the module and launch the web server. 
 ```
@@ -101,10 +101,8 @@ Replace ```your_server_id_here``` with the id you used when setting up the serve
 
 OpenMRS is now fully running on your computer at ```http://localhost:8080/openmrs``` and can be tested. Log in with the following credentials: 
 
-**User: admin
-Password: Admin123 **
+**User: admin, Password: Admin123 **
  
-
 ### Troubleshooting
 
 Detailed documentation and troubleshooting help can be found on the OpenMRS Wiki at http://om.rs/sdk or try IRC for a great place to ask for help!
@@ -147,16 +145,16 @@ You now have a local copy of OpenMRS running with both an embedded database and 
 ## Manual Installation
 
 
-#### Set up MySQL
+#### Set Up MySQL
 
 You must have a MySQL database set up for OpenMRS to be installed successfully. To point your OpenMRS project to the database, should either know your MySQL root password, or have a database schema pre-configured and ready with a username and password to provide during the OpenMRS setup. More information about installing and setting up MySQL is available at: http://dev.mysql.com/usingmysql/get_started.html
 
 
-#### Set up Maven
+#### Set Up Maven
 
 Ensure that you have Maven installed and configured to support building OpenMRS software. You can use the instructions at: http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
-#### Set up Git
+#### Set Up Git
 
 Ensure that you have installed and configured Git for source code management. You can use one of the following relevant instruction pages:
 
@@ -168,7 +166,7 @@ Ensure that you have installed and configured Git for source code management. Yo
 
 OpenMRS developers generally agree that the command line is the best way to interact with GIT, and we recommend that you set up your Git instance to be able to do so. 
 
-#### Get the core source code
+#### Get The Core Source Code
 
 You must clone the openmrs-core repository on GitHub using your Git client in order to start working on the project. In a directory that you keep your code in, run the following:
 ```shell
@@ -180,7 +178,7 @@ You are now in the main working source code directory for OpenMRS.
 More detailed steps are necessary if you are checking out OpenMRS code to fix a particular ticket. Please refer to Git instructions listed under the Development process on how to check out the required source code. 
 
 
-#### Compiling your code
+#### Compiling Your Code
 
 Compile the source code to be able to run it. First make sure that you are in the top-level openmrs-core directory, then run:
 
@@ -188,7 +186,7 @@ Compile the source code to be able to run it. First make sure that you are in th
 
 This will take a few minutes, while it downloads dependencies and builds OpenMRS. Make sure you are connected to the Internet so Maven can download the necessary dependencies from our repositories.
 
-##### Start the OpenMRS Webapp
+##### Start The OpenMRS Webapp
 
 To run the code, you have to start the webapp. The OpenMRS source code contains a dependency to the Jetty server, so you can start the application by running a simple command. to do so, complete the following steps:
 
