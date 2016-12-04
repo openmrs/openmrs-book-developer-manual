@@ -3,7 +3,7 @@
 
 <center> <h1> Welcome To OpenMRS</h1>
 ******************************************** 
-<center><h2> Write Code, Save Lives </h2>
+<center><h2 style="font-weight: 200;"> Write Code, Save Lives </h2>
 ********************************************
 
 
