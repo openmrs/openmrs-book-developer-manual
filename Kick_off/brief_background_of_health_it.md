@@ -3,16 +3,15 @@
 
 Before you get started as a developer in the OpenMRS project, you may find it useful to learn just a brief background of Health IT, what it is, and why it matters.
 
-For many years, Health IT applications have been created and used to effectively record and manage patient medical records. Traditionally, patient data were recorded in paper records. However, advances in the field of medicine are introducing the need to manage very large amounts of data. Because paper medical records are inherently passive, they can not evaluate or trigger meaningful actions in response to their content. These challenges led to the development of many different **Electronic Medical Record** (EMR) systems. These software tools promote meaningful use of patient health records.
+For many years, Health IT applications have been created and used to effectively record and manage patient medical records. Traditionally, patient data were recorded in paper records. However, advances in the field of medicine are introducing the need to manage very large amounts of data. Because paper medical records are inherently passive, they can not evaluate or trigger meaningful actions in response to their content. These challenges led to the development of many different[ **Electronic Medical Record** (EMR)](https://en.wikipedia.org/wiki/Electronic_health_record) systems. These software tools promote meaningful use of patient health records.
 
 Over the past several decades, several commercial and [open source EMR](https://en.wikipedia.org/wiki/OpenEMR) tools have been developed and implemented with varied levels of success. OpenMRS is one of them!
 
  ![](http://write.flossmanuals.net/openmrs-developers-guide/the-need-for-health-it/static/Story%20of%20OpenMRS.jpg)
+ 
+ *Patient registration clerks using OpenMRS*
 
-
-*Patient registration clerks using OpenMRS*
-
-## Improving health care quality
+## Improving Health Care Quality
 
 EMRs *like OpenMRS* can help improve the quality of healthcare in multiple ways.
 
@@ -24,15 +23,15 @@ The adoption of health IT can significantly reduce the potential for medical err
 
 EMR systems can improve the efficiency of data exchange between multiple health IT applications. They can also prevent duplication of services, thereby reducing chances of unnecessarily extending a patient's hospital stay and maximizing use of hospital resources.
 
-#### 3. Better patient care
+#### 3. Better Patient Care
 
 Data collected by an EMR application can be used to support decision-making by health care professionals. Computerized guidelines can also offer benefits to help clinicians and patients make better decisions, thereby increasing the likelihood that health care decisions have a positive outcome on the patient.
 
-#### 4. Understanding data about public health
+#### 4. Understanding Data About Public Health
 
 The data captured via an EMR system can be used to explore data used to create and monitor public health standards. For example, vaccination records stored in an EMR can provide a deep insight into the population of a state or country, and the health of those vaccinated people over time.
 
-#### 5. Serving as a record of patient care
+#### 5. Serving As a Record of Patient Care
 
 Patient data recorded in an EMR system can serve as a historical record of patient care, and is usable both as a legal record as well as a means of evaluating the quality of health care provided. For example, patient records in an EMR system that record health care activities at a certain location can be transferred to another location when that patient moves somewhere else. The information provided to the new physician can be re-used to assess a patient's health condition.
 
