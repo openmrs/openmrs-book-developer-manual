@@ -5,7 +5,7 @@ Before you get started as a developer in the OpenMRS project, you may find it us
 
 For many years, Health IT applications have been created and used to effectively record and manage patient medical records. Traditionally, patient data were recorded in paper records. However, advances in the field of medicine are introducing the need to manage very large amounts of data. Because paper medical records are inherently passive, they can not evaluate or trigger meaningful actions in response to their content. These challenges led to the development of many different **Electronic Medical Record** (EMR) systems. These software tools promote meaningful use of patient health records.
 
-Over the past several decades, several commercial and open source EMR tools have been developed and implemented with varied levels of success. OpenMRS is one of them!
+Over the past several decades, several commercial and [open source EMR](https://en.wikipedia.org/wiki/OpenEMR) tools have been developed and implemented with varied levels of success. OpenMRS is one of them!
 
  ![](http://write.flossmanuals.net/openmrs-developers-guide/the-need-for-health-it/static/Story%20of%20OpenMRS.jpg)
 
