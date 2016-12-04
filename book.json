@@ -1,7 +1,8 @@
 {
     "plugins": [
         "theme-clarity",
-        "theme-default"
+        "theme-default",
+        "theme-brl"
     ],
     "pluginsConfig": {
         "theme-default": {
