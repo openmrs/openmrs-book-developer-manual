@@ -26,11 +26,11 @@ The event was a partnership between the Google Open Source Programs Office, Aspi
 
 We welcome your feedback on this book. We want to know if it helps you get started as an OpenMRS developer, and what might be missing. You can make comments directly in the online version of this book, or send your feedback to [community@openmrs.org.](mailto:community@openmrs.org) We're ready to use your comments and input as we continuously update this resource.
 
-## Who Should Read This Book
+### Who Should Read This Book
 
 Several people who care about OpenMRS gathered in 2013 to create this information resource for you. Who are you exactly? As this book's authors, we assume you are a software developer who is new to OpenMRS and someone who wants to learn more about the project and community that is OpenMRS. You're someone who shares our values and believes in our mission to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software. You're someone who wants to become a member of our community.
 
-**Being new to OpenMRS can mean different things for different people:**
+**Being New to OpenMRS Can Mean Different Things For Different People:**
 
 * You might be new to software development.
 * You might be new to free and open source software projects.
@@ -39,7 +39,7 @@ Several people who care about OpenMRS gathered in 2013 to create this informatio
 
 Regardless of what you know or how much you need to know, this book is designed for you!
 
-## What You Will Gain
+### What You Will Gain
 
 This book is designed to give you the knowledge, tools, and confidence to be an OpenMRS developer, no matter from which point you're starting. We'll give you a background and brief [history of OpenMRS](https://en.wikipedia.org/wiki/OpenMRS#History). We'll also talk about where we are now, and how we are working together to change the world.
 
