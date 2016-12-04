@@ -1,5 +1,8 @@
 {
-    "plugins": [ "theme-default" ],
+    "plugins": [
+        "theme-default",
+        "theme-clarity"
+    ],
     "pluginsConfig": {
         "theme-default": {
             "languages": [
