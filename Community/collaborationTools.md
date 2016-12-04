@@ -4,7 +4,7 @@
 ![](http://write.flossmanuals.net/openmrs-developers-guide/collaboration-tools/static/Collaboration%20Tools.jpg)
 <center><i>2013 OpenMRS Implementers Meeting, Eldoret, Kenya</i>
 
-##Tools and tips
+##Tools and Tips
 
 In the previous section, we examined some ways to work together in the OpenMRS community. This section will explore some of the tools we use to do so. We have many different ways we can work with one another. Our main collaborative tools include:
 
