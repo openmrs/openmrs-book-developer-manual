@@ -1,10 +1,10 @@
 {
     "plugins": [
-        "theme-default",
-        "theme-clarity"
+        "theme-clarity",
+        "theme-default"
     ],
     "pluginsConfig": {
-        "theme-default": {
+        "theme-clarity": {
             "languages": [
                 {
                     "lang": "js",
