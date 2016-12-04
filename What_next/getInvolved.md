@@ -22,7 +22,8 @@ The **"Community Development"** swim lane has two objectives. The first is worki
 
 See if there is an official mentoring program coming up. OpenMRS is one of many open source projects that has successfully participated in 
 * [Google Summer of Code](https://summerofcode.withgoogle.com) for university students
-* [Google Code-In](https://codein.withgoogle.com) for pre-university or high school students *[ FOSS Outreach Program](https://gnome.org/opw/) for Women.
+* [Google Code-In](https://codein.withgoogle.com) for pre-university or high school students
+*  [FOSS Outreach Program](https://gnome.org/opw/) for Women.
 
 
 ## Community gatherings online 
