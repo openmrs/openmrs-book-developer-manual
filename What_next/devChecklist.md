@@ -10,7 +10,7 @@ The following checklist signifies potential milestones which a developer may fol
 |#| Goal |
 |--|:-----|
 |1.|Join the OpenMRS community. Get an OpenMRS ID. Introduce yourself to others. Begin contributing to introductory tickets.
-|2.|ain more knowledge of the OpenMRS, and begin to participate in mailing list discussions.
+|2.|Gain more knowledge of the OpenMRS, and begin to participate in mailing list discussions.
 |3.|Begin to suggest potential improvements to the existing code base.
 |4.|Identify a module or field you're motivated to work on, and begin to familiarize yourself in this field by building relationships with other interested people.
 |6.|Becomes a sprint leader or project owner.
