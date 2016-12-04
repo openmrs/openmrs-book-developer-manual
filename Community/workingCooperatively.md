@@ -69,7 +69,7 @@ Although we encourage public discussions about our software design, it's also im
 
 See http://om.rs/newdev-bikeshed for more information about bikeshedding. 
 
-### Commit Early and Often
+### Commit Early And Often
 
 One of the biggest (and often most difficult) lessons for open source developers to learn is commit changes to your source code repository early and often. Don't wait until you are finished with a project,or even a single feature. In the past, OpenMRS used the Subversion version control system which made this more painful. However, with DVCS systems like [GitHub](https://github.com) in use now for most of our software, it's much easier to get your work-in-progress published online as you go. There are a few reasons to embrace this behavior. 
 
