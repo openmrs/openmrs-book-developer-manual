@@ -1,10 +1,10 @@
 {
     "plugins": [
-        "theme-brl",
-        "theme-default"
+        "theme-default",
+        "theme-brl"
     ],
     "pluginsConfig": {
-        "theme-brl": {
+        "theme-default": {
             "languages": [
                 {
                     "lang": "js",
