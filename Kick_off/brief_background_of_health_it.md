@@ -35,21 +35,21 @@ The data captured via an EMR system can be used to explore data used to create a
 
 Patient data recorded in an EMR system can serve as a historical record of patient care, and is usable both as a legal record as well as a means of evaluating the quality of health care provided. For example, patient records in an EMR system that record health care activities at a certain location can be transferred to another location when that patient moves somewhere else. The information provided to the new physician can be re-used to assess a patient's health condition.
 
-## Challenges of maintaining EMR's
+## Challenges of Maintaining EMR's
 
-#### 1. The need for standardized clinical terminology
+#### 1. The Need For Standardized Clinical Terminology
 
 Both variation in terms used by health care professionals and a general lack of standardization, have both had a significant impact on the meaningful use of health IT applications. For example, a clinician in one wing of the hospital might use the term "heart attack", while another in a different department might use the term "myocardial infarction" to refer to the same thing. This lack of standardization reduces the quality and usefulness of the data. The most common way to handle this problem is use of **standardized medical terminology.**
 
-#### 2. Data privacy, confidentiality and security issues
+#### 2. Data Privacy, Confidentiality And Security Issues
 
 Given the significance of medical data, it is extremely important that confidentiality of patient records are ensured at all times, and that access to these records is strictly controlled and is only given to relevant users. For example, different types of EMR users may only require access to certain types of data or metadata, based on their roles in the health care facility.
 
-### 3. Challenges related to data entry
+### 3. Challenges Related to Data Entry
 
 It's necessary to ensure that entering data into an EMR is efficient and easy, so that providers are able to manage their time in a productive manner. If a health care professional is overworked or distracted, mistakes may occur that have adverse effects on a patient's health.
 
-### 4. Integration of multiple health IT applications
+### 4. Integration of Multiple Health IT Applications
 
-Consistent with other efforts to ensure meaningful use of Health IT systems, data stored in the EMR system should be easily exchangeable to and from other medical applications. For example, the integration of separate health applications into a regional or national health Information Exchange (HIE) requires that an EMR is capable of easily exchanging data with these external systems.
+Consistent with other efforts to ensure meaningful use of Health IT systems, data stored in the EMR system should be easily exchangeable to and from other medical applications. For example, the integration of separate health applications into a regional or national Health Information Exchange (HIE) requires that an EMR is capable of easily exchanging data with these external systems.
 
