@@ -13,7 +13,7 @@ If you find yourself eager to get started, we've also included some practical ad
 
 As with much of free and open source software, what you're reading is a **"living" and evolving resource!** This book was initially created over just 3 days during the 2013 [Google Summer of Code](https://summerofcode.withgoogle.com) Doc Sprints held at the Google campus in Mountain View, California, United States.
 
-The event was a partnership between the Google Open Source Programs Office, Aspiration, and FLOSS Manuals. The initial authors of this book represented a wide variety of OpenMRS community members & developers:
+The event was a partnership between the Google Open Source Programs Office, Aspiration, and FLOSS Manuals. The initial authors of this book represented a wide variety of OpenMRS community members &amp; developers:
 
 * **Michael Downey**  (United States)
 * **Eric Holscher** (United States)
@@ -22,15 +22,15 @@ The event was a partnership between the Google Open Source Programs Office, Aspi
 * **Jordan Kellerstrass** (United States)
 * **Elyse Voegeli** (United States)
 
-Photos used in this book are courtesy of Michael Downey and OpenMRS1, Limited.
+*Photos used in this book are courtesy of Michael Downey and OpenMRS1, Limited.*
 
-We welcome your feedback on this book. We want to know if it helps you get started as an OpenMRS developer, and what might be missing. You can make comments directly in the online version of this book, or send your feedback to community@openmrs.org. We're ready to use your comments and input as we continuously update this resource.
+We welcome your feedback on this book. We want to know if it helps you get started as an OpenMRS developer, and what might be missing. You can make comments directly in the online version of this book, or send your feedback to [community@openmrs.org.](mailto:community@openmrs.org) We're ready to use your comments and input as we continuously update this resource.
 
-## Who should read this book
+## Who Should Read This Book
 
 Several people who care about OpenMRS gathered in 2013 to create this information resource for you. Who are you exactly? As this book's authors, we assume you are a software developer who is new to OpenMRS and someone who wants to learn more about the project and community that is OpenMRS. You're someone who shares our values and believes in our mission to improve health care delivery in resource-constrained environments by coordinating a global community to create and support this software. You're someone who wants to become a member of our community.
 
-Being new to OpenMRS can mean different things for different people:
+**Being new to OpenMRS can mean different things for different people:**
 
 * You might be new to software development.
 * You might be new to free and open source software projects.
