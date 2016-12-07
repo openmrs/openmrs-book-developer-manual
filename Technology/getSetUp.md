@@ -43,13 +43,13 @@ There are several options for installation, so reach through each one and decide
 
 ### Set Up Maven
 
-Ensure that you have Maven installed and configured to support building OpenMRS software. You can use the instructions at: http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+Ensure that you have Maven installed and configured to support building OpenMRS software. You can use the instructions at [Maven in Five Minutes ](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 
 
 ### Download and Install
 
 
-It's time to install the SDK. Open up a terminal window or command line console and type the following (for the most recent instructions on using the SDK, see http://om.rs/sdk): 
+It's time to install the SDK. Open up a terminal window or command line console and type the following (for the most recent instructions on using the SDK, see [OpenMRS SDK docs](https://wiki.openmrs.org/display/docs/OpenMRS+SDK)): 
 
 ```mvn org.openmrs.maven.plugins:openmrs-sdk-maven-plugin:setup-sdk```
 
@@ -69,7 +69,7 @@ https://wiki.openmrs.org/display/docs/OpenMRS+SDK
 
 If that is the case, you have successfully installed the OpenMRS SDK!
 
-If you're having trouble, take a look at the SDK documenation on the OpenMRS Wiki at http://om.rs/sdk for more assistance, or join the #OpenMRS IRC channel for help. 
+If you're having trouble, take a look at the [SDK documenation](https://wiki.openmrs.org/display/docs/OpenMRS+SDK) on the OpenMRS Wiki for more assistance, or join the **#OpenMRS IRC** channel for help. 
 
 
 ## Create OpenMRS Instance
@@ -105,14 +105,14 @@ OpenMRS is now fully running on your computer at ```http://localhost:8080/openmr
  
 ### Troubleshooting
 
-Detailed documentation and troubleshooting help can be found on the OpenMRS Wiki at http://om.rs/sdk or try IRC for a great place to ask for help!
+Detailed documentation and troubleshooting help can be found on the OpenMRS Wiki [here](https://wiki.openmrs.org/display/docs/OpenMRS+SDK) or try IRC for a great place to ask for help!
 
 
 ## Standalone Setup
 
-OpenMRS Standalone is a great way to evaluate and explore OpenMRS capabilities. It may also be useful for small-scale production environments. The best place to learn about the standalone in full is on the OpenMRS Wiki at https://wiki.openmrs.org/display/docs/OpenMRS+Standalone but we'll go through the set up here too.
+OpenMRS Standalone is a great way to evaluate and explore OpenMRS capabilities. It may also be useful for small-scale production environments. The best place to learn about the standalone in full is on the OpenMRS Wiki at [OMRS Standalone docs]( https://wiki.openmrs.org/display/docs/OpenMRS+Standalone) but we'll go through the set up here too.
 
-**Step 1:** Download OpenMRS Standalone from http://openmrs.org/download/ and unzip the downloaded file.
+**Step 1:** Download OpenMRS Standalone from [OpenMRS Download page](http://openmrs.org/download/) and unzip the downloaded file.
 
 **Step 2:** Execute the JAR file in that folder. You can do this by typing the following in the terminal/command line:
 
@@ -139,7 +139,7 @@ The MySQL database has these credentials by default:
 Look in the ```openmrs-runtime.properties``` file for the value of ```connection.password.```
  
 
-You now have a local copy of OpenMRS running with both an embedded database and a web server! At any time, you can upgrade the standalone version. Check out the wiki for details on how to do this: https://wiki.openmrs.org/display/docs/Upgrading+OpenMRS 
+You now have a local copy of OpenMRS running with both an embedded database and a web server! At any time, you can upgrade the standalone version. Check out the wiki for details on [Upgrading OpenMRS](https://wiki.openmrs.org/display/docs/Upgrading+OpenMRS)
 
 
 ## Manual Installation
@@ -147,22 +147,22 @@ You now have a local copy of OpenMRS running with both an embedded database and 
 
 #### Set Up MySQL
 
-You must have a MySQL database set up for OpenMRS to be installed successfully. To point your OpenMRS project to the database, should either know your MySQL root password, or have a database schema pre-configured and ready with a username and password to provide during the OpenMRS setup. More information about installing and setting up MySQL is available at: http://dev.mysql.com/usingmysql/get_started.html
+You must have a MySQL database set up for OpenMRS to be installed successfully. To point your OpenMRS project to the database, should either know your MySQL root password, or have a database schema pre-configured and ready with a username and password to provide during the OpenMRS setup. More information about installing and setting up MySQL is available at [Getting Started with MySQL](http://dev.mysql.com/usingmysql/get_started.html)
 
 
 #### Set Up Maven
 
-Ensure that you have Maven installed and configured to support building OpenMRS software. You can use the instructions at: http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+Ensure that you have Maven installed and configured to support building OpenMRS software. You can use the instructions at [Maven in five Minutes]( http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 
 #### Set Up Git
 
 Ensure that you have installed and configured Git for source code management. You can use one of the following relevant instruction pages:
 
-* https://atlassian.com/git/tutorials/
-* http://help.github.com/mac-set-up-git/
-* http://help.github.com/win-set-up-git/
-* http://help.github.com/linux-set-up-git/
-* http://git-scm.com/book/en/Getting-Started-Installing-Git
+* [Atlassian Git Tutorial](https://atlassian.com/git/tutorials/)
+* [Getting Started with Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
+* [Setting Up Git on Mac](http://help.github.com/mac-set-up-git/)
+* [Setting Up Git on Windows](http://help.github.com/win-set-up-git/)
+* [Setting Up Git on Linux](http://help.github.com/linux-set-up-git/)
 
 OpenMRS developers generally agree that the command line is the best way to interact with GIT, and we recommend that you set up your Git instance to be able to do so. 
 
