@@ -1,0 +1,34 @@
+{  
+    "plugins": \[  
+        "theme-default",  
+        "custom-favicon"  
+    \],  
+    "pluginsConfig": {  
+        "theme-default": {  
+            "languages": \[  
+                {  
+                    "lang": "js",  
+                    "name": "JavaScript",  
+                    "default": true  
+                },  
+                {  
+                    "lang": "java",  
+                    "name": "Java"  
+                },  
+                {  
+                    "lang": "html",  
+                    "name": "HTML"  
+                },  
+                {  
+                    "lang": "sh",  
+                    "name": "Shell"  
+                },  
+                {  
+                    "lang": "go",  
+                    "name": "Go"  
+                }  
+            \]  
+        }  
+    }  
+}
+
