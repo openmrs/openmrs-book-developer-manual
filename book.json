@@ -1,7 +1,8 @@
 {
     "plugins": [
         "theme-default",
-        "theme-brl"
+        "theme-brl",
+        "custom-favicon"
     ],
     "pluginsConfig": {
         "theme-default": {
