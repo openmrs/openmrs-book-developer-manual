@@ -1,11 +1,11 @@
 {  
-    "plugins": \[  
+    "plugins": [  
         "theme-default",  
         "custom-favicon"  
-    \],  
+    ],  
     "pluginsConfig": {  
         "theme-default": {  
-            "languages": \[  
+            "languages": [  
                 {  
                     "lang": "js",  
                     "name": "JavaScript",  
@@ -27,7 +27,7 @@
                     "lang": "go",  
                     "name": "Go"  
                 }  
-            \]  
+            ]  
         }  
     }  
 }
