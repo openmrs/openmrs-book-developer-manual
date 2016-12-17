@@ -1,8 +1,9 @@
-<center> <h1> Data Model </h1>
+<center><h2>Data Model</h2></center>
 *****************************
 <center>
-![](http://write.flossmanuals.net/openmrs-developers-guide/data-model/static/openmrs_data_model_1.9.0.png)
-*OpenMRS data model version 1.9. Details at http://go.openmrs.org/newdev-data*
+
+</center>
+_OpenMRS data model version 1.9. Details at http://om.rs/datamodel_
 
 OpenMRS invests continuous effort into shaping the OpenMRS data model using knowledge and experience gathered from practical experiences from the Regenstrief Institute, Partners in Health, and all of our development partners spread across the world. The core of this data model addresses the who, what, when, where, and how of medical encounters. The core data model is divided into ten basic domains.
 

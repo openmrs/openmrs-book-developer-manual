@@ -1,4 +1,4 @@
-<center><h2> Appendix B: OpenMRS Glossary</h2>
+<center><h2>Appendix B: OpenMRS Glossary</h2></center>
 *******************************
 
 **Allergy list:** A series of allergies from which a patient suffers.

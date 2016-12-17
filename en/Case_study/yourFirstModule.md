@@ -1,4 +1,4 @@
-<center><h1>Creating Your First Module</h1>
+<center><h2>Creating Your First Module</h2></center>
 ************************************
 
 ## Amani Clinic Case Study
@@ -166,6 +166,7 @@ In ```department/api/src/main/resources/Department.hbm.xm```l, uncomment the cen
 ```
 
 To reflect this change in the existing database, add an appropriate change set into the ```department/api/src/main/resources/liquibase.xml```. This is the code that actually changes the database for your project to reflect your name field. A sample changeset will generally look like this:
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
@@ -193,6 +194,7 @@ To reflect this change in the existing database, add an appropriate change set i
 #### Modify DAO And Service Layer Classes Support End to End Interactions
 
 The Module Maven Archetype or SDK option to add a service layer gives the module four files that make up the service layer: 
+
 ```
 * DAO (data access interface)
 * HibernateDAO

@@ -1,4 +1,4 @@
-<center><h1> Solving the Health IT Challenges (Our Response) </h1>
+<center><h2>Solving the Health IT Challenges (Our Response)</h2></center>
 *********************************************************
 <center>
 ![](http://write.flossmanuals.net/openmrs-developers-guide/our-response/static/AMPATH-2004.png)

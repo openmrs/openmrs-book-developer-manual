@@ -1,4 +1,4 @@
-<center><h1> Architecture </h1>
+<center><h2>Architecture</h2></center>
 *******************************************
 
 This chapter contains an in-depth view of the architecture of the system. If you don't understand everything on the first reading, don't fret! Understanding how the basic system fits together is the most important thing you need for now.
@@ -9,8 +9,7 @@ OpenMRS is a framework built upon Java and other related frameworks. It is based
 
 The key architectural components of the OpenMRS core can be depicted as follows:
 
-![](http://write.flossmanuals.net/openmrs-developers-guide/architecture/static/Application-layers.png)
-<center> _ An Overview of OpenMRS _
+<center><img src="/assets/OpenMRS-architecture.png"></center> _ An Overview of OpenMRS _
 
 The backbone of OpenMRS lies in its core API. The OpenMRS API has methods for all of the basic functions such as adding/updating a patient, encounter, observation, etc. Methods which enable this functionality are provided in service layer classes. 
 
@@ -36,6 +35,7 @@ The Service layer is responsible for managing the business logic of the applicat
 * Spring [Aspect Oriented Programming (AOP)](https://en.wikipedia.org/wiki/Aspect-oriented_programming) is used to provide separate cross cutting functions (for example: authentication, logging).
 * Spring Dependency Injection (DI) is used to provide dependencies between components.
 * Spring is used to manage transactions in between service layer classes
+
 ### User Interface layer
 
 The User Interface layer for the legacy application is built upon Spring MVC, Direct Web Remoting (DWR), JSP and JavaScript. DWR is used for AJAX functionality and it provides the mapping between our Java objects and methods to JavaScript objects and methods respectively. JQuery is used to simplify the interactions with Javascript and the browser. Spring MVC is used to provide the Model-View-Controller design pattern. Our domain objects serve as the Model. We have a mixture of controllers that subclass Spring's ```SimpleFormControllers``` and those which use Spring's ```@Controller annotation```. For the new reference application user interface, we no longer use Spring ```MVC```, ```DWR``` or ```JSP```, but heavily use **Groovy, JQuery, AngularJS**, and more.
@@ -87,17 +87,21 @@ Following release, these build artifacts are uploaded and maintained in a maven 
 
 * Maven built releases (1.8.0 and later)
 * Ant built releases (1.5.0 up to 1.7.X)
+
 #### Snapshots
 
 * Maven development versions
+
 #### Modules
 
 * Module releases
+
 #### 3rd Party Artifacts
 
 * Libraries not found in other Maven repositories (HAPI)
 * Modified libraries (DWR, Hibernate, Liquibase, Simple XML)
 * Custom Maven plugins (OpenMRS omod plugin)
+
 ## Summary
 
 As you read the next section, keep in mind the important parts from this chapter:
