@@ -7,7 +7,7 @@ For many years, Health IT applications have been created and used to effectively
 
 Over the past several decades, several commercial and [open source EMR](https://en.wikipedia.org/wiki/OpenEMR) tools have been developed and implemented with varied levels of success. OpenMRS is one of them!
 
- ![](http://write.flossmanuals.net/openmrs-developers-guide/the-need-for-health-it/static/Story%20of%20OpenMRS.jpg)
+<center><img src="/assets/Story of OpenMRS.jpg"></center>
  
  *Patient registration clerks using OpenMRS*
 
