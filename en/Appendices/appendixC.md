@@ -1,4 +1,4 @@
-<center><h2>Appendix C: Troubleshooting</h2></center>
+<center><h1>Appendix C: Troubleshooting</h1></center>
 *********************************************
 
 ![Troubleshooting Flow Chart](/assets/troubleshootingflowchart.png)
