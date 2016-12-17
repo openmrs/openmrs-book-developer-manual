@@ -1,4 +1,4 @@
-<center><h2>About this book</h2></center>
+<center><h1>About this book</h1></center>
 ***************************************
 
 This book was initially created over just 3 days during the 2013 [Google Summer of Code](https://summerofcode.withgoogle.com) Doc Sprints held at the Google campus in Mountain View, California, United States.
