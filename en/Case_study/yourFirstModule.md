@@ -1,4 +1,4 @@
-<center><h2>Creating Your First Module</h2></center>
+<center><h1>Creating Your First Module</h1></center>
 ************************************
 
 ## Amani Clinic Case Study
