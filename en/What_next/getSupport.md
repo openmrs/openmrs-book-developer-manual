@@ -1,4 +1,4 @@
-<center><h1>Get Support</h1>
+<center><h1>Get Support</h1></center>
 *****************************************
 
 ## Asking Questions
