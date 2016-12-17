@@ -1,4 +1,4 @@
-<center><h2>OpenMRS Today</h2></center>
+<center><h1>OpenMRS Today</h1></center>
 ********************************************************
 
 <center> ![](http://write.flossmanuals.net/openmrs-developers-guide/openmrs-today/static/openmrsatlas.png)
