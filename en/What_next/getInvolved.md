@@ -1,4 +1,4 @@
-<center><h1> Get Involved </h1>
+<center><h1>Get Involved</h1></center>
 ******************************
 <center> ![](http://write.flossmanuals.net/openmrs-developers-guide/get-involved/static/OpenMRS%20Community.jpg)
 *The OpenMRS Community, Circa 2013*
