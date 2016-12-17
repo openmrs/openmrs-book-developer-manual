@@ -1,8 +1,6 @@
 <center><h1>Collaboration Tools</h1></center>
 **************************************
-<center>
-![](http://write.flossmanuals.net/openmrs-developers-guide/collaboration-tools/static/Collaboration%20Tools.jpg)
-<center><i>2013 OpenMRS Implementers Meeting, Eldoret, Kenya</i>
+<center><img src="/assets/Collaboration Tools.jpg"><center> _2013 OpenMRS Implementers Meeting, Eldoret, Kenya_
 
 ##Tools and Tips
 
