@@ -1,4 +1,4 @@
-<center><h2>Data Model</h2></center>
+<center><h1>Data Model</h1></center>
 *****************************
 <center>
 
