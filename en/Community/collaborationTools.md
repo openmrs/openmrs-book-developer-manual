@@ -1,4 +1,4 @@
-<center><h2>Collaboration Tools</h2></center>
+<center><h1>Collaboration Tools</h1></center>
 **************************************
 <center>
 ![](http://write.flossmanuals.net/openmrs-developers-guide/collaboration-tools/static/Collaboration%20Tools.jpg)
