@@ -1,4 +1,4 @@
-<center><h2>Architecture</h2></center>
+<center><h1>Architecture</h1></center>
 *******************************************
 
 This chapter contains an in-depth view of the architecture of the system. If you don't understand everything on the first reading, don't fret! Understanding how the basic system fits together is the most important thing you need for now.
