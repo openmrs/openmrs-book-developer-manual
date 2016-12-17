@@ -1,7 +1,6 @@
 <center><h1>Get Involved</h1></center>
 ******************************
-<center> ![](http://write.flossmanuals.net/openmrs-developers-guide/get-involved/static/OpenMRS%20Community.jpg)
-*The OpenMRS Community, Circa 2013*
+<center><img src="/assets/OpenMRS Community.jpg"></center> _The OpenMRS Community, Circa 2013_
 
 Now that you understand the basics of OpenMRS development, you can do a lot or you can do a little. How deep you dive into the OpenMRS community is up to you! Keep in mind that someone may want to pick up your work where you leave off, so be sure to document everything as you go along. 
 
