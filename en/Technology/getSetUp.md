@@ -1,6 +1,6 @@
 <center><h1>Setting Up </h1></center>
 **********
-<center>![](http://write.flossmanuals.net/openmrs-developers-guide/get-set-up/static/Get%20Set%20Up.jpg)
+<center><img src="/assets/Get Set Up.jpg"></center>
 
 Now that we know all of the background and support information, let's set up a basic install of OpenMRS on your system!
 
