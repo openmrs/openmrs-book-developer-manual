@@ -1,6 +1,6 @@
 <center><img src="/assets/OpenMRS-cross.png"></center>
-<center><h1> Welcome To OpenMRS </h1></center>
-<center><h2> Write Code, Save Lives </h2></center>
+<center><h1>Welcome To OpenMRS</h1></center>
+<center><h2>Write Code, Save Lives</h2></center>
 ********************************************
 
 Thank you for your interest in the [OpenMRS Community!](http://openmrs.org/join-the-community/) We have created this book for people who are curious about becoming a developer using our software. This book serves as a quick guide for you to learn more about our history, what [OpenMRS does,](http://openmrs.org/about/mission/) and understand more about how our community works.
