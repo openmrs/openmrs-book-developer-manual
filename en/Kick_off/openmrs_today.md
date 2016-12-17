@@ -16,7 +16,7 @@ As a developer, you are about to become a member of this worldwide community ded
 
 ## Where And Who We Are
 
-As you can see in the map above, you can find OpenMRS is use all around the world. For an interactive map built with data from some of our implementation sites, visit: http://om.rs/newdev-atlas
+As you can see in the map above, you can find OpenMRS is use all around the world. For an interactive map built with data from some of our implementation sites, visit: https://atlas.openmrs.org
 
 Users, implementers, developers and contributors come from a wide variety of backgrounds and interests. We collaborate, cooperate and communicate in different ways, but we all gain from and share in the work of others within our community.
 
