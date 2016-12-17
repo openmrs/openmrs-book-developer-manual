@@ -1,4 +1,4 @@
-<center><h1> Setting Up </h1>
+<center><h1>Setting Up </h1></center>
 **********
 <center>![](http://write.flossmanuals.net/openmrs-developers-guide/get-set-up/static/Get%20Set%20Up.jpg)
 
