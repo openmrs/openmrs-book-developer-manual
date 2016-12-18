@@ -6,7 +6,6 @@
 
 Regardless of whether or not you've participated in large software development projects, if you're new to open source projects you may be in for some surprises. The leadership of such projects is very "flat" -- meaning that there isn't a lot of bureaucracy to deal with. On the other hand, you'll find that as a developer, you're given great freedom in finding interesting work and designing what gets built. The more code and ideas you contribute, the more you'll become a leader in the project.
 
-
 > "People should feel that their connection to a project, and influence over it, is directly proportional to their contributions." - **Karl Fogel, Producing Open Source Software **
 
 Free and open source software projects offer an ideal setting for coordination and crowd-sourcing of ideas and solutions. You should always try to be open to what others might have to say about your ideas and code -- great ideas don't necessarily have a single owner or contributor! Listen to what others have to say, and pay attention to what they're doing ... there's a lot to learn from everyone in the OpenMRS community. Working together can be hugely beneficial to everyone involved, and the sharing of ideas can yield rich results.
