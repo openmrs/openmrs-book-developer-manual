@@ -12,9 +12,9 @@ javac -version
 ```
 You should see output like this:
 
-```javac 1.7.0_45```
+```javac 1.8.0_112```
 
-Note: Java 1.6 or above is required to run OpenMRS. If you plan to use the **OpenMRS Software Development Kit** (SDK) installation, Java 1.7 or higher is required. (See below for more information on install options.)
+Note: Java 1.6 or above is required to run OpenMRS 1.x. OpenMRS Platform 2.0+ (including Reference Application 2.5+) require Java 1.8. If you plan to use the **OpenMRS Software Development Kit** (SDK) installation, Java 1.7 or higher is required. (See below for more information on install options.)
 
 If you do not have similar output to what is shown above, it means that you are missing the JDK, so go ahead and install it. Below is a list of external tutorials for installation, based on your platform.
 
@@ -23,16 +23,13 @@ If you do not have similar output to what is shown above, it means that you are 
 | -- | -- |
 |  Windows  |  http://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html#zz-1.   |
 | OS X |http://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html#zz-2. |
-| Linux | http://www.webupd8.org/2011/09/how-to-install-oracle-java-7-jdk-in.html |
- 	 
- 	 
- 	  
+| Linux | http://www.webupd8.org/2011/09/how-to-install-oracle-java-7-jdk-in.html |  
 
 ## Choosing An Approach
 
 There are several options for installation, so reach through each one and decide which is best for you.
 
-* If you're getting started, we recommend trying the **OpenMRS SDK**, which comes with a complete environment for using OpenMRS. This means that you won't need to have much else on your system installed other than Java. This is the easiest and quickest path to getting OpenMRS running so that you can start developing modules.
+* If you're getting started, we highly recommend using the **OpenMRS SDK**, which comes with a complete environment for using OpenMRS. This means that you won't need to have much else on your system installed other than Java. This is the easiest and quickest path to getting OpenMRS running so that you can start developing modules.
 
 * The **OpenMRS Standalone Application** bundles OpenMRS with Tomcat and MySQL which will be ready to run by simply running the standalone JAR file. The Standalone does not bundle Maven, so you'll need to run and install the [Maven](https://maven.apache.org/) Module Archetype yourself to begin creating new modules. If you're planning to work on a pre-existing module, rather than creating a new module, then the Standalone may be a good option for you.
 
@@ -45,15 +42,11 @@ There are several options for installation, so reach through each one and decide
 
 Ensure that you have Maven installed and configured to support building OpenMRS software. You can use the instructions at [Maven in Five Minutes ](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 
-
 ### Download and Install
 
-
-It's time to install the SDK. Open up a terminal window or command line console and type the following (for the most recent instructions on using the SDK, see [OpenMRS SDK docs](https://wiki.openmrs.org/display/docs/OpenMRS+SDK)): 
+It's time to install the SDK. Open up a terminal window or command line console and type the following (for the most recent instructions on using the SDK, see http://om.rs/sdk:
 
 ```mvn org.openmrs.maven.plugins:openmrs-sdk-maven-plugin:setup-sdk```
-
-**NOTE:** Unlike the manual setup which requires Java 1.6 and above, if you decide to use the OpenMRS SDK, Java 1.7 or above is required. Java 1.7 is required only for running the SDK installer, but not for OpenMRS itself.
 
 Wait for the installation to finish then check to see if the SDK is working. To do so, open up a terminal window or command line console and type the following: 
 
@@ -61,7 +54,7 @@ Wait for the installation to finish then check to see if the SDK is working. To 
 
 The output it gives, should be similar of that below:
 ```
-OpenMRS SDK 3.2.0 
+OpenMRS SDK 3.5.0 
 For more info, see SDK documentation:
 https://wiki.openmrs.org/display/docs/OpenMRS+SDK
 ...

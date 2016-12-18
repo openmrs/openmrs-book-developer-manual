@@ -16,9 +16,10 @@ The backbone of OpenMRS lies in its core API. The OpenMRS API has methods for al
 ## The Source Code Structure
 
 In OpenMRS framework and modules, there are different levels in the code architecture. The OpenMRS source code is divided into three main segments: 
-* The User Interface
-* The Service Layers and
-* The Data Access layers. 
+
+* The User Interface (presentation)
+* The Service Layer
+* The Data Access layer
 
 This layering isolates various system responsibilities from one another, to improve both system development and maintenance.
 
