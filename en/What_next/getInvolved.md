@@ -14,7 +14,7 @@ Read https://wiki.openmrs.org/display/ISM/JIRA+Issue+Tracking+System for introdu
 
 ## Community Development Swim Lane
 
-The **"Community Development"** swim lane has two objectives. The first is working on high-priority bugs and long-standing issues, and the second is providing accessible mentorship to new developers. There are always experienced developers leading this swim lane. This leadership role entails serving as a mentor to new developers, including guidance on anything from which introductory issues the new developer should choose to helping with troubleshooting as you work on those issues, or providing tips for your own OpenMRS-related projects. To help you find this person, read our Wiki page on the community development swim lane and calendar at http://om.rs/newdev-swimlane.
+The **"Community Development"** swim lane has two objectives. The first is working on high-priority bugs and long-standing issues, and the second is providing accessible mentorship to new developers. There are always experienced developers leading this swim lane. This leadership role entails serving as a mentor to new developers, including guidance on anything from which introductory issues the new developer should choose to helping with troubleshooting as you work on those issues, or providing tips for your own OpenMRS-related projects. To help you find this person, read our Wiki page on the community development swim lane and calendar at http://om.rs/newdevswimlane.
 
 
 ## Mentoring Programs 
@@ -41,4 +41,4 @@ These events are usually announced on the OpenMRS developers mailing lists, so b
 
 ## Feedback
 
-One simple way for you to contribute right now is to give us feedback on this book! Anything you have to say will be helpful to us, so please fill out our brief survey:  http://om.rs/newdev-survey.
+One simple way for you to contribute right now is to give us feedback on this book! Anything you have to say will be helpful to us, so please fill out our brief survey:  http://om.rs/newdevsurvey.
