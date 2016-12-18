@@ -1,9 +1,6 @@
 <center><h1>Working Cooperatively</h1></center>
 ********************************************
-<!-- <center><img src="/assets/Working Cooperatively.jpg"><center> -->
-
-![](/assets/Working Cooperatively.jpg)
-_OpenMRS design brainstorming session, October 2013_
+<center><img src="/assets/Working Cooperatively.jpg"><center> _OpenMRS design brainstorming session, October 2013_
 
 ## Getting Things Done
 
