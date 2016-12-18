@@ -83,7 +83,7 @@ We recommend naming your source code repository to include the word "OpenMRS" so
 
 It's also important to consider what type of license your work will have. If you don't provide a license with your software, it might remain copyrighted and its use might still be restricted in ways which you may not intend. (The specifics of what would happen depend on the laws where you are.)
 
-Many different free and open source software licenses exist, and sometimes it can be hard to choose one. The creators of GitHub have created http://om.rs/newdev-choose which is an easy way to compare some of the popular FOSS licenses currently in use.
+Many different free and open source software licenses exist, and sometimes it can be hard to choose one. The creators of GitHub have created http://om.rs/newdevchoose which is an easy way to compare some of the popular FOSS licenses currently in use.
 
 The OpenMRS core application is licensed under the [Mozilla Public License (MPL) version 2,](https://www.mozilla.org/en-US/MPL/2.0/) along with an additional disclaimer of warranty and limitation of liability (essentially a disclaimer for how the software is used in health care settings). We encourage use of this license for consistency across our community-developed software ecosystem and license compatibility between add-on modules. However, you are free to choose any license you wish. Just make sure to choose a license.
 
