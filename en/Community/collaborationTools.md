@@ -22,10 +22,7 @@ Let's look at some of these collaboration tools, their functionality, and how to
 
 In order to use most of our community tools, you'll need to create an OpenMRS ID. (This isn't used for the OpenMRS software itself, but just our collaboration tools.) When you create your OpenMRS ID, you'll create a user profile with information about who you are. You can also create a personal space on the OpenMRS Wiki where you can detail your work and interests.
 
-
-> Here's where you can sign up for your ID:  https://id.openmrs.org/
-Learn more about the OpenMRS ID here: http://om.rs/id
-
+> Learn more about OpenMRS ID and register for you own at http://om.rs/id
 
 ### 2. OpenMRS Wiki
 
@@ -35,46 +32,39 @@ You can search for information in the wiki using the search bar in the top right
 
 You can communicate directly with other community members by leaving comments on wiki pages. You also directly edit the wiki if you find an error, if it's out of date, if you've updated the project or if it just doesn't have complete or accurate information. If you're not sure or don't want to edit the page, feel free to leave your thoughts in a comment. You should create a new wiki page when you start a new project, or if you note that one doesn't exist (perhaps an interesting discussion on the mailing list deserves its own page). When you do this, make sure that the page doesn't already exist!  
 
-
-> Always document what you're doing on the wiki- this helps everyone in the community! 
-
-
-
-The OpenMRS Wiki is available at: http://wiki.openmrs.org/  
+> The OpenMRS Wiki is available at: http://wiki.openmrs.org/  
 
 ### 3. OpenMRS Talk
 
 Another great resource for posting and searching for questions and answers is OpenMRS Talk, our online question-and-answer site. If you have specific problems or need help troubleshooting, this is a great space to browse others' questions and answers, and seek out help from other developers. You can answer questions on the site as you learn more about OpenMRS and become an experienced developer, earning points and badges along the way. 
 
-OpenMRS Talk can be found online at: https://talk.openmrs.org/c/ask
+> OpenMRS Talk can be found online at: https://talk.openmrs.org/
 
 ### 4. IRC
 
 [Internet Relay Chat](https://en.wikipedia.org/wiki/Internet_Relay_Chat) is a form of real time chat and conferencing. IRC is a great way to chat with other people in the OpenMRS community in real-time. IRC is a good place to ask questions, get help with a problem, discuss ideas, or just chat! Keep in mind that there are not always people actively watching the IRC channel, so if your question or comment isn't answered, it might be useful to send out an email to the mailing list as well. 
 
 We use the #OpenMRS channel on the Freenode network. You can visit our chat room directly from the web, or use an IRC client. We recommend 
+
 * **X-Chat** or **mIRC** for Windows
 * **X-Chat** or **Irssi** for Linux and 
 * **Textual**, **Colloquy** or **Adium** for Mac. 
 * Or the web interface on https://webchat.freenode.net/ 
 
-We keep up-to-date logs from our IRC channel on the OpenMRS Wiki. They are fully searchable, and can be a great place to check if you problem or question that someone might have already addressed. 
-* View the logs here:  https://wiki.openmrs.org/display/IRC/Logs+-+OpenMRS
-* For more information on the IRC channel: http://om.rs/irc 
+We keep up-to-date [logs from our IRC channel](https://wiki.openmrs.org/display/IRC/Logs+-+OpenMRS
+) on the OpenMRS Wiki. They are fully searchable, and can be a great place to check if you problem or question that someone might have already addressed. 
+
+> For more information on the IRC channel: http://om.rs/irc 
 
 ### 5. Telegram 
+
 [Telegram](https://telegram.org) is an open source messenger that syncs with our IRC channel and is great for communication. The sync in made possible by two Telegram Bots: OpenMRS Bot and our Telegram Bot. Telegram Messenger can be downloaded from the official website and supported is on Windows, Mac, Linux, iOS, &amp; Android.
+
+> Join us on Telegram: http://om.rs/tg
 
 ### 6. Mailing Lists
 
-We have several different mailing lists for groups of people within the community. As a new developer, you should start by joining the main developers mailing list. This is a great place for design discussions and development troubleshooting, and can facilitate long term (as well as short term) discussion among developers.
-
-You can subscribe to the list by sending a blank e-mail to dev+subscribe@openmrs.org, or by updating your profile at http://id.openmrs.org/.
-After subscribing, you can e-mail the list at dev@openmrs.org. 
-There are other mailing lists you might be interested in, such as the implementers mailing list. 
-
-More information about this and other lists are available online: http://om.rs/lists
-We also keep archives of all of our mailing lists. This is a great resource to check if something has been discussed in the past. You can view all the logs before 2012 at http://listarchives.openmrs.org/ and everything beyond that date is available on each list's Google Groups page, such as:http:/om.rs/dev. The address for each list's archive is included at the bottom of every message to the list. 
+You may find archived mailing list entries when searching for OpenMRS-related information on the internet. The community used mailing lists for several years before switching from mailing lists to [OpenMRS Talk](https://talk.openmrs.org). Our forum supports both online and email communication.
 
 ### 7. JIRA Issue Tracker
 
