@@ -5,7 +5,7 @@
 
 There are many places to go when you get stuck. The most important thing is not to get discouraged. The OpenMRS community is here to help each other, and tomorrow you may be the one helping a new developer with the same problem.
 
-You can help experienced developers help you by asking "smart questions", which are informed by the your attempts to solve the problem on your own, include adequate context of the problem, and a contain a precise description of your problem. Read http://om.rs.org/newdev-smart for more about asking "smart questions".
+You can help experienced developers help you by asking "smart questions", which are informed by the your attempts to solve the problem on your own, include adequate context of the problem, and a contain a precise description of your problem. Read http://om.rs.org/newdevsmart for more about asking "smart questions".
 
 Be sure to check if your question has already been answered. This section will help you navigate the OpenMRS resources to find answers. After a good faith effort of searching, reach out to the community! If your question has anything to do with OpenMRS, ask it in a public forum.
 
