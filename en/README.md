@@ -9,7 +9,7 @@ If you find yourself eager to get started, we've also included some practical ad
 
 As with much of free and open source software, what you're reading is a **"living" and evolving resource!**
 
-> You can contribute to this book at [github.com/openmrs](https://github.com/openmrs/openmrs-book-developers-manual)
+> You can contribute to this book at [github.com/openmrs](https://github.com/openmrs/openmrs-book-developer-manual)
 
 We welcome your feedback on this book. We want to know if it helps you get started as an OpenMRS developer, and what might be missing. You can make comments directly in the online version of this book, or send your feedback to [community@openmrs.org.](mailto:community@openmrs.org) We're ready to use your comments and input as we update this resource.
 
