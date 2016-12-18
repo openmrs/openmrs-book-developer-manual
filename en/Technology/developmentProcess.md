@@ -51,12 +51,10 @@ You should use a separate branch for your development work on each JIRA issue. T
  To create a new branch, use the following commands:
 ```shell
   git checkout -b TRUNK-123 master
-  git clean -df
-  git pull --rebase upstream master
 ```
 **Step 2:** Push the branch to your fork:
 ```shell
-  git push origin TRUNK-123
+  git push -u origin TRUNK-123
 ```
 Now you may begin work on your task on the newly created branch.
 
