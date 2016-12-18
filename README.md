@@ -3,7 +3,7 @@
 <center><h2> Write Code, Save Lives </h2></center>
 ********************************************
 
-This is the OpenMRS Developer Manual. It is designed to be an introduction to OpenMRS Development.
+This is the OpenMRS Developer Manual. It is an introduction to [OpenMRS](https://openmrs.org) Development.
 
 You can view or download the manual at http://om.rs/newdev ([PDF](http://om.rs/newdevpdf))
 
