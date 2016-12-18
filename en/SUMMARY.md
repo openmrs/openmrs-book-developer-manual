@@ -5,7 +5,7 @@
 * [Solving the Health IT Challenges](Kick_off/solving_the_health_it_challenges_our_responsemd.md)
 * [OpenMRS Today](Kick_off/openmrs_today.md)
 * [Working Cooperatively](Community/workingCooperatively.md)
-* [Collaboration tools](Community/collaborationTools.md)
+* [Collaboration Tools](Community/collaborationTools.md)
 * [Architecture](Technology/architecture.md)
 * [Data Model](Technology/dataModel.md)
 * [Development Process](Technology/developmentProcess.md)
@@ -18,4 +18,5 @@
    * [Appendix A: Learning Resources](Appendices/appendixA.md)
    * [Appendix B: OpenMRS Glossary](Appendices/appendixB.md)
    * [Appendix C: Troubleshooting](Appendices/appendixC.md)
+* [About This Book](about.md)
 
