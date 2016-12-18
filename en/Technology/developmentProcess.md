@@ -156,7 +156,6 @@ OpenMRS migrated from Subversion to GitHub in mid-2012. Before that time, we use
 
 We encourage the hosting and migration of OpenMRS modules into GitHub, although your module's source code may be hosted wherever you prefer. If you are planning to work on a legacy module hosted in Subversion, you will need appropriate knowledge to use this version control system.
 
-
 ## Code Review
 
 A senior developer will review your code, and may suggest revisions. You may be asked to make changes to your patch, and re-submit it for review. Code review is an iterative process, and multiple review cycles may be required. Additional changes made to your patch can be built on the same branch used previously.
@@ -194,7 +193,7 @@ We highly encourage developers to publicize their work so other community member
 
 * Make your work publicly accessible via GitHub.
 * Add appropriate documentation to the OpenMRS Wiki.
-* Email the OpenMRS developers mailing list.
+* Discuss your work on OpenMRS Talk, answering related questions, and joining in design discussion on the topic.
 * Create and submit example videos to be published on the OpenMRS YouTube channel.
 * Request time on in the weekly developers forum or university calls to showcase your work.
 * Requesting tool licenses for your development work
