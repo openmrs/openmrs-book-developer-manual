@@ -70,13 +70,11 @@ The @deprecated javadoc annotation should point to the new method that is replac
 DAO methods do not have to go through a deprecation cycle. They can be changed/deleted outright.
  ##### Security:
 
-* To enforce security, avoiding XSS scripting by using 
-``` StringEscapeUtils.escapeJavaScript() ``` 
-and ```StringEscapeUtils.escapeHtml()``` to escape any user-generated data in pages.
+* To enforce security, avoiding XSS scripting by using `StringEscapeUtils.escapeJavaScript()` and `StringEscapeUtils.escapeHtml()` to escape any user-generated data in pages.
 
 ##### Code Formatting Style:
 
-* OpenMRS uses Eclipse auto-formatting features for managing the style of your code. These formatting rules are included in the ```OpenMRSFormatter.xml``` file which can either be downloaded from http://om.rs/newdev-formatter or the source code checked out from GitHub. To apply these guidelines, use the command ```Ctrl+Alt+F. ```
+* OpenMRS uses Eclipse auto-formatting features for managing the style of your code. These formatting rules are included in the `OpenMRSFormatter.xml` file which can either be downloaded from http://om.rs/newdevformatter or the source code checked out from GitHub. To apply these guidelines, use the command `Ctrl+Alt+F`. ```
 Running the command mvn clean install will also enforce these formatting stylistics on your code.
 
 ## Quality Assurance Efforts
@@ -208,9 +206,9 @@ OpenMRS provides contributor licenses to community members in good standing who 
 
 Release timelines and supported features are largely decided upon by the OpenMRS leadership group. Larger goals are discussed, agreed upon, and documented under the OpenMRS technical road-map, which is a set of predefined milestones for the core OpenMRS platform and sponsored modules.
 
-More detailed on the release process can be found at: https://om.rs/newdev-release
+More detailed on the release process can be found at: https://om.rs/newdevrelease
 
-The latest technical road-map can be found at: https://om.rs/newdev-techmap    
+The latest technical road-map can be found at: https://om.rs/newdevtechmap    
 
 The release process is managed by a release manager who is responsible for getting the source code stabilized, packaged, and released to the general public. 
 
