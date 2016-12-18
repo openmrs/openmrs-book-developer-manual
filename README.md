@@ -5,6 +5,8 @@
 
 This is the OpenMRS Developer Manual. It is an introduction to [OpenMRS](https://openmrs.org) Development.
 
+### View the Book
+
 You can view or download the manual at http://om.rs/newdev ([PDF](http://om.rs/newdevpdf))
 
 ### Book Source on GitHub
