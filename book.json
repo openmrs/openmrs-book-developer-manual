@@ -32,7 +32,7 @@
         },
         "favicon": "/assets/favicon.ico",
         "ga": {
-            "token": "UA-16695719-3",
+            "token": "UA-16695719-13",
             "configuration": "auto"
         }
     }
