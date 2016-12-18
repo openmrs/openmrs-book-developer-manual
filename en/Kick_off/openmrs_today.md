@@ -1,7 +1,7 @@
 <center><h1>OpenMRS Today</h1></center>
 ********************************************************
 
-<center><img src="/assets/openmrs_atlas.png"></center> _ OpenMRS Atlas, October 2013 _
+<center><img src="/assets/openmrs_atlas_2016.png"></center> _ OpenMRS Atlas, October 2016 _
 
 ## A Snapshot
 
