@@ -17,7 +17,7 @@ You send an email to Mrs. Zuma, the clinic's lead informatics person and ticket 
 
 Mrs. Zuma is enthusiastic about you building this module for their clinic and potentially many others. She invites you to keep in touch as you go along. You have already worked your way through the Getting Started chapter, so you get to work using the OpenMRS SDK to start building your module.
 
-You officially begin work on the module by clicking on the button to '```claim```' the ticket on the OpenMRS JIRA. 
+You officially begin work on the module by clicking on the button to "claim" the ticket on the OpenMRS JIRA. 
 
 ## Pre-development issues
 
@@ -27,20 +27,20 @@ It is best not to begin development until you have discussed your design plans w
 
 ## Creating A Basic Module
 
-The OpenMRS SDK, as explained in the Technology Chapter, allows you to get started with a basic module in a few minutes. The ```omrs-create-module``` command helps you execute the maven archetype, creating a module directory with a framework of all the necessary module files by prompting you for specific information.
+The OpenMRS SDK, as explained in the Technology Chapter, allows you to get started with a basic module in a few minutes. The `omrs-create-module` command helps you execute the maven archetype, creating a module directory with a framework of all the necessary module files by prompting you for specific information.
 
 However, in order to execute this command, we assume that you're using JDK 1.7. No other pre-requisites are necessary
-To complete the ```omrs-create-module``` workflow, you will be prompted to enter the following data:
+To complete the `omrs-create-module` workflow, you will be prompted to enter the following data:
 
-* **```Module name```:** Enter the name of your module as you would like it to appear. For this example use the name ```Hello World```.
+* **`Module name`:** Enter the name of your module as you would like it to appear. For this example use the name `Hello World`.
 * **```Do you want to add an admin page link (y/n)```** : Yes, most likely you want your module to be accessible from the OpenMRS admin page.
-* **```Do you want to add a service layer (y/n)```**: Yes, the default, creates a module with a ```Service, ServiceImpl, DAO, HibernateDAO, POJO, Hibernate mapping, liquibase.xml``` and ```sqldiff.xml,``` which will work together to allow your module to access the OpenMRS database.
-* Entering this data and clicking ```Enter``` will allow the OpenMRS SDK to complete the module creation for you.
+* **`Do you want to add a service layer (y/n)`**: Yes, the default, creates a module with a `Service, ServiceImpl, DAO, HibernateDAO, POJO, Hibernate mapping, liquibase.xml` and `sqldiff.xml,` which will work together to allow your module to access the OpenMRS database.
+* Entering this data and clicking `Enter` will allow the OpenMRS SDK to complete the module creation for you.
 
 
 ## Basic Module Structure 
 
-The ```omrs-create-module``` command creates the basic module structure and components that it requires for use. Below is detailed overview of these components, their structure and how they can be used.
+The `omrs-create-module` command creates the basic module structure and components that it requires for use. Below is detailed overview of these components, their structure and how they can be used.
 
 * **api** - non-web-specific 'maven module' project
    * **src** 
@@ -61,7 +61,7 @@ The ```omrs-create-module``` command creates the basic module structure and comp
          * [portlets](https://wiki.openmrs.org/display/docs/Module+Portlets) -
          * [resources](https://wiki.openmrs.org/display/docs/Module+Resources) - image, js, and css files that your jsp files reference
   * **target** - Contains the distributable omod file
-* **pom.xml** - Maven build file.  Delegates to ```pom.xml``` files in the omod and api project
+* **pom.xml** - Maven build file.  Delegates to `pom.xml` files in the omod and api project
 
 You can read more about module conventions at: https://wiki.openmrs.org/display/docs/Module+Conventions 
 
@@ -70,43 +70,43 @@ You can read more about module conventions at: https://wiki.openmrs.org/display/
 
 The basic module structure comes ready to be compiled and installed onto the OpenMRS framework. To do this, navigate into the ```helloworld``` directory and execute the following command:
 
- ```mvn clean install```
+ `mvn clean install`
  
-This creates a ```jar``` file, and then package that jar into a ```omod``` file. The omod file is what you need to care about. It will be named ```basicexample-1.0-SNAPSHOT.omod```, and located under the ```helloworld/omod/target/ folder```. The omod file is the module binary, which you will install into your OpenMRS application.
+This creates a `jar` file, and then package that jar into a `omod` file. The omod file is what you need to care about. It will be named `basicexample-1.0-SNAPSHOT.omod`, and located under the `helloworld/omod/target/ folder`. The omod file is the module binary, which you will install into your OpenMRS application.
 
 Executing the maven clean install command also runs any unit tests. If you want to skip unit tests, use the following command instead:
 
-```mvn clean install -Dmaven.test.skip=true ```
+`mvn clean install -Dmaven.test.skip=true `
 
 
 ## Try Out Your Module
 
 To install your module go to the Admin interface of OpenMRS.
 
-* Go to ```http://localhost:8080/openmrs/admin/index.htm```. 
+* Go to `http://localhost:8080/openmrs/admin/`. 
 * On the right side, is a **Modules section**. Click the **Manage Modules** link.
 * Near the top, you will see an Add or Upgrade Module button, click it.
 * Under the **Add Module** heading, click the **Browse...** button.
-* In the file browser, select your ```omod``` file from ```basicexample/omod/target/basicexmaple-1.0-SNAPSHOT.omod```
+* In the file browser, select your `omod` file from `basicexample/omod/target/basicexmaple-1.0-SNAPSHOT.omod`
 * **Click Upload**.
 
 
 You should now see your module under the Manage Modules heading.
-Another alternative would be to drop the compiled omod file into the``` ~/.OpenMRS/modules``` folder.  (Where ```~/.OpenMRS``` is assumed to be the Application Data Directory that the running openmrs is currently using.)  After putting the file in there simply restart OpenMRS and the module will be loaded and started.
+Another alternative would be to drop the compiled omod file into the `~/.OpenMRS/modules` folder.  (Where `~/.OpenMRS` is assumed to be the Application Data Directory that the running openmrs is currently using.)  After putting the file in there simply restart OpenMRS and the module will be loaded and started.
 
 When you navigate back to the main Administration page, you should see your module listed with a Basic Example Module heading, and a single sub-option of Manage module.
 
 
 ## Customize Your Module 
 
-Now that you have a basic module running, you want to add your own features which would allow it to ```Hello World```, or what ever you want! Where to start?
+Now that you have a basic module running, you want to add your own features which would allow it to `Hello World`, or what ever you want! Where to start?
 
 
 ### Add a New Field To Your Data Model
 
-Let's assume that your hello world task involves adding a new field titled '```name```' to your data model. 
+Let's assume that your hello world task involves adding a new field titled '`name`' to your data model. 
 
-In```department/api/src/main/java/org/openmrs/module/department/Department.java```, add new fields called name and description along with appropriate getters and setters for them. The file should now look as follows: 
+In`department/api/src/main/java/org/openmrs/module/department/Department.java`, add new fields called name and description along with appropriate getters and setters for them. The file should now look as follows: 
 ```java
 public class Department extends BaseOpenmrsObject implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -145,7 +145,7 @@ public class Department extends BaseOpenmrsObject implements Serializable {
 
 #### Update Hibernate ORM File to Work With Your New Field
 
-In ```department/api/src/main/resources/Department.hbm.xm```l, uncomment the central block of code add new properties as shown below anywhere in the file. This lets Hibernate knows about the name and description fields you just created. Your file should look like the following:
+In `department/api/src/main/resources/Department.hbm.xml`, uncomment the central block of code add new properties as shown below anywhere in the file. This lets Hibernate knows about the name and description fields you just created. Your file should look like the following:
 ```xml
  <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC
@@ -165,7 +165,7 @@ In ```department/api/src/main/resources/Department.hbm.xm```l, uncomment the cen
 </hibernate-mapping>
 ```
 
-To reflect this change in the existing database, add an appropriate change set into the ```department/api/src/main/resources/liquibase.xml```. This is the code that actually changes the database for your project to reflect your name field. A sample changeset will generally look like this:
+To reflect this change in the existing database, add an appropriate change set into the `department/api/src/main/resources/liquibase.xml`. This is the code that actually changes the database for your project to reflect your name field. A sample changeset will generally look like this:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -202,7 +202,7 @@ The Module Maven Archetype or SDK option to add a service layer gives the module
 * ServiceImpl. 
 ```
 
-The ```HibernateDAO``` is home to the ```sessionFactory```, which actually connects to the database. The ```ServiceImpl``` will instantiate a DAO and then the module controller is free to instantiate a Service. Here is the code you will add to each file:
+The `HibernateDAO` is home to the `sessionFactory`, which actually connects to the database. The ```ServiceImpl``` will instantiate a DAO and then the module controller is free to instantiate a Service. Here is the code you will add to each file:
 
 **DAO:**
 ```java
@@ -377,12 +377,12 @@ public class DepartmentServiceImpl extends BaseOpenmrsService implements Departm
 
 When editing the DAO and service layer classes, don't forget to ensure that your code adheres to our general standards. Refer to the 'Development process' chapter, which will give you detailed instructions on how to ensure this.
 
-Also, don't forget to add ```Junit Unit tests``` to validate that the methods you introduced behave exactly as they should. 
+Also, don't forget to add `Junit Unit tests` to validate that the methods you introduced behave exactly as they should. 
 
 
 ### Creating The Web Interface For Your Module
 
-To make these changes to be accessible to users, you need to make changes to the module controller. You will also need to introduce a new file named ```addDepartment.jsp``` into ```the /omod/src/main/webapp``` directory. This will contain the ```.jsp``` page that lets you edit your name. The general contents of this class will be as follows: 
+To make these changes to be accessible to users, you need to make changes to the module controller. You will also need to introduce a new file named `addDepartment.jsp` into the `/omod/src/main/webapp` directory. This will contain the `.jsp` page that lets you edit your name. The general contents of this class will be as follows: 
 
 ```html
 <form method="post">
@@ -413,7 +413,7 @@ To make these changes to be accessible to users, you need to make changes to the
 </form>
 ```
 
-Once the ```.jsp``` is complete, don't forget to modify the controller to point to this. It is also useful to add validations to asses user input when the controller is triggered.
+Once the `.jsp` is complete, don't forget to modify the controller to point to this. It is also useful to add validations to asses user input when the controller is triggered.
 
 ```java
  @RequestMapping(value = "/module/department/departmentForm.form", method = RequestMethod.POST)
@@ -446,13 +446,13 @@ Once the ```.jsp``` is complete, don't forget to modify the controller to point 
  
 Now that your module is completed, it is the perfect time to go ahead and test it. First test it yourself to make sure that there are no obvious mistakes before asking a target end user to try it out. The end user's feedback may result in further design discussions or reviews. Once these have been completed, the module can be implemented at the clinic, and also made available publicly. Refer to the guidelines specified in the 'Development Process' chapter to find out the best way to do this.
 
-Once your module is released, you may think that your work is over. However, there is no such thing. As health systems, requirements, and technology change, so must the software.This makes medical informatics a viable career option, but does not mean you are responsible for maintaining ```Hello World``` for the rest of its life with OpenMRS.
+Once your module is released, you may think that your work is over. However, there is no such thing. As health systems, requirements, and technology change, so must the software.This makes medical informatics a viable career option, but does not mean you are responsible for maintaining `Hello World` for the rest of its life with OpenMRS.
 
 
 ### Sharing Your Module 
 
-When done with developing and testing your module, you can release it for developers by deploying to the Maven repository using instructions at: http://om.rs/newdev-tagging
+When done with developing and testing your module, you can release it for developers by deploying to the Maven repository using instructions at: http://om.rs/newdevtagging
 
-For end users, you can upload it to the module repository http://modules.openmrs.org which is available to everyone. Read more about our rules and regulations for it here: http://om.rs/newdev-modrepo 
+For end users, you can upload it to the module repository http://modules.openmrs.org which is available to everyone. Read more about our rules and regulations for it here: http://om.rs/newdevmodrepo 
 
  
