@@ -65,7 +65,7 @@ Because we're a large project, much written communication gets generated every d
 
 Although we encourage public discussions about our software design, it's also important to avoid non-productive conversations about trivial details. This type of anti-pattern best described by the concept of [bikeshedding](https://en.wiktionary.org/wiki/bikeshedding), which gets its name from a 1960s book about management. In the book, C. Northcote Parkinson described how it might be often easier to get approval for an expensive nuclear power plant than it could be to discuss what color to paint a bike shed. Everyone feels they have a valid opinion of what color to paint the bike shed, but only certain qualified people can comment on the design of a reactor. Don't let yourself fall into this trap -- avoid these wasteful conversations on trivial topics.
 
-See http://om.rs/newdev-bikeshed for more information about bikeshedding. 
+See http://om.rs/newdevbikeshed for more information about bikeshedding. 
 
 ### Commit Early And Often
 
