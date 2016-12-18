@@ -1,7 +1,8 @@
-{  
-    "plugins": [  
+{
+    "plugins": [
         "theme-default",
-        "custom-favicon"
+        "custom-favicon",
+        "ga"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -29,7 +30,10 @@
                 }
             ]
         },
-        "favicon": "/assets/favicon.ico"
+        "favicon": "/assets/favicon.ico",
+        "ga": {
+            "token": "UA-16695719-3",
+            "configuration": "auto"
+        }
     }
 }
-
