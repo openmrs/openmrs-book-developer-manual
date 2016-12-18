@@ -126,7 +126,7 @@ After multiple iterations of making changes to your code and committing them int
 ```shell
   git pull --rebase upstream master 
 ```
-**Step 2:** If you have made many commits, squash them into atomic units of work. Most JIRA issues, especially bug fixes, should have one commit only, making them easier to back-port. To do so, use the instructions at: http://om.rs/newdev-squash
+**Step 2:** If you have made many commits, squash them into atomic units of work. Most JIRA issues, especially bug fixes, should have one commit only, making them easier to back-port. To do so, use the instructions at: http://om.rs/newdevsquash
 
 **Step 3:** Make sure all unit tests still pass by running:
 ```shell
