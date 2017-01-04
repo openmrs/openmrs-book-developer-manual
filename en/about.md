@@ -6,3 +6,7 @@ This book was initially created over just 3 days during the 2013 [Google Summer 
 The event was a partnership between the Google Open Source Programs Office, Aspiration, and FLOSS Manuals. The initial authors of this book represented a wide variety of OpenMRS community members &amp; developers (Michael Downey, Eric Holscher, Suranga Nath Kasthurirathne, Daniel Kayiwa, Jordan Kellerstrass, and Elyse Voegeli from United States, Sri Lanka, and Uganda). Photos used in this book are courtesy of Michael Downey and OpenMRS, Inc.
 
 In 2016, this book was translated into GitBook format and migrated to GitHub.
+
+### Contribute
+
+This book is hosted on [GitHub](https://github.com/openmrs/openmrs-book-guide) and your are welcome and encouraged to [help us improve it](https://github.com/openmrs/openmrs-book-guide/blob/master/CONTRIBUTING.md)!
