@@ -1,7 +1,6 @@
 <center><img src="/assets/OpenMRS-cross.png"></center>
 <center><h1> Welcome To OpenMRS </h1></center>
 <center><h2> Write Code, Save Lives </h2></center>
-********************************************
 
 The OpenMRS Developers manual is hosted at [https://github.com/openmrs/openmrs-book-developer-manual](https://github.com/openmrs/openmrs-book-developer-manual). Anyone is welcome to help us improve the manual by contributing pull requests to this repository.
 
