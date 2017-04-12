@@ -1,7 +1,6 @@
 <center><img src="/assets/OpenMRS-cross.png"></center>
 <center><h1> Welcome To OpenMRS </h1></center>
 <center><h2> Write Code, Save Lives </h2></center>
-********************************************
 
 This is the OpenMRS Developer Manual. It is an electronic book meant to serve as an introduction to [OpenMRS](https://openmrs.org) Development.
 
