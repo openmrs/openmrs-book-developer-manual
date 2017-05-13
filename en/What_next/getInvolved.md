@@ -27,8 +27,7 @@ See if there is an official mentoring program coming up. OpenMRS is one of many 
 
 ## Community Gatherings Online 
 
-The [weekly online Developers Forum](https://wiki.openmrs.org/display/RES/Developers+Forum), the [daily scrum meeting ](https://wiki.openmrs.org/display/RES/Daily+Scrum+Meeting) and [OpenMRS University](https://wiki.openmrs.org/display/RES/OpenMRS+University) meetings are great places to learn, as well as share. When you make significant progress on a project, volunteer to present your work on one of these calls. That may seem scary now, but you are among friends. Hopefully you are working on a project that will be used in implementations. That makes it interesting to others in the community.
-
+The [daily scrum meeting](http://om.rs/scrum), weekly [design forums](http://om.rs/d), weekly [leadership meetings](http://om.rs/l), and occasional use of the [OpenMRS University classroom](http://om.rs/u)  are great places to learn, as well as share. You can view the [OpenMRS Calendar](http://om.rs/cal) for the timing of events. If you have design-related questions and would like some community feedback, sign up to be on the agenda of a [design forum](http://om.rs/d) that is convenient for you. That may seem scary now, but you are among friends. Hopefully you are working on a project that will be used in implementations. That makes it interesting to others in the community.
 
 ## Community Gatherings Around the World
 
@@ -37,7 +36,6 @@ The annual [Implementers Meeting](https://wiki.openmrs.org/display/RES/2016+Impl
 People from OpenMRS regularly participate in other open source and eHealth conferences as well, and even organize their own local meet up events such as hackathons. These can be great opportunities to meet other members of the community, talk about OpenMRS, and form lasting relationships. 
 
 These events are usually announced on the OpenMRS developers mailing lists, so be sure you're subscribed to learn about them and share your own. 
-
 
 ## Feedback
 
