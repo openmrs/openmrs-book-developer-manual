@@ -17,7 +17,7 @@ If you are selecting an existing ticket to work on, please make sure that:
 * The issue is not "In Progress" and claimed by someone else.
 * The issue is not "blocked" waiting for the completion of another issue.
 
-##Beginning Work 
+## Beginning Work 
 
 We assume that you have already installed git on your computer, and that you are able to access it using the command line, which is often easier to interact with than IDE integration plugins.
 
@@ -146,13 +146,7 @@ After you make your pull request, go to the relevant JIRA issue and click the bu
 
 ### About Attribution
 
-In OpenMRS, attribution is done via commit comments only. When a committer applies a patch, the author or authors of the patch are attributed within the commit comment itself. Attribution (either author or contributing authors) will not be placed into the source code. OpenMRS will graciously refuse contributions from volunteers who require attribution of their work within source code.
-
-## About Subversion And OpenMRS
-
-OpenMRS migrated from Subversion to GitHub in mid-2012. Before that time, we used Subversion for version control for over seven years. As a result, some of our older and infrequently-used modules are still be hosted in our Subversion repository.
-
-We encourage the hosting and migration of OpenMRS modules into GitHub, although your module's source code may be hosted wherever you prefer. If you are planning to work on a legacy module hosted in Subversion, you will need appropriate knowledge to use this version control system.
+In OpenMRS, attribution is done via commit comments only. When a committer applies a patch, the author or authors of the patch are attributed within the commit comment itself. We do not put attribution into source code. This avoids the challenges of deciding when someone's name should be added to a file and places the focus on everyone working together to create awesome code. OpenMRS will graciously refuse contributions from volunteers who require attribution of their work within source code.
 
 ## Code Review
 
@@ -191,14 +185,12 @@ We highly encourage developers to publicize their work so other community member
 
 * Make your work publicly accessible via GitHub.
 * Add appropriate documentation to the OpenMRS Wiki.
-* Discuss your work on OpenMRS Talk, answering related questions, and joining in design discussion on the topic.
+* Discuss your work on [OpenMRS Talk](https://talk.openmrs.org/), answering related questions, and joining in design discussion on the topic.
 * Create and submit example videos to be published on the OpenMRS YouTube channel.
-* Request time on in the weekly developers forum or university calls to showcase your work.
-* Requesting tool licenses for your development work
 
-OpenMRS encourages the use of open source tools for development work. However, in certain cases, you may require licenses to use some commercial tools.
-OpenMRS provides contributor licenses to community members in good standing who can demonstrate need for using these tools. Licenses may be available for a number of tools including IntelliJ IDEA and the YourKit profiler, among others. If you are able to demonstrate sufficient need to obtain such a license, please contact the OpenMRS help desk at https://help.openmrs.org
+### Requesting tool licenses for your development work
 
+OpenMRS encourages the use of open source tools for development work. However, in certain cases, you may require licenses to use some commercial tools. OpenMRS provides contributor licenses to community members in good standing who can demonstrate need for using these tools. Licenses may be available for a number of tools including IntelliJ IDEA and the YourKit profiler, among others. If you are able to demonstrate sufficient need to obtain such a license, please contact the OpenMRS help desk at [help.openmrs.org](https://help.openmrs.org).
 
 ## Understanding OpenMRS Releases
 
@@ -206,15 +198,13 @@ OpenMRS provides contributor licenses to community members in good standing who 
 
 Release timelines and supported features are largely decided upon by the OpenMRS leadership group. Larger goals are discussed, agreed upon, and documented under the OpenMRS technical road-map, which is a set of predefined milestones for the core OpenMRS platform and sponsored modules.
 
-More detailed on the release process can be found at: https://om.rs/newdevrelease
+More detailed on the release process can be found [on the wiki](https://om.rs/newdevrelease).
 
-The latest technical road-map can be found at: https://om.rs/newdevtechmap    
+The latest technical road-map can also be found [on the wiki](https://om.rs/newdevtechmap).
 
 The release process is managed by a release manager who is responsible for getting the source code stabilized, packaged, and released to the general public. 
 
-
 ## OpenMRS Release Types 
-
 
 #### Alpha Release
 
@@ -239,7 +229,6 @@ A maintenance release contains bug fixes and security patches for use between ma
 #### Release Rranch
 
 A new release branch is created for each new major and minor release. As an example, a new release branch is created when preparing to release version 2.0.0, or version 1.3.0. However, when preparing to release 1.3.1 (a maintenance-version increment), the release branch created at the time of 1.3.0 is simply re-used. 
-
 
 ## Continuous Integration (CI) For OpenMRS
 
