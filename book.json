@@ -2,7 +2,8 @@
     "plugins": [
         "theme-default",
         "custom-favicon",
-        "ga"
+        "ga",
+        "edit-link"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -29,6 +30,10 @@
                     "name": "Go"
                 }
             ]
+        },
+        "edit-link": {
+          "base": "https://github.com/openmrs/openmrs-book-developer-manual/tree/master",
+          "label": "EDIT"
         },
         "favicon": "/assets/favicon.ico",
         "ga": {
