@@ -12,7 +12,6 @@ Be sure to check if your question has already been answered. This section will h
 
 ## IRC Tips
 
-
 * You can generally just ask a question for any one to answer. But if you wait for a while without getting a response, you may pick a person in the list and mention their "nickname" so that they are notified. 
 > **IRC pro-tip:** With most IRC clients, just start typing the nickname and use the Tab key to auto complete.
 
@@ -21,21 +20,17 @@ Be sure to check if your question has already been answered. This section will h
 * Don't worry about saving a helpful IRC conversation. The channel is logged automatically, so just make a note of the day and time of your helpful conversation and revisit it even after leaving the chat room. 
 > **Tip:** Remember our [Telegram Group](https://telegram.me/openmrs) syncs with IRC, so if you are not a fan of IRC, feel free to use Telegram instead
 
-
 ## Weekly Meetings
 
-OpenMRS community members meet online during the weekly OpenMRS developers forum. This forum is a fine opportunity to learn more about the project, share experiences, give feedback about where they want the future of OpenMRS to be, and more. You can see more details on calls and topics on the upcoming topics wiki page. Periodically, the meeting will be open to Q&amp;A with experienced developers. This is a great place to get questions answered! 
-
+OpenMRS community members meet online during daiy [scrum meetings](http://om.rs/scrum) and weekly OpenMRS [design forums](http://om.rs/u). These forums are a fine opportunity to interact with other developers.
 
 ## OpenMRS Talk
 
-Our Q&amp;A site at [OpenMRS Talk](http://talk.openmrs.org/) is used for clearly answerable questions that have anything to do with OpenMRS. If your question is more likely to start a discussion than get a clear answer, post it to the Developers Mailing List instead. If your question is actually a bug or feature request, use JIRA. Also don't use OpenMRS Talk if your question is unrelated to OpenMRS, or directed to a single person.
+Our Q&amp;A site [Ask OpenMRS](http://ask.openmrs.org/) is used for clearly answerable questions that have anything to do with OpenMRS. If your question is more likely to start a discussion than get a clear answer, post it to the [Development Category of Talk](https://talk.openmrs.org/c/dev) instead. If your question is actually a bug or feature request, create an issue in JIRA. Please do not use OpenMRS Talk if your question is unrelated to OpenMRS or directed to a single person.
 
+### When posting to Talk
 
-## Mailing Lists
-
-If you decide a mailing list is the best forum for your question, there are a few things to always include.
-
+* Try to make some effort to find an answer by searching using [Google](http://search.openmrs.org/) or searching with [OpenMRS Talk](https://talk.openmrs.org/) and the [wiki](https://wiki.openmrs.org/). It is inconsiderate to ask people a question that can be easily by the first item found in a Google search of the same question. Demonstrating you made some effort to find the question yourself will be appreciated by everyone.
 * Use a descriptive subject header. **"PLEASE HELP ME!!"** for example, is not descriptive enough.
 * Introduce yourself and don't apologize for being a beginner. The community welcomes you.
 * Describe the context of the issue you're having or the question you would like to have answered. What were you doing when you ran into this problem? What troubleshooting have you already tried unsuccessfully? What is your goal?
