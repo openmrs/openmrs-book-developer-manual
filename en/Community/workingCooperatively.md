@@ -26,28 +26,25 @@ The OpenMRS community has established a [Code of Conduct.](https://wiki.openmrs.
 
 ## Working Asynchronously
 
-You'll find lots of people willing to help and give advice in the OpenMRS community, but they might be located across the planet from you. That means you should try to plan your work tasks to work asynchronously. For a quick answer, searching Google, our [Wiki pages](https://wiki.openmrs.org) finding someone to chat with on our [IRC channel](http://om.rs/irc) or [Telegram Group](https://telegram.me/OpenMRS) works well. However, it's more likely that you'll need to write a question to one of our mailing lists and end up waiting for an answer before you can continue. Having a few tasks, issues, or projects going in parallel will help you to feel more productive while you wait for answers or supplemental information to get your work accomplished.
+You'll find lots of people willing to help and give advice in the OpenMRS community, but they might be located across the planet from you. That means you should try to plan your work tasks to work asynchronously. For a quick answer, searching Google, our [Wiki pages](https://wiki.openmrs.org) finding someone to chat with on our [IRC channel](http://om.rs/irc) or [Telegram Group](https://telegram.me/OpenMRS) works well. If you haven't gotten answer to your question or discover that your question doesn't appear to have been asked before, consider posting your question to [Ask OpenMRS](http://om.rs/ask). Since you may end up waiting for an answer before you can continue, having a few tasks, issues, or projects going in parallel will help you to feel more productive while you wait for answers or supplemental information to get your work accomplished.
 
 ## Collaboration vs. Cooperation
 
-People often speak of working collaboratively on a project when large groups are involved. Before using these terms, it's important to understand the differences between the words collaboration and cooperation. When people collaborate, they work closely together on a single goal. When people cooperate, however, they coordinate their work on "selfish" but similar goals. Collaboration works well in small groups, but cooperation allows large software projects to support both individual and group goals.
+People often speak of working collaboratively on a project when large groups are involved. Before using these terms, it's important to understand the differences between the words collaboration and cooperation. When people collaborate, they work closely together and depend on each other to accomplish a single goal. When people cooperate, however, they coordinate their work on "selfish" but similar goals. Collaboration works well in small groups, but cooperation allows large software projects to support both individual and group goals.
 
-Both types of work happen in the OpenMRS community. When looking at the development of code for the OpenMRS core software, you'll find lots of collaboration. Core developers need to frequently communicate their ideas in detail to avoid causing problems for other core developers. The same holds true when there are several developers working on an OpenMRS add-on module.
+Both types of work happen in the OpenMRS community. When looking at the development of code for the OpenMRS core software, you'll find lots of collaboration. Developers working on core parts of the software need to frequently communicate their ideas in detail to avoid causing problems for other developers. The same holds true when there are several developers working on an OpenMRS add-on module.
 
-Cooperation happens when looking at the different teams who develop OpenMRS modules. Those teams are most successful when they cooperate to prevent duplicate efforts, such as the creation of two modules that provide the same functionality.
-
+Cooperation happens when looking at the different teams who develop OpenMRS modules. Those teams are most successful when they cooperate to prevent duplicate efforts, such as creating two modules that provide the same functionality.
 
 > As an OpenMRS developer, you should plan to cooperate more than you collaborate. This means you'll need to have a good understanding of your personal or small group goals, and you'll need to communicate more than you might be accustomed. This chapter will review some tips on how best to do so.
-
-
 
 ### Find Mentors
 
 Mentors are a great way for new developers to learn about participating in the OpenMRS community. We're a very friendly group of people, and there are plenty of people who, not too long ago, were new to our project just like you. They can help you find interesting work, answer questions about getting your environment set up, or help connect you to other people in the community who share your interests.
 
-The easiest way to find a mentor is to join the community conversations at [OpenMRS Talk](https://talk.openmrs.org), providing a short description of what interests you and some of the questions you're having as you get started. If you get stuck or have issues at any time, send an e-mail to our community management team at community@openmrs.org and they will help answer any questions you have.
+The easiest way to find a mentor is to join the community conversations at [OpenMRS Talk](https://talk.openmrs.org). If you haven't already, make a post in the [Welcome - please introduce yourself!](https://talk.openmrs.org/t/welcome-please-introduce-yourself/) topic, providing a short description of what interests you and some of your goals with OpenMRS. If you get stuck or have issues at any time, send an e-mail to our community management team at community@openmrs.org and they will help answer any questions you have.
 
-The OpenMRS community also regularly participates in formal mentoring programs. [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com) is a summer (in the northern hemisphere) program for university students age 18 and over, offering a stipend to do development work on open source projects such as OpenMRS. Applications generally open each spring.[ The FOSS Outreach Program for Women (OPW) ](https://gnome.org/opw/)is a program for all women age 18 and over that offers 3-month projects on development, documentation, project management, and other tasks in open source projects. Check out the web sites for both programs to learn more about them.
+The OpenMRS community also regularly participates in formal mentoring programs. [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com) is a summer (in the northern hemisphere) program for university students age 18 and over, offering a stipend to do development work on open source projects such as OpenMRS. Applications generally open each spring. [The FOSS Outreach Program for Women (OPW)](https://gnome.org/opw/)is a program for all women age 18 and over that offers 3-month projects on development, documentation, project management, and other tasks in open source projects. Check out the web sites for both programs to learn more about them.
 
 ### Forming Questions
 
@@ -57,7 +54,7 @@ Our project has been around many years, so there is a lot of reference material 
 
 ### Communicate Publicly &amp; Productively
 
-In an open source project, all decisions happen in public. This means you should avoid private conversations such as instant messages, phone calls, and face-to-face meetings -- particularly when brainstorming or making decisions about software design. We have many different public tools available for our community to support these conversations, and those tools are described in detail elsewhere in this book. Ensuring that decisions are made in public venues maximizes participation and exposes those decisions to as many brilliant minds as possible. Try not to make decisions in private, or you might miss out on interesting ideas.
+In an open source project, all decisions happen in public. This means you should avoid private conversations such as instant messages, phone calls, and face-to-face meetings -- particularly when brainstorming or making decisions about community software design. We have many different public tools available for our community to support these conversations and those tools are described in detail elsewhere in this book. Ensuring that decisions are made in public venues maximizes participation and exposes those decisions to as many brilliant minds as possible. Try not to make decisions in private, or you might miss out on interesting ideas.
 
 Because we're a large project, much written communication gets generated every day for other developers to read. To help, try to do your part in maintaining a high signal-to-noise ratio on mailing lists or other communication tools. Think before you post a message, and make sure what you're writing adds value to the conversation. Responses like "me too!" or "+1" are rarely productive. 
 
@@ -79,13 +76,13 @@ One of the biggest (and often most difficult) lessons for open source developers
 
 ### Share &amp; License Your Work
 
-We recommend naming your source code repository to include the word "OpenMRS" so others can more easily find your work. For example, if you're creating the FooBar module, you might name your repository "openmrs-module-foobar". Similarly, when you're at a point that you want to introduce your project or projects to others in the community, we strongly encourage you to do so! The easiest way to do this is to write a short description of your project along with links to more information, 
+We recommend naming your source code repository to include the word "OpenMRS" so others can more easily find your work. The OpenMRS community has a convention of naming repositories in the form "openmrs-category-name". For modules, this takes the form "openmrs-module-moduleid". For example, if you're creating the FooBar module, you might name your repository "openmrs-module-foobar". Similarly, when you're at a point that you want to introduce your project or projects to others in the community, we strongly encourage you to do so! The easiest way to do this is to write a short description of your project along with links to more information, 
 
 It's also important to consider what type of license your work will have. If you don't provide a license with your software, it might remain copyrighted and its use might still be restricted in ways which you may not intend. (The specifics of what would happen depend on the laws where you are.)
 
 Many different free and open source software licenses exist, and sometimes it can be hard to choose one. The creators of GitHub have created http://om.rs/newdevchoose which is an easy way to compare some of the popular FOSS licenses currently in use.
 
-The OpenMRS core application is licensed under the [Mozilla Public License (MPL) version 2,](https://www.mozilla.org/en-US/MPL/2.0/) along with an additional disclaimer of warranty and limitation of liability (essentially a disclaimer for how the software is used in health care settings). We encourage use of this license for consistency across our community-developed software ecosystem and license compatibility between add-on modules. However, you are free to choose any license you wish. Just make sure to choose a license.
+The OpenMRS core application is licensed under the [Mozilla Public License (MPL) version 2,](https://www.mozilla.org/en-US/MPL/2.0/) along with a healthcare disclaimer (essentially a disclaimer for how the software is used in health care settings). We encourage use of this license for consistency across our community-developed software ecosystem and license compatibility between add-on modules; however, you are free to choose any license you wish. Just make sure to choose a license.
 
 ## Summary
 
