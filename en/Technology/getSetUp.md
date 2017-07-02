@@ -72,7 +72,7 @@ You need to start from creating a new OpenMRS server. Run the following command 
 ```
 mvn openmrs-sdk:setup
 ```
-* Choose ```Distribution``` if you want to setup 'Refernce Application' or any other distirbution. 
+* Choose ```Distribution``` if you want to setup the 'Reference Application' or any other distribution. 
 * Choose ```Platform``` to setup the OpenMRS Platform without any modules to start with.
 
 
