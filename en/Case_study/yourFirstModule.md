@@ -27,20 +27,20 @@ It is best not to begin development until you have discussed your design plans w
 
 ## Creating A Basic Module
 
-The OpenMRS SDK, as explained in the Technology Chapter, allows you to get started with a basic module in a few minutes. The `omrs-create-module` command helps you execute the maven archetype, creating a module directory with a framework of all the necessary module files by prompting you for specific information.
+The OpenMRS SDK, as explained in the Technology Chapter, allows you to get started with a basic module in a few minutes. The `mvn openmrs-sdk:create-project` command helps you execute the maven archetype, creating a module directory with a framework of all the necessary module files by prompting you for specific information.
 
-However, in order to execute this command, we assume that you're using JDK 1.7. No other pre-requisites are necessary
-To complete the `omrs-create-module` workflow, you will be prompted to enter the following data:
+However, in order to execute this command, we assume that you're using JDK 1.7. No other pre-requisites are necessary.
+To complete the `mvn openmrs-sdk:create-project` workflow, you will be prompted to enter the following data:
 
-* **`Module name`:** Enter the name of your module as you would like it to appear. For this example use the name `Hello World`.
-* **```Do you want to add an admin page link (y/n)```** : Yes, most likely you want your module to be accessible from the OpenMRS admin page.
-* **`Do you want to add a service layer (y/n)`**: Yes, the default, creates a module with a `Service, ServiceImpl, DAO, HibernateDAO, POJO, Hibernate mapping, liquibase.xml` and `sqldiff.xml,` which will work together to allow your module to access the OpenMRS database.
-* Entering this data and clicking `Enter` will allow the OpenMRS SDK to complete the module creation for you.
+* **`What kind of project would you like to create?:`** You may choose to create a platform module, which can be run on any server or an OpenMRS Reference Application module, which needs to be run on a server with the OpenMRS Reference Application distribution installed. For this example, choose type `1`.
+* Next, you will be prompted for `module id`, `module name`, `description`, `groupId`, `initial version` and the lowest version of `platform support`. For this example, you can stick with the default provided values.
+
+For more info, see [module conventions](https://wiki.openmrs.org/display/docs/Module+Conventions).
 
 
-## Basic Module Structure 
+## Basic Module Structure
 
-The `omrs-create-module` command creates the basic module structure and components that it requires for use. Below is detailed overview of these components, their structure and how they can be used.
+The `mvn openmrs-sdk:create-project` command creates the basic module structure and components that it requires for use. Below is a detailed overview of these components, their structure and how they can be used.
 
 * **api** - non-web-specific 'maven module' project
    * **src** 
@@ -63,20 +63,18 @@ The `omrs-create-module` command creates the basic module structure and componen
   * **target** - Contains the distributable omod file
 * **pom.xml** - Maven build file.  Delegates to `pom.xml` files in the omod and api project
 
-You can read more about module conventions at: https://wiki.openmrs.org/display/docs/Module+Conventions 
-
 
 ## Compiling Your Module 
 
-The basic module structure comes ready to be compiled and installed onto the OpenMRS framework. To do this, navigate into the ```helloworld``` directory and execute the following command:
+The basic module structure comes ready to be compiled and installed onto the OpenMRS framework. To do this, navigate into the `basicexample` (your module id) directory and execute the following command:
 
  `mvn clean install`
- 
-This creates a `jar` file, and then package that jar into a `omod` file. The omod file is what you need to care about. It will be named `basicexample-1.0-SNAPSHOT.omod`, and located under the `helloworld/omod/target/ folder`. The omod file is the module binary, which you will install into your OpenMRS application.
+
+This creates a `jar` file, and then package that jar into a `omod` file. The omod file is what you need to care about. It will be named `basicexample-1.0.0-SNAPSHOT.omod`, and located under the `basicexample/omod/target/` folder. The omod file is the module binary, which you will install into your OpenMRS application.
 
 Executing the maven clean install command also runs any unit tests. If you want to skip unit tests, use the following command instead:
 
-`mvn clean install -Dmaven.test.skip=true `
+`mvn clean install -Dmaven.test.skip=true`
 
 
 ## Try Out Your Module
@@ -87,7 +85,7 @@ To install your module go to the Admin interface of OpenMRS.
 * On the right side, is a **Modules section**. Click the **Manage Modules** link.
 * Near the top, you will see an Add or Upgrade Module button, click it.
 * Under the **Add Module** heading, click the **Browse...** button.
-* In the file browser, select your `omod` file from `basicexample/omod/target/basicexmaple-1.0-SNAPSHOT.omod`
+* In the file browser, select your `omod` file from `basicexample/omod/target/basicexample-1.0.0-SNAPSHOT.omod`
 * **Click Upload**.
 
 
