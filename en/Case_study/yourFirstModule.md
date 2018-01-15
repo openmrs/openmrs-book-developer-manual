@@ -451,6 +451,5 @@ Once your module is released, you may think that your work is over. However, the
 
 When done with developing and testing your module, you can release it for developers by deploying to the Maven repository using instructions at: http://om.rs/newdevtagging
 
-For end users, you can upload it to the module repository http://modules.openmrs.org which is available to everyone. Read more about our rules and regulations for it here: http://om.rs/newdevmodrepo 
-
+For end users, you can release your module via GitHub Releases, Bintray, Maven, etc. Now, your published module will be added to the [Add-ons index](https://addons.openmrs.org/), which is available to everyone. Read more on the [Module Release process here](https://wiki.openmrs.org/x/zIMmAQ). Also read more about our rules and regulations for it here: http://om.rs/newdevmodrepo 
  

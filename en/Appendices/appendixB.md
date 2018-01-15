@@ -65,7 +65,7 @@
 
 **Module:** A software package that extends or changes OpenMRS functionality without interfering with core OpenMRS code and have full access to OpenMRS.
 
-**Module repository:** An online resource to find and maintain community-developed OpenMRS add-on modules. http://modules.openmrs.org/
+**Module repository:** An online resource to find and maintain community-developed OpenMRS add-on modules. [https://addons.openmrs.org/](https://addons.openmrs.org/)
 
 **MySQL:** An open source relational database management system (RDMS) popular with web application and used by OpenMRS. 
 
