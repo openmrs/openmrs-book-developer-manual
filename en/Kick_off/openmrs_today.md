@@ -34,7 +34,7 @@ At this stage, OpenMRS requires a fairly sophisticated team of implementers to i
 
 ### Data Collection
 
-OpenMRS is backed by a data model driven by a concept dictionary, allowing for the collection of coded, reusable data without requiring changes to the data model. Because the platform is not based on an disease-centric data model, it can be adapted for use in tuberculosis, malaria, or more general medical care.
+OpenMRS is backed by a data model driven by a concept dictionary, allowing for the collection of coded, reusable data without requiring changes to the data model. Because the platform is not based on a disease-centric data model, it can be adapted for use in tuberculosis, malaria, or more general medical care.
 
 Furthermore, we also promote the implementation of health data standards which enable the convenient exchange of medical data. OpenMRS supports the generation and consumption of HL7 messaging, the most commonly used health data standard for exchanging information. This allows external systems to communicate and exchange medical data in a more coherent manner.
 
