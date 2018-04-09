@@ -167,6 +167,14 @@ In `department/api/src/main/resources/Department.hbm.xml`, uncomment the central
 </hibernate-mapping>
 ```
 
+Add a mapping to the above hibernate configuration file in the [config.xml](https://wiki.openmrs.org/display/docs/Module+Config+File) file as follows
+
+```xml
+<mappingFiles>
+	   Department.hbm.xml 
+</mappingFiles>
+```
+
 To reflect this change in the existing database, add an appropriate change set into the `department/api/src/main/resources/liquibase.xml`. This is the code that actually changes the database for your project to reflect your name field. A sample changeset will generally look like this:
 
 ```xml
@@ -379,8 +387,91 @@ public class DepartmentServiceImpl extends BaseOpenmrsService implements Departm
 
 When editing the DAO and service layer classes, don't forget to ensure that your code adheres to our general standards. Refer to the 'Development process' chapter, which will give you detailed instructions on how to ensure this.
 
-Also, don't forget to add `Junit Unit tests` to validate that the methods you introduced behave exactly as they should. 
+## Adding tests units for the service layer
 
+### Setting up the configurations for the tests 
+ you can see the [testing convesions here](https://wiki.openmrs.org/display/docs/Unit+Testing+Conventions) and [more information about tests here](https://wiki.openmrs.org/display/docs/Module+Unit+Testing)
+
+ Since we are going to run tests on the service classes , we shall need to set up a Dataset to act as our Database for unit tests
+
+ * First add a hibernate configuration file named `Derpartment-hibernate.cfg.xml`  under the `/api/src/test/resources` as follows
+```xml
+ <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+	
+ <hibernate-configuration>
+<session-factory>
+	<mapping resource="Department.hbm.xml"/>
+</session-factory>
+
+</hibernate-configuration>
+```
+
+this file should point to the  `Department.hbm.xml` defined at `department/api/src/main/resources/Department.hbm.xml`
+
+
+ * then add another config file `TestingApplicationContext.xml`  under  `/api/src/test/resources` 
+ ```xml
+ <?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+						
+						
+	<bean id="sessionFactory" class="org.openmrs.api.db.hibernate.HibernateSessionFactoryBean">
+    <property name="configLocations">
+        <list>
+             <value>classpath:hibernate.cfg.xml</value>  
+            <value>classpath:Department-hibernate.cfg.xml</value>
+        </list>
+    </property>
+    <property name="mappingJarLocations">
+        <ref bean="mappingJarResources" />
+    </property>
+    <!--  default properties must be set in the hibernate.default.properties -->
+</bean>
+
+</beans>
+```
+* Finally we add a `Dataset.xml` file under `/api/src/test/resources` to act as our database
+
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+
+<dataset>
+  <department_department department_id="1" name="Malaria_ward" description="the ward for Malaria patients" uuid="AA126GT45LLL" />
+  <department_department department_id="2" name="HIV_ward" description="the ward for HIV patients" uuid="AB12886GT45LXY" />
+</dataset>
+```
+add all the database columns in the above datase as defined in the `Department.hbm.xml` .
+
+Now lets go ahead to write some test units
+
+add a  `DerpartmentServiceTest.java` under `src\testjava`
+```java
+
+public class DerpartmentServiceTest extends BaseModuleContextSensitiveTest {
+	
+
+	@Test
+	public void shouldreturnDerpartmentName() throws Exception {
+
+		initializeInMemoryDatabase();
+		executeDataSet("Dataset.xml");
+		authenticate();
+
+		DepartmentService departmentService = Context.getService(DepartmentService.class);	
+		Assert.assertEquals( departmentService.getDepartment(1).getName(),"Malaria_ward");
+	}
+}
+```
+You can add more test units for all the service methods.
 
 ### Creating The Web Interface For Your Module
 
@@ -445,7 +536,24 @@ Once the `.jsp` is complete, don't forget to modify the controller to point to t
         return "redirect:departmentList.list";
     }
  ```
- 
+ ## Upating the mesage.properties file
+ This file is used  is by Spring to internationalize all strings .
+ In the `addDepartment.jsp` and the `controller` class above , you note we have used the `MessageSourceService` to get messages from the [messages_*.properties files](https://wiki.openmrs.org/display/docs/Module+messages.properties+Files), hence we need to update the file to add all the messages we reffered to ,as follows.
+
+```
+ ${project.parent.artifactId}.title= Derpatment 
+ general.name=Derpartment Module
+ general.description= Module for adding and removing derpartments
+ department.save= save derpartment
+ department.auth.required= User not Authenticated
+ department.purgeDepartment= delete the department permanenty?
+ department.delete.success=succesfully deleted derpartment
+ department.delete.failure=failed to delete Derpartment
+ department.saved=Derpartment saved
+```
+
+
+
 Now that your module is completed, it is the perfect time to go ahead and test it. First test it yourself to make sure that there are no obvious mistakes before asking a target end user to try it out. The end user's feedback may result in further design discussions or reviews. Once these have been completed, the module can be implemented at the clinic, and also made available publicly. Refer to the guidelines specified in the 'Development Process' chapter to find out the best way to do this.
 
 Once your module is released, you may think that your work is over. However, there is no such thing. As health systems, requirements, and technology change, so must the software.This makes medical informatics a viable career option, but does not mean you are responsible for maintaining `Hello World` for the rest of its life with OpenMRS.
