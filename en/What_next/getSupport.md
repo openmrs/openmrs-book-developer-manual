@@ -22,7 +22,7 @@ Be sure to check if your question has already been answered. This section will h
 
 ## Weekly Meetings
 
-OpenMRS community members meet online during daiy [scrum meetings](http://om.rs/scrum) and weekly OpenMRS [design forums](http://om.rs/u). These forums are a fine opportunity to interact with other developers.
+OpenMRS community members meet online during daily [scrum meetings](http://om.rs/scrum) and weekly OpenMRS [design forums](http://om.rs/u). These forums are a fine opportunity to interact with other developers.
 
 ## OpenMRS Talk
 
