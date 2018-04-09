@@ -36,8 +36,8 @@ Our Q&amp;A site [Ask OpenMRS](http://ask.openmrs.org/) is used for clearly answ
 * Describe the context of the issue you're having or the question you would like to have answered. What were you doing when you ran into this problem? What troubleshooting have you already tried unsuccessfully? What is your goal?
 * Include your exact error message if there is one.
 * Indicate which version of OpenMRS you are using.
-* As a general rule, be as precise and informative.
-* If the answer you receive doesn't make sense, repeat this process for your follow up questions. Sometimes a web-search of the terms you don't understand is all the clarification you will need. Maybe the person who responded to your email is conveniently hanging out on IRC. Otherwise, proceed confidently in asking for more information.
+* As a general rule, write precisely and informatively.
+* If the answer you receive doesn't make sense to you, repeat this process for your follow up questions. Sometimes a web-search of the terms you don't understand is all the clarification you will need. Maybe the person who responded to your email is conveniently hanging out on IRC. Otherwise, proceed confidently in asking for more information.
 
 ## Finding Answers With Reference Material
 
