@@ -1,6 +1,6 @@
 <center><h1>Data Model</h1></center>
 *****************************
-<center><img src="/assets/openmrs_data_model_1.9.0_small.png"></center>
+<center><img src="/res/DataModel_1.9.0.png"></center>
 _OpenMRS data model version 1.9. Details at http://om.rs/datamodel_
 
 OpenMRS invests continuous effort into shaping the OpenMRS data model using knowledge and experience gathered from practical experiences from the Regenstrief Institute, Partners in Health, and all of our development partners spread across the world. The core of this data model addresses the who, what, when, where, and how of medical encounters. The core data model is divided into ten basic domains.
@@ -31,8 +31,8 @@ However, other domains may also be added to the data model via the use of module
 6. Location
 7. Program
 8. Role
-9. User 
+9. User
 
-The OpenMRS source code comes with certain metadata included by default. It is recommended that you do not edit/remove these. 
+The OpenMRS source code comes with certain metadata included by default. It is recommended that you do not edit/remove these.
 
-Any request to modify/add metadata should be communicated to the Meta-Data/Terminology lead, who is responsible for the oversight of content required for key functionality of the OpenMRS platform. 
+Any request to modify/add metadata should be communicated to the Meta-Data/Terminology lead, who is responsible for the oversight of content required for key functionality of the OpenMRS platform.

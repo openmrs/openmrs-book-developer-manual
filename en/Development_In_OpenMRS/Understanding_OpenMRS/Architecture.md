@@ -3,19 +3,19 @@
 
 This chapter contains an in-depth view of the architecture of the system. If you don't understand everything on the first reading, don't fret! Understanding how the basic system fits together is the most important thing you need for now.
 
-## Technical Overview 
+## Technical Overview
 
 OpenMRS is a framework built upon Java and other related frameworks. It is based on a modular architecture which consists of a core application and optional modules which provide additional functionality to the core workflows.
 
 The key architectural components of the OpenMRS core can be depicted as follows:
 
-<center><img src="/assets/OpenMRS-architecture.png"></center> _ An Overview of OpenMRS _
+<center><img src="/res/ArchitectureDiagram.png"></center> _ An Overview of OpenMRS _
 
 The backbone of OpenMRS lies in its core API. The OpenMRS API has methods for all of the basic functions such as adding/updating a patient, encounter, observation, etc. Methods which enable this functionality are provided in service layer classes. 
 
 ## The Source Code Structure
 
-In OpenMRS framework and modules, there are different levels in the code architecture. The OpenMRS source code is divided into three main segments: 
+In OpenMRS framework and modules, there are different levels in the code architecture. The OpenMRS source code is divided into three main segments:
 
 * The User Interface (presentation)
 * The Service Layer
@@ -31,7 +31,7 @@ The relationships between our domain objects and database tables are mapped usin
 
 ### The Service layer
 
-The Service layer is responsible for managing the business logic of the application. It is built around the [Spring framework.](https://en.wikipedia.org/wiki/Spring_Framework) The OpenMRS service layer classes make extensive use of the Spring framework for a number of tasks including the following: 
+The Service layer is responsible for managing the business logic of the application. It is built around the [Spring framework.](https://en.wikipedia.org/wiki/Spring_Framework) The OpenMRS service layer classes make extensive use of the Spring framework for a number of tasks including the following:
 
 * Spring [Aspect Oriented Programming (AOP)](https://en.wikipedia.org/wiki/Aspect-oriented_programming) is used to provide separate cross cutting functions (for example: authentication, logging).
 * Spring Dependency Injection (DI) is used to provide dependencies between components.
@@ -45,7 +45,7 @@ The User Interface layer for the legacy application is built upon Spring MVC, Di
 
 At the heart of OpenMRS is a custom module framework which lets you extend and modify the default functionality of the OpenMRS core in accordance to your needs. Modules are also structured like the OpenMRS core, and consist of user interface, data access and service layers.
 
-Some OpenMRS functionality is pulled out into modules instead of being written into the core application. This allows users to upgrade the content in those modules without having to wait for the next OpenMRS release. Currently, the only core module used in OpenMRS is the Logic Module. 
+Some OpenMRS functionality is pulled out into modules instead of being written into the core application. This allows users to upgrade the content in those modules without having to wait for the next OpenMRS release. Currently, the only core module used in OpenMRS is the Logic Module.
 
 ## Associated Frameworks and Technology Stacks
 
@@ -63,7 +63,7 @@ OpenMRS strongly subscribes to the [Model-View-Controller](https://en.wikipedia.
 
 Furthermore, not all files served by the webapp are run through Spring. The ```/web/WEB-INF/web.xml``` file maps certain web page extensions to the SpringController. All ```*.form```, ```*.htm```, and *```.list``` pages are mapped. The SpringController then uses the mappings in the ```openmrs-servlet.xml``` file to know which pages are mapping to which Controller.
 
-There are no ```jsp``` pages that are accessed directly. If a page's url is ```/admin/patients/index.htm```, the jsp will actually reside in ```/web/WEB-INF/view/admin/patients/index.jsp```. This is necessary so that we can do the redirect with the SpringController. Because the file being accessed ends with ```.htm```, the SpringController is invoked by the web server. When the SpringController sees the url, it simply replaces ```.htm``` with ```.jsp``` and looks for the file in ```/web/WEB-INF/view/``` according to the jspViewResolver bean in ```openmrs-servlet.xml```. If the page being accessed was patient.form, the mapping in the urlMapping bean would have told spring to use the PatientFormController and the ```patientForm.jsp``` file. 
+There are no ```jsp``` pages that are accessed directly. If a page's url is ```/admin/patients/index.htm```, the jsp will actually reside in ```/web/WEB-INF/view/admin/patients/index.jsp```. This is necessary so that we can do the redirect with the SpringController. Because the file being accessed ends with ```.htm```, the SpringController is invoked by the web server. When the SpringController sees the url, it simply replaces ```.htm``` with ```.jsp``` and looks for the file in ```/web/WEB-INF/view/``` according to the jspViewResolver bean in ```openmrs-servlet.xml```. If the page being accessed was patient.form, the mapping in the urlMapping bean would have told spring to use the PatientFormController and the ```patientForm.jsp``` file.
 
 ### Authentication and Authorization
 
@@ -71,17 +71,17 @@ OpenMRS has a very granulated permissions system. Every action is associated wit
 
 ### Build Management
 
-OpenMRS uses **Apache Maven** for build management of the OpenMRS core and modules. 
+OpenMRS uses **Apache Maven** for build management of the OpenMRS core and modules.
 
-All information regarding the module being built, its dependencies on other external modules and components, the build order, directories, and required plug-ins are stored in the modules' ```pom.xml``` file. 
+All information regarding the module being built, its dependencies on other external modules and components, the build order, directories, and required plug-ins are stored in the modules' ```pom.xml``` file.
 
 Following release, these build artifacts are uploaded and maintained in a maven repository manager. A maven repository manager is used for this purpose due to a number of advantages that it provides. These advantages include:
 
 * Faster and more reliable builds
 * Improved collaboration
 * Component usage visibility
-* Enforcement of component standards 
-* The Maven Repository used by OpenMRS is SonaType Nexus, which can be accessed at http://mavenrepo.openmrs.org/nexus/. 
+* Enforcement of component standards
+* The Maven Repository used by OpenMRS is SonaType Nexus, which can be accessed at http://mavenrepo.openmrs.org/nexus/.
 * Artifacts maintained in the OpenMRS repository are:
 
 ## Releases

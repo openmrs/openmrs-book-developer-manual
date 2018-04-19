@@ -1,6 +1,6 @@
 <center><h1>Working Cooperatively</h1></center>
 ********************************************
-<center><img src="/assets/Working Cooperatively.jpg"><center> _OpenMRS design brainstorming session, October 2013_
+<center><img src="/res/WorkingCooperatively.png"><center> _OpenMRS design brainstorming session, October 2013_
 
 ## Getting Things Done
 
@@ -48,35 +48,35 @@ The OpenMRS community also regularly participates in formal mentoring programs. 
 
 ### Forming Questions
 
-One of the greatest things about a free and open source software project is the large community of developers, contributors, and users available to help you find answers to questions or inspire you. 
+One of the greatest things about a free and open source software project is the large community of developers, contributors, and users available to help you find answers to questions or inspire you.
 
-Our project has been around many years, so there is a lot of reference material available to understand why certain design decisions were made. Some of this material is current and much of it can be useful for a historical perspective. When developing questions to ask others in the community, it's important to do some background research first to make sure that there isn't already a readily-available answer. 
+Our project has been around many years, so there is a lot of reference material available to understand why certain design decisions were made. Some of this material is current and much of it can be useful for a historical perspective. When developing questions to ask others in the community, it's important to do some background research first to make sure that there isn't already a readily-available answer.
 
 ### Communicate Publicly &amp; Productively
 
 In an open source project, all decisions happen in public. This means you should avoid private conversations such as instant messages, phone calls, and face-to-face meetings -- particularly when brainstorming or making decisions about community software design. We have many different public tools available for our community to support these conversations and those tools are described in detail elsewhere in this book. Ensuring that decisions are made in public venues maximizes participation and exposes those decisions to as many brilliant minds as possible. Try not to make decisions in private, or you might miss out on interesting ideas.
 
-Because we're a large project, much written communication gets generated every day for other developers to read. To help, try to do your part in maintaining a high signal-to-noise ratio on mailing lists or other communication tools. Think before you post a message, and make sure what you're writing adds value to the conversation. Responses like "me too!" or "+1" are rarely productive. 
+Because we're a large project, much written communication gets generated every day for other developers to read. To help, try to do your part in maintaining a high signal-to-noise ratio on mailing lists or other communication tools. Think before you post a message, and make sure what you're writing adds value to the conversation. Responses like "me too!" or "+1" are rarely productive.
 
 ### Avoid Bikeshedding
 
 Although we encourage public discussions about our software design, it's also important to avoid non-productive conversations about trivial details. This type of anti-pattern best described by the concept of [bikeshedding](https://en.wiktionary.org/wiki/bikeshedding), which gets its name from a 1960s book about management. In the book, C. Northcote Parkinson described how it might be often easier to get approval for an expensive nuclear power plant than it could be to discuss what color to paint a bike shed. Everyone feels they have a valid opinion of what color to paint the bike shed, but only certain qualified people can comment on the design of a reactor. Don't let yourself fall into this trap -- avoid these wasteful conversations on trivial topics.
 
-See http://om.rs/newdevbikeshed for more information about bikeshedding. 
+See http://om.rs/newdevbikeshed for more information about bikeshedding.
 
 ### Commit Early And Often
 
-One of the biggest (and often most difficult) lessons for open source developers to learn is commit changes to your source code repository early and often. Don't wait until you are finished with a project,or even a single feature. In the past, OpenMRS used the Subversion version control system which made this more painful. However, with DVCS systems like [GitHub](https://github.com) in use now for most of our software, it's much easier to get your work-in-progress published online as you go. There are a few reasons to embrace this behavior. 
+One of the biggest (and often most difficult) lessons for open source developers to learn is commit changes to your source code repository early and often. Don't wait until you are finished with a project,or even a single feature. In the past, OpenMRS used the Subversion version control system which made this more painful. However, with DVCS systems like [GitHub](https://github.com) in use now for most of our software, it's much easier to get your work-in-progress published online as you go. There are a few reasons to embrace this behavior.
 
 * First, by committing early you'll have more chance for others to stumble across your work. They may have very valuable feedback or ideas that you might want to consider to make your project more useful. They may also have already written something very similar and may prevent you from duplicating effort.
 
 * By committing your work often, you'll be protected in case of an accidental data loss. You'll also be able to share your progress with others, so they can get a better idea how much work remains. If you're committing code regularly and a lot of work remains, you might find someone to help you by squashing bugs or adding additional features.
 
-* Don't be afraid that your work appears "not ready". After all, it probably isn't ready yet! In free &amp; open source projects, one of the most important practices is to share your work in progress. Make sure you do your part. 
+* Don't be afraid that your work appears "not ready". After all, it probably isn't ready yet! In free &amp; open source projects, one of the most important practices is to share your work in progress. Make sure you do your part.
 
 ### Share &amp; License Your Work
 
-We recommend naming your source code repository to include the word "OpenMRS" so others can more easily find your work. The OpenMRS community has a convention of naming repositories in the form "openmrs-category-name". For modules, this takes the form "openmrs-module-moduleid". For example, if you're creating the FooBar module, you might name your repository "openmrs-module-foobar". Similarly, when you're at a point that you want to introduce your project or projects to others in the community, we strongly encourage you to do so! The easiest way to do this is to write a short description of your project along with links to more information, 
+We recommend naming your source code repository to include the word "OpenMRS" so others can more easily find your work. The OpenMRS community has a convention of naming repositories in the form "openmrs-category-name". For modules, this takes the form "openmrs-module-moduleid". For example, if you're creating the FooBar module, you might name your repository "openmrs-module-foobar". Similarly, when you're at a point that you want to introduce your project or projects to others in the community, we strongly encourage you to do so! The easiest way to do this is to write a short description of your project along with links to more information,
 
 It's also important to consider what type of license your work will have. If you don't provide a license with your software, it might remain copyrighted and its use might still be restricted in ways which you may not intend. (The specifics of what would happen depend on the laws where you are.)
 
@@ -86,4 +86,4 @@ The OpenMRS core application is licensed under the [Mozilla Public License (MPL)
 
 ## Summary
 
-In this section, we reviewed some of the unique aspects of working together in an open source project like OpenMRS. In the next section, we'll cover more details of the tools we use to do so. If any time you have questions about how best to work cooperatively, ask a more senior member of the community for guidance, or write to a mailing list with your questions. You'll find everyone very friendly and ready to help you be productive! 
+In this section, we reviewed some of the unique aspects of working together in an open source project like OpenMRS. In the next section, we'll cover more details of the tools we use to do so. If any time you have questions about how best to work cooperatively, ask a more senior member of the community for guidance, or write to a mailing list with your questions. You'll find everyone very friendly and ready to help you be productive!

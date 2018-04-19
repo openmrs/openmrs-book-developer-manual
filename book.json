@@ -3,7 +3,8 @@
         "theme-default",
         "custom-favicon",
         "ga",
-        "edit-link"
+        "edit-link",
+		"expandable-chapters"
     ],
     "pluginsConfig": {
         "theme-default": {
@@ -35,7 +36,7 @@
           "base": "https://github.com/openmrs/openmrs-book-developer-manual/edit/master",
           "label": "EDIT"
         },
-        "favicon": "/assets/favicon.ico",
+        "favicon": "/res/favicon.ico",
         "ga": {
             "token": "UA-16695719-13",
             "configuration": "auto"

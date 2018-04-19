@@ -1,6 +1,8 @@
 <center><h1>Creating Your First Module</h1></center>
 ************************************
 
+Before you get started, please consult the [Starting Development](StartingDevelopment.md) page if you have not already to make sure that a module is right for your type of project.
+
 ## Amani Clinic Case Study
 
 To put this book in perspective, we'll walk through a fictional scenario that reflects the real world process of identifying the need for, designing, and building a module. Maintaining a modular architecture allows developers to add and remove special functionality into OpenMRS without having to modify the core project.
@@ -107,36 +109,36 @@ Let's assume that your hello world task involves adding a new field titled '`nam
 In`department/api/src/main/java/org/openmrs/module/department/Department.java`, add new fields called name and description along with appropriate getters and setters for them. The file should now look as follows: 
 ```java
 public class Department extends BaseOpenmrsObject implements Serializable {
-	private static final long serialVersionUID = 1L;
-	private Integer departmentId;
-	private String name;
-	private String description;
-	public Integer getDepartmentId() {
-		return departmentId;
-	}
-	public void setDepartmentId(Integer departmentId) {
-		this.departmentId = departmentId;
-	}
-	@Override
-	public Integer getId() {
-		return getDepartmentId();
-	}
-	@Override
-	public void setId(Integer id) {
-		setDepartmentId(id);
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    private static final long serialVersionUID = 1L;
+    private Integer departmentId;
+    private String name;
+    private String description;
+    public Integer getDepartmentId() {
+        return departmentId;
+    }
+    public void setDepartmentId(Integer departmentId) {
+        this.departmentId = departmentId;
+    }
+    @Override
+    public Integer getId() {
+        return getDepartmentId();
+    }
+    @Override
+    public void setId(Integer id) {
+        setDepartmentId(id);
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
 ``` 
 
@@ -150,16 +152,16 @@ In `department/api/src/main/resources/Department.hbm.xml`, uncomment the central
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
 <hibernate-mapping package="org.openmrs.module.department">
-	<class name="Department"
-		table="${project.parent.artifactId}_Department">
-		<id name="departmentId" type="int" column="department_id" unsaved-value="0">
-			<generator class="native" />
-		</id>
-		<discriminator column="department_id" insert="false" />
-		<property name="uuid" type="java.lang.String" column="uuid" length="38" unique="true" />
-		<property name="name" type="java.lang.String" column="name" length="255" unique="true" />
-		<property name="description" type="java.lang.String" column="description" length="255" />	
-	</class>
+    <class name="Department"
+        table="${project.parent.artifactId}_Department">
+        <id name="departmentId" type="int" column="department_id" unsaved-value="0">
+            <generator class="native" />
+        </id>
+        <discriminator column="department_id" insert="false" />
+        <property name="uuid" type="java.lang.String" column="uuid" length="38" unique="true" />
+        <property name="name" type="java.lang.String" column="name" length="255" unique="true" />
+        <property name="description" type="java.lang.String" column="description" length="255" />   
+    </class>
 </hibernate-mapping>
 ```
 
@@ -208,22 +210,22 @@ The `HibernateDAO` is home to the `sessionFactory`, which actually connects to t
  * Database methods for {@link DepartmentService}.
  */
 public interface DepartmentDAO {
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#getAllDepartments()
-	 */
-	List<Department> getAllDepartments();
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#getDepartment(java.lang.Integer)
-	 */
-	Department getDepartment(Integer departmentId);
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#saveDepartment(org.openmrs.module.department.Department)
-	 */
-	Department saveDepartment(Department department);
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#purgeDepartment(org.openmrs.module.department.Department)
-	 */
-	void purgeDepartment(Department department);
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#getAllDepartments()
+     */
+    List<Department> getAllDepartments();
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#getDepartment(java.lang.Integer)
+     */
+    Department getDepartment(Integer departmentId);
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#saveDepartment(org.openmrs.module.department.Department)
+     */
+    Department saveDepartment(Department department);
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#purgeDepartment(org.openmrs.module.department.Department)
+     */
+    void purgeDepartment(Department department);
 }
 ```
 
@@ -233,49 +235,49 @@ public interface DepartmentDAO {
  * The default implementation of {@link DepartmentDAO}.
  */
 public class HibernateDepartmentDAO implements DepartmentDAO {
-	protected final Log log = LogFactory.getLog(this.getClass());
-	private SessionFactory sessionFactory;
-	/**
-	 * @param sessionFactory the sessionFactory to set
-	 */
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-	/**
-	 * @return the sessionFactory
-	 */
-	public SessionFactory getSessionFactory() {
-		return sessionFactory;
-	}
-	/**
-	 * @see org.openmrs.module.department.api.db.DepartmentDAO#getAllDepartments()
-	 */
-	@Override
-	public List<Department> getAllDepartments() {
-		return sessionFactory.getCurrentSession().createCriteria(Department.class).list();
-	}
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#getDepartment(java.lang.Integer)
-	 */
-	@Override
-	public Department getDepartment(Integer departmentId) {
-		return (Department) sessionFactory.getCurrentSession().get(Department.class, departmentId);
-	}
-	/**
-	 * @see org.openmrs.module.department.api.db.DepartmentDAO#saveDepartment(org.openmrs.module.department.Department)
-	 */
-	@Override
-	public Department saveDepartment(Department department) {
-		sessionFactory.getCurrentSession().save(department);
-		return department;
-	}
-	/**
-	 * @see org.openmrs.module.department.api.db.DepartmentDAO#purgeDepartment(org.openmrs.module.department.Department)
-	 */
-	@Override
-	public void purgeDepartment(Department department) {
-		sessionFactory.getCurrentSession().delete(department);
-	}
+    protected final Log log = LogFactory.getLog(this.getClass());
+    private SessionFactory sessionFactory;
+    /**
+     * @param sessionFactory the sessionFactory to set
+     */
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+    /**
+     * @return the sessionFactory
+     */
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+    /**
+     * @see org.openmrs.module.department.api.db.DepartmentDAO#getAllDepartments()
+     */
+    @Override
+    public List<Department> getAllDepartments() {
+        return sessionFactory.getCurrentSession().createCriteria(Department.class).list();
+    }
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#getDepartment(java.lang.Integer)
+     */
+    @Override
+    public Department getDepartment(Integer departmentId) {
+        return (Department) sessionFactory.getCurrentSession().get(Department.class, departmentId);
+    }
+    /**
+     * @see org.openmrs.module.department.api.db.DepartmentDAO#saveDepartment(org.openmrs.module.department.Department)
+     */
+    @Override
+    public Department saveDepartment(Department department) {
+        sessionFactory.getCurrentSession().save(department);
+        return department;
+    }
+    /**
+     * @see org.openmrs.module.department.api.db.DepartmentDAO#purgeDepartment(org.openmrs.module.department.Department)
+     */
+    @Override
+    public void purgeDepartment(Department department) {
+        sessionFactory.getCurrentSession().delete(department);
+    }
 }
 ```
 
@@ -287,34 +289,34 @@ public class HibernateDepartmentDAO implements DepartmentDAO {
  */
 @Transactional
 public interface DepartmentService extends OpenmrsService {
-	/**
-	 * Gets a list of departments.
-	 *
-	 * @return the department list.
-	 */
-	@Transactional(readOnly = true)
-	List<Department> getAllDepartments();
-	/**
-	 * Gets a department for a given id.
-	 *
-	 * @param id the department id
-	 * @return the department with the given id
-	 */
-	@Transactional(readOnly = true)
-	Department getDepartment(Integer departmentId);
-	/**
-	 * Saves a new or existing department.
-	 *
-	 * @param department the department to save.
-	 * @return the saved department.
-	 */
-	Department saveDepartment(Department department);
-	/**
-	 * Deletes a department from the database.
-	 *
-	 * @param department the department to delete.
-	 */
-	void purgeDepartment(Department department);
+    /**
+     * Gets a list of departments.
+     *
+     * @return the department list.
+     */
+    @Transactional(readOnly = true)
+    List<Department> getAllDepartments();
+    /**
+     * Gets a department for a given id.
+     *
+     * @param id the department id
+     * @return the department with the given id
+     */
+    @Transactional(readOnly = true)
+    Department getDepartment(Integer departmentId);
+    /**
+     * Saves a new or existing department.
+     *
+     * @param department the department to save.
+     * @return the saved department.
+     */
+    Department saveDepartment(Department department);
+    /**
+     * Deletes a department from the database.
+     *
+     * @param department the department to delete.
+     */
+    void purgeDepartment(Department department);
 }
 ```
 
@@ -325,48 +327,48 @@ public interface DepartmentService extends OpenmrsService {
  * It is a default implementation of {@link DepartmentService}.
  */
 public class DepartmentServiceImpl extends BaseOpenmrsService implements DepartmentService {
-	protected final Log log = LogFactory.getLog(this.getClass());
-	private DepartmentDAO dao;
-	/**
-	 * @param dao the dao to set
-	 */
-	public void setDao(DepartmentDAO dao) {
-		this.dao = dao;
-	}
-	/**
-	 * @return the dao
-	 */
-	public DepartmentDAO getDao() {
-		return dao;
-	}
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#getAllDepartments()
-	 */
-	@Override
-	public List<Department> getAllDepartments() {
-		return dao.getAllDepartments();
-	}
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#getDepartment(java.lang.Integer)
-	 */
-	@Override
-    public Department getDepartment(Integer departmentId) {
-	    return dao.getDepartment(departmentId);
+    protected final Log log = LogFactory.getLog(this.getClass());
+    private DepartmentDAO dao;
+    /**
+     * @param dao the dao to set
+     */
+    public void setDao(DepartmentDAO dao) {
+        this.dao = dao;
     }
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#saveDepartment(org.openmrs.module.department.Department)
-	 */
-	@Override
-	public Department saveDepartment(Department department) {
-		return dao.saveDepartment(department);
-	}
-	/**
-	 * @see org.openmrs.module.department.api.DepartmentService#purgeDepartment(org.openmrs.module.department.Department)
-	 */
-	@Override
-	public void purgeDepartment(Department department) {
-		dao.purgeDepartment(department);
-	}
+    /**
+     * @return the dao
+     */
+    public DepartmentDAO getDao() {
+        return dao;
+    }
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#getAllDepartments()
+     */
+    @Override
+    public List<Department> getAllDepartments() {
+        return dao.getAllDepartments();
+    }
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#getDepartment(java.lang.Integer)
+     */
+    @Override
+    public Department getDepartment(Integer departmentId) {
+        return dao.getDepartment(departmentId);
+    }
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#saveDepartment(org.openmrs.module.department.Department)
+     */
+    @Override
+    public Department saveDepartment(Department department) {
+        return dao.saveDepartment(department);
+    }
+    /**
+     * @see org.openmrs.module.department.api.DepartmentService#purgeDepartment(org.openmrs.module.department.Department)
+     */
+    @Override
+    public void purgeDepartment(Department department) {
+        dao.purgeDepartment(department);
+    }
 } 
 ```
 

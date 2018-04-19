@@ -1,6 +1,6 @@
 <center><h1>Solving the Health IT Challenges (Our Response)</h1></center>
 *********************************************************
-<center><img src="/assets/AMPATH-2004.png"><center> _ AMPATH Clinic, Eldoret, Kenya, ca. 2004 _
+<center><img src="/res/AMPATH_2004.png"><center> _ AMPATH Clinic, Eldoret, Kenya, ca. 2004 _
 
 OpenMRS was conceived in 2004 specifically to solve the problem of managing health care information in the developing world. Today, connectivity and accessibility are critical pieces for health information systems. In most countries, this information is still in silos and is not accessible to those who need it—patients, clinicians, researchers, epidemiologists, and planners. Based on best practices and institutional knowledge from founding partners **Regenstrief Institute &amp; Partners In Health**.
 The goal of OpenMRS was to become a platform that could be flexible enough for use in a variety of contexts in settings that had very different requirements.
@@ -39,7 +39,6 @@ Concepts and processes can be easily shared to enable health care professionals 
 * Medical software helps ease the work of health care providers and administrators to provide them with the tools to improve health outcomes all over the world
 Looking forward
 
-From its humble beginnings as a solution to a problem in a small African town, OpenMRS has become the largest health IT project on the planet. Between 2006 and 2012, the installation of OpenMRS at AMPATH in Kenya has recorded over 5 million heath care encounters points of data for nearly 200,000 patients, helping to save untold thousands of lives. Every day, similar stories are retold somewhere else around the world with the assistance of thousands of volunteers. 
+From its humble beginnings as a solution to a problem in a small African town, OpenMRS has become the largest health IT project on the planet. Between 2006 and 2012, the installation of OpenMRS at AMPATH in Kenya has recorded over 5 million heath care encounters points of data for nearly 200,000 patients, helping to save untold thousands of lives. Every day, similar stories are retold somewhere else around the world with the assistance of thousands of volunteers.
 
 The OpenMRS community continues to grow, and we are excited that you're ready to join us. Regardless of your background or interests, there is a way for you to both contribute and gain from the work of others in the OpenMRS community. In the next section we'll explore OpenMRS around the world today and the many exciting prospects for the future.
-
