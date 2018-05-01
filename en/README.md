@@ -1,4 +1,4 @@
-<center><img src="/assets/OpenMRS-cross.png"></center>
+<center><img src="/res/OpenMRSCross.png"></center>
 <center><h1>Welcome To OpenMRS</h1></center>
 <center><h2>Write Code, Save Lives</h2></center>
 ********************************************
@@ -43,4 +43,3 @@ This book is designed to give you the knowledge, tools, and confidence to be an 
 * Know where to go to get started with your first contributions to the community.
 
 > By the end of this book, you'll be an OpenMRS developer, contributor, and community member!
-
