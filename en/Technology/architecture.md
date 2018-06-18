@@ -11,6 +11,7 @@ The key architectural components of the OpenMRS core can be depicted as follows:
 
 <center><img src="/assets/OpenMRS-architecture.png"></center> _ An Overview of OpenMRS _
 
+
 The backbone of OpenMRS lies in its core API. The OpenMRS API has methods for all of the basic functions such as adding/updating a patient, encounter, observation, etc. Methods which enable this functionality are provided in service layer classes. 
 
 ## The Source Code Structure
@@ -28,6 +29,7 @@ This layering isolates various system responsibilities from one another, to impr
 The Data Access layer is an abstraction layer from the actual data model and its changes. It uses Hibernate as the Object Relational mapping tool, and Liquibase to manage relational database changes in a database-independent way.
 
 The relationships between our domain objects and database tables are mapped using a mixture of Hibernate annotations and XML mapping files. The data access layer is exposed to the service layer through interfaces, thereby shielding it from implementation details such as which object relational mapping tool is being used.
+see [openmrs DataModel at openmrs university](https://www.youtube.com/watch?v=9mK9p0Pc9zg)
 
 ### The Service layer
 
@@ -51,7 +53,7 @@ Some OpenMRS functionality is pulled out into modules instead of being written i
 
 ### Hibernate
 
-Hibernate is the object-relational mapping library used by OpenMRS. It allows users to describe the relationship between database tables and domain objects using xml configuration files or Java annotations.
+[Hibernate](https://en.wikipedia.org/wiki/Hibernate_(framework)) is the object-relational mapping library used by OpenMRS. It allows users to describe the relationship between database tables and domain objects using xml configuration files or Java annotations.
 
 Hibernate is also useful in managing dependencies between classes. As an example, the concept domain in the data model consists of tables named concept, concept_answer, concept_set and concept_name. It would be very difficult to keep up with where to store each part of the concept object and the relations between them if a user decides to update each table individually. However, using Hibernate, developers only need to concern themselves with the Concept object, and not the tables behind that object. The ```concept.hbm.xml``` mapping file does the work of knowing that the Concept object contains a collection of ```ConceptSet objects```, a collection of ```ConceptName objects```, etc.
 
@@ -67,7 +69,8 @@ There are no ```jsp``` pages that are accessed directly. If a page's url is ```/
 
 ### Authentication and Authorization
 
-OpenMRS has a very granulated permissions system. Every action is associated with a Privilege, which in turn can be grouped into Roles. Examples of such privileges are "Add Patient", "Update Patient", "Delete Patient", "Add Concept", "Update Concept", and more. A Role can also point to a list of inherited roles. The role inherits all privileges from that inherited role. In this way, hierarchies of roles are possible. A User contains only a collection of Roles, not Privileges. These privileges are enforced in the service layer using AOP annotations.
+OpenMRS has a very granulated permissions system. Every action is associated with a Privilege, which in turn can be grouped into Roles. Examples of such privileges are "Add Patient", "Update Patient", "Delete Patient", "Add Concept", "Update Concept", and more. A Role can also point to a list of inherited roles. The role inherits all privileges from that inherited role. In this way, hierarchies of roles are possible. A User contains only a collection of Roles, not Privileges. These privileges are enforced in the service layer using AOP annotations. In a way, this
+also enssures Confidentiality of patients' Data by putting restrictions on the data Access. 
 
 ### Build Management
 
@@ -108,6 +111,8 @@ Following release, these build artifacts are uploaded and maintained in a maven 
 As you read the next section, keep in mind the important parts from this chapter:
 
 * OpenMRS consists of a core system, with a modular architecture to extend its functionality.
-* There are three main layers to the system: User Interface, Service Layer and Data Access Layer.
+* There are three main layers to the system: User Interface (Presentation), Service Layer and Data Access Layer.
 * OpenMRS makes extensive use of a number of frameworks including Spring and Hibernate.
 * We use Apache Maven for build management, JIRA for issue management and Github for version control.
+* Authentification/Authorisation is ensured by gruoping different priviledges into roles which then are assigned to
+ defined users and in turn it ensures the confidentiality of patients data and security of the system.

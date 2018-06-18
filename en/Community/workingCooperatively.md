@@ -86,4 +86,4 @@ The OpenMRS core application is licensed under the [Mozilla Public License (MPL)
 
 ## Summary
 
-In this section, we reviewed some of the unique aspects of working together in an open source project like OpenMRS. In the next section, we'll cover more details of the tools we use to do so. If any time you have questions about how best to work cooperatively, ask a more senior member of the community for guidance, or write to a mailing list with your questions. You'll find everyone very friendly and ready to help you be productive! 
+In this section, we reviewed some of the unique aspects of working together in an open source project like OpenMRS. In the next section, we'll cover more details of the tools we use to do so. If at any time you have questions about how best to work cooperatively, ask a more senior member of the community for guidance, or write to a mailing list with your questions. You'll find everyone very friendly and ready to help you be productive! 
