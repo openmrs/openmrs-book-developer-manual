@@ -7,7 +7,7 @@ Selecting your initial task depends on your personal preferences and expertise. 
 
 OpenMRS uses [Atlassian's JIRA](https://www.atlassian.com/software/jira) software for issue tracking purposes. The OpenMRS JIRA installation can be found at https://issues.openmrs.org/.
 
-JIRA allows you to search for suitable tickets using a number of criteria. When choosing a ticket, identify one based on a programming language or task that you are already familiar with to reducing the learning curve involved.
+JIRA allows you to search for suitable tickets using a number of criteria. When choosing a ticket, identify one based on a programming language or task that you are already familiar with to reduce the learning curve involved.
 
 You may also want to work on issues or limitations that you identified yourself. First, create a ticket for this task in JIRA by clicking on the "Create Issue" link. Next, wait for your issue to be reviewed by a core OpenMRS developer. Begin work on the issue after it has been assessed and discussed, and a core developer changes its status to "Ready for Work".
 

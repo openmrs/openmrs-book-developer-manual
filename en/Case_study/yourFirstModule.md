@@ -35,7 +35,11 @@ To complete the `mvn openmrs-sdk:create-project` workflow, you will be prompted 
 * **`What kind of project would you like to create?:`** You may choose to create a platform module, which can be run on any server or an OpenMRS Reference Application module, which needs to be run on a server with the OpenMRS Reference Application distribution installed. For this example, choose type `1`.
 * Next, you will be prompted for `module id`, `module name`, `description`, `groupId`, `initial version` and the lowest version of `platform support`. For this example, you can stick with the default provided values.
 
+
 For more info, see [module conventions](https://wiki.openmrs.org/display/docs/Module+Conventions).
+
+N.B. in the Module Activation class, The SDK will implement the  ModuleActivator interface. 
+For more about the Module Activator class,see [Module Activator](https://wiki.openmrs.org/display/docs/Module+Activator)
 
 
 ## Basic Module Structure
