@@ -10,6 +10,8 @@
 
 [Introductory Pages](https://wiki.openmrs.org/display/docs/Introduction+to+OpenMRS)
 
+[Sign up for OpenMRS ID](https://id.openmrs.org/)
+
 [OpenMRS Talk](https://talk.openmrs.org)
 
 [How to use OpenMRS Talk with Email](https://talk.openmrs.org/t/openmrs-talk-email-discussion-groups/1165)

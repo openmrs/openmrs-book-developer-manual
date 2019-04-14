@@ -11,6 +11,8 @@
 
 [How to use Talk with Email](https://talk.openmrs.org/t/openmrs-talk-email-discussion-groups/1165)
 
+[OpenMRS Design Forum](https://wiki.openmrs.org/display/RES/Design+Forum)
+
 [Understanding Issues](https://wiki.openmrs.org/display/docs/Tickets)
 
 [OpenMRS Issues](https://issues.openmrs.org/secure/Dashboard.jspa)
