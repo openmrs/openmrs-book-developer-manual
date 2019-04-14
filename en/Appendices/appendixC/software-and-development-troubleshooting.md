@@ -1,7 +1,8 @@
 <center><h1>Software and Development Troubleshooting</h1></center>
 *********************************************
-![](/assets/Troubleshooting_Development_Flowchart.png)
+
 <center>Troubleshooting Flow Chart</center>
+## Helpful Links:
 
 [OpenMRS IRC](https://wiki.openmrs.org/display/IRC/Home)
 
