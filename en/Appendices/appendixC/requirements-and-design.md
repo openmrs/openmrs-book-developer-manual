@@ -9,7 +9,7 @@
 
 [OpenMRS Talk](https://talk.openmrs.org)
 
-[How to use Talk with Email](https://talk.openmrs.org/t/openmrs-talk-email-discussion-groups/1165)
+[How to use OpenMRS Talk with Email](https://talk.openmrs.org/t/openmrs-talk-email-discussion-groups/1165)
 
 [OpenMRS Design Forum](https://wiki.openmrs.org/display/RES/Design+Forum)
 
