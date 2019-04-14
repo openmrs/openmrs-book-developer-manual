@@ -13,3 +13,8 @@
 [Software Installation](https://wiki.openmrs.org/display/docs/Step%20by%20Step%20Installation%20for%20Developers)
 
 [World of OpenMRS](https://openmrs.org/join-the-community/)
+
+[Rubber Duck Debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+
+[Pair Programming](https://wiki.openmrs.org/display/docs/Pair+Programming)
+
