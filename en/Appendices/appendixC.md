@@ -1,5 +1,7 @@
 <center><h1>Appendix C: Troubleshooting</h1></center>
+
 *********************************************
+
 ## What to do when generally confused:
 
 * Read through the developer's manual

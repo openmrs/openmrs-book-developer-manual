@@ -1,8 +1,11 @@
 <center><h1>Requirements and Design Troubleshooting</h1></center>
+
 *********************************************
+
 ![](/assets/Troubleshooting_Design_Flowchart.png)
 
 <center>Troubleshooting Flow Chart</center>
+
 ## Helpful Links:
 
 [OpenMRS IRC](https://wiki.openmrs.org/display/IRC/Home)
