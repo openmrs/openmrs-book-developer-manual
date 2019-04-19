@@ -15,8 +15,10 @@
 * [Get Support](What_next/getSupport.md)
 * [Developer Checklist](What_next/devChecklist.md)
 * Appendices
-   * [Appendix A: Learning Resources](Appendices/appendixA.md)
-   * [Appendix B: OpenMRS Glossary](Appendices/appendixB.md)
-   * [Appendix C: Troubleshooting](Appendices/appendixC.md)
+  * [Appendix A: Learning Resources](Appendices/appendixA.md)
+  * [Appendix B: OpenMRS Glossary](Appendices/appendixB.md)
+  * [Appendix C: Troubleshooting](Appendices/appendixC.md)
+    * [Software and Development](Appendices/appendixC/software-and-development-troubleshooting.md)
+    * [Requirements and Design](Appendices/appendixC/requirements-and-design.md)
 * [About This Book](about.md)
 
