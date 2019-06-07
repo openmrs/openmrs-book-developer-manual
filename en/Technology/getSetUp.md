@@ -27,7 +27,7 @@ If you do not have similar output to what is shown above, it means that you are 
 
 ## Choosing An Approach
 
-There are several options for installation, so reach through each one and decide which is best for you.
+There are several options for installation, so read through each one and decide which is best for you.
 
 * If you're getting started, we highly recommend using the **OpenMRS SDK**, which comes with a complete environment for using OpenMRS. This means that you won't need to have much else on your system installed other than Java. This is the easiest and quickest path to getting OpenMRS running so that you can start developing modules.
 
