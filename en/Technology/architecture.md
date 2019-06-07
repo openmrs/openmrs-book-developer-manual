@@ -114,5 +114,5 @@ As you read the next section, keep in mind the important parts from this chapter
 * There are three main layers to the system: User Interface (Presentation), Service Layer and Data Access Layer.
 * OpenMRS makes extensive use of a number of frameworks including Spring and Hibernate.
 * We use Apache Maven for build management, JIRA for issue management and Github for version control.
-* Authentification/Authorisation is ensured by gruoping different priviledges into roles which then are assigned to
+* Authentification/Authorisation is ensured by grouping different priviledges into roles which then are assigned to
  defined users and in turn it ensures the confidentiality of patients data and security of the system.
