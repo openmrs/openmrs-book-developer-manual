@@ -54,3 +54,5 @@ It's necessary to ensure that entering data into an EMR is efficient and easy, s
 
 Consistent with other efforts to ensure meaningful use of Health IT systems, data stored in the EMR system should be easily exchangeable to and from other medical applications. For example, the integration of separate health applications into a regional or national Health Information Exchange (HIE) requires that an EMR is capable of easily exchanging data with these external systems.
 
+This section is simply for testing
+
