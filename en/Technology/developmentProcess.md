@@ -226,7 +226,7 @@ A major release is deemed tested and worthy of production environments.
 
 A maintenance release contains bug fixes and security patches for use between major releases, e.g., from 1.8.0 to 1.8.1. For maintenance releases, no additional branches are created. Developers simply begin where development work was left off in the current minor version series release branch. 
 
-#### Release Rranch
+#### Release Branch
 
 A new release branch is created for each new major and minor release. As an example, a new release branch is created when preparing to release version 2.0.0, or version 1.3.0. However, when preparing to release 1.3.1 (a maintenance-version increment), the release branch created at the time of 1.3.0 is simply re-used. 
 
