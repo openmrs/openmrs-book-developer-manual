@@ -15,13 +15,13 @@ The book uses basic [markdown](https://guides.github.com/features/mastering-mark
 
 ## Making bigger edits
 
-We use [GitBook](https://gitbook.com) for this book. You can learn more about the GitBook format within the [GitBook Toolchain Documentation](https://toolchain.gitbook.com).
+We use [GitBook](https://gitbook.com) for this book. You can learn more about the GitBook format within the [GitBook Documentation](https://docs.gitbook.com/).
 
 1. If you don't have one, get a [GitHub account](https://github.com/join).
 2. Fork this book repository into your GitHub account.
 3. If you don't have git installed, get and install it from [here](https://git-scm.com) (macOS and Linux operating systems often already have git installed)
 4. Clone the repository to your local machine.
-5. Use the [GitBook Editor](https://www.gitbook.com/editor) to open the book and make changes.
+5. Use the [GitBook Editor](https://docs.gitbook.com/) to open the book and make changes.
 6. Publish changes to your fork and then submit a pull request from your repository on the GitHub website.
 
 ## Questions?
