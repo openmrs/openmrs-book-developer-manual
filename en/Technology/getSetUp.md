@@ -188,7 +188,7 @@ To run the code, you have to start the webapp. The OpenMRS source code contains 
   mvn jetty:run
 ```
 
-Now you may access OpenMRS using the url ```http://localhost:8080/openmrs```. This should let you run a wizard which will guide you through setting up your database. The Wizard will allow you to configure you instance in a number of ways, and offers multiple options to help you point to what datbase you want to use, and what data you wish to include by default.
+Now you may access OpenMRS using the url ```http://localhost:8080/openmrs```. This should let you run a wizard which will guide you through setting up your database. The Wizard will allow you to configure you instance in a number of ways, and offers multiple options to help you point to what database you want to use, and what data you wish to include by default.
 
 
 > **NOTE:** If you run into issues with Out of Memory exceptions from Java, try running:
