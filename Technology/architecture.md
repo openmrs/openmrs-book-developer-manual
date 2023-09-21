@@ -9,7 +9,7 @@ OpenMRS is a framework built upon Java and other related frameworks. It is based
 
 The key architectural components of the OpenMRS core can be depicted as follows:
 
-![_An Overview of OpenMRS_](/assets/OpenMRS-architecture.png)
+![_An Overview of OpenMRS_](/assets/OpenMRS-architecture.png){ style="width:600px" }
 
 The backbone of OpenMRS lies in its core API. The OpenMRS API has methods for all of the basic functions such as adding/updating a patient, encounter, observation, etc. Methods which enable this functionality are provided in service layer classes. 
 

@@ -3,7 +3,7 @@ title: Working Cooperatively
 icon: people
 ---
 
-![_OpenMRS design brainstorming session October 2013_](/assets/working-cooperatively.jpg)
+![_OpenMRS design brainstorming session October 2013_](/assets/working-cooperatively.jpg){ style="width:600px" }
 
 ----
 

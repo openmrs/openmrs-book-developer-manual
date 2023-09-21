@@ -3,7 +3,7 @@ title: Get Involved
 icon: git-pull-request
 ---
 
-![_The OpenMRS Community, Circa 2013_](/assets/OpenMRS-Community.jpg)
+![_The OpenMRS Community, Circa 2013_](/assets/OpenMRS-Community.jpg){ style="width:600px" }
 
 Now that you understand the basics of OpenMRS development, you can do a lot or you can do a little. How deep you dive into the OpenMRS community is up to you! Keep in mind that someone may want to pick up your work where you leave off, so be sure to document everything as you go along. 
 

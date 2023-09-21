@@ -3,7 +3,7 @@ title: Setting Up
 icon: play
 ---
 
-![](/assets/get-set-up.jpg)
+![](/assets/get-set-up.jpg){ style="width:600px" }
 
 ----
 
