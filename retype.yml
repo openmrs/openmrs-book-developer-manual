@@ -16,6 +16,8 @@ links:
   link: https://openmrs.org/
 - text: Wiki
   link: https://wiki.openmrs.org/
+- text: O3 Frontend Docs
+  link: https://om.rs/o3docs
 edit:
   repo: "https://github.com/openmrs/openmrs-book-developer-manual/"
 footer:
