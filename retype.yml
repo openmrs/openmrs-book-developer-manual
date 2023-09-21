@@ -1,0 +1,22 @@
+input: .
+output: .retype
+start:
+  pro: true
+url: https://devmanual.openmrs.org/
+branding:
+  title: OpenMRS Developer Manual
+  label: 1.2
+search:
+  hotkeys:
+    - "/"
+toc:
+  label: On this page
+links:
+- text: OpenMRS.org
+  link: https://openmrs.org/
+- text: Wiki
+  link: https://wiki.openmrs.org/
+edit:
+  repo: "https://github.com/openmrs/openmrs-book-developer-manual/"
+footer:
+  copyright: "&copy; Copyright {{ year }} OpenMRS, Inc. All rights reserved."
