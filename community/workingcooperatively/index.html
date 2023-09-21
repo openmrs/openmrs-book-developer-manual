@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748633586488">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.5.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Working Cooperatively</title>
+    <meta name="title" content="Working Cooperatively">
+    <meta name="description" content="OpenMRS design brainstorming session October 2013">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://devmanual.openmrs.org/community/workingcooperatively/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devmanual.openmrs.org/community/workingcooperatively/">
+    <meta property="og:title" content="Working Cooperatively">
+    <meta property="og:description" content="OpenMRS design brainstorming session October 2013">
+    <meta property="og:image" content="https://devmanual.openmrs.org/assets/working-cooperatively.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://devmanual.openmrs.org/community/workingcooperatively/">
+    <meta property="twitter:title" content="Working Cooperatively">
+    <meta property="twitter:description" content="OpenMRS design brainstorming session October 2013">
+    <meta property="twitter:image" content="https://devmanual.openmrs.org/assets/working-cooperatively.jpg">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../resources/css/retype.css?v=3.5.0.748633586488" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.748633586488" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.748633586488" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">OpenMRS Developer Manual</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">1.2</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://openmrs.org/">OpenMRS.org</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://wiki.openmrs.org/">Wiki</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://openmrs.org/">OpenMRS.org</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://wiki.openmrs.org/">Wiki</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="working-cooperatively" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#working-cooperatively">#</doc-anchor-trigger>
+        <span>Working Cooperatively</span>
+    </h1>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <img src="../../assets/working-cooperatively.jpg" alt="OpenMRS design brainstorming session October 2013">
+    <figcaption class="caption"><em>OpenMRS design brainstorming session October 2013</em></figcaption>
+</figure>
+</p>
+<hr>
+<doc-anchor-target id="getting-things-done">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-things-done">#</doc-anchor-trigger>
+        <span>Getting Things Done</span>
+    </h2>
+</doc-anchor-target>
+<p>Regardless of whether or not you&#x27;ve participated in large software development projects, if you&#x27;re new to open source projects you may be in for some surprises. The leadership of such projects is very &quot;flat&quot; -- meaning that there isn&#x27;t a lot of bureaucracy to deal with. On the other hand, you&#x27;ll find that as a developer, you&#x27;re given great freedom in finding interesting work and designing what gets built. The more code and ideas you contribute, the more you&#x27;ll become a leader in the project.</p>
+<blockquote>
+<p>&quot;People should feel that their connection to a project, and influence over it, is directly proportional to their contributions.&quot; - **Karl Fogel, Producing Open Source Software **</p>
+</blockquote>
+<p>Free and open source software projects offer an ideal setting for coordination and crowd-sourcing of ideas and solutions. You should always try to be open to what others might have to say about your ideas and code -- great ideas don&#x27;t necessarily have a single owner or contributor! Listen to what others have to say, and pay attention to what they&#x27;re doing ... there&#x27;s a lot to learn from everyone in the OpenMRS community. Working together can be hugely beneficial to everyone involved, and the sharing of ideas can yield rich results.</p>
+<p>One of the easiest ways to build functionality in the OpenMRS ecosystem is to use our modular architecture, which is covered in more detail later in this book. Add-on modules allow you to try lots of different ideas to solve problems. Modules also let you to build upon the work of others through dependencies.</p>
+<doc-anchor-target id="play-nicely">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#play-nicely">#</doc-anchor-trigger>
+        <span>Play Nicely</span>
+    </h2>
+</doc-anchor-target>
+<p>The OpenMRS community has established a <a href="https://wiki.openmrs.org/display/docs/Code+of+Conduct">Code of Conduct.</a> It&#x27;s less of a list of rules as much as it is some useful guidance about ways to work in the community to help each other and be successful. You should take a moment to read it and be familiar with the values mentioned there, which include:</p>
+<ul>
+<li>Be considerate</li>
+<li>Be respectful</li>
+<li>Be collaborative</li>
+<li>When you disagree, consult others</li>
+<li>When you are unsure, ask for help</li>
+<li>Step down considerately</li>
+</ul>
+<doc-anchor-target id="working-asynchronously">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#working-asynchronously">#</doc-anchor-trigger>
+        <span>Working Asynchronously</span>
+    </h2>
+</doc-anchor-target>
+<p>You&#x27;ll find lots of people willing to help and give advice in the OpenMRS community, but they might be located across the planet from you. That means you should try to plan your work tasks to work asynchronously. For a quick answer, searching Google, our <a href="https://wiki.openmrs.org">Wiki pages</a> finding someone to chat with on our <a href="http://om.rs/irc">IRC channel</a> or <a href="https://telegram.me/OpenMRS">Telegram Group</a> works well. If you haven&#x27;t gotten answer to your question or discover that your question doesn&#x27;t appear to have been asked before, consider posting your question to <a href="http://om.rs/ask">Ask OpenMRS</a>. Since you may end up waiting for an answer before you can continue, having a few tasks, issues, or projects going in parallel will help you to feel more productive while you wait for answers or supplemental information to get your work accomplished.</p>
+<doc-anchor-target id="collaboration-vs-cooperation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#collaboration-vs-cooperation">#</doc-anchor-trigger>
+        <span>Collaboration vs. Cooperation</span>
+    </h2>
+</doc-anchor-target>
+<p>People often speak of working collaboratively on a project when large groups are involved. Before using these terms, it&#x27;s important to understand the differences between the words collaboration and cooperation. When people collaborate, they work closely together and depend on each other to accomplish a single goal. When people cooperate, however, they coordinate their work on &quot;selfish&quot; but similar goals. Collaboration works well in small groups, but cooperation allows large software projects to support both individual and group goals.</p>
+<p>Both types of work happen in the OpenMRS community. When looking at the development of code for the OpenMRS core software, you&#x27;ll find lots of collaboration. Developers working on core parts of the software need to frequently communicate their ideas in detail to avoid causing problems for other developers. The same holds true when there are several developers working on an OpenMRS add-on module.</p>
+<p>Cooperation happens when looking at the different teams who develop OpenMRS modules. Those teams are most successful when they cooperate to prevent duplicate efforts, such as creating two modules that provide the same functionality.</p>
+<blockquote>
+<p>As an OpenMRS developer, you should plan to cooperate more than you collaborate. This means you&#x27;ll need to have a good understanding of your personal or small group goals, and you&#x27;ll need to communicate more than you might be accustomed. This chapter will review some tips on how best to do so.</p>
+</blockquote>
+<doc-anchor-target id="find-mentors">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#find-mentors">#</doc-anchor-trigger>
+        <span>Find Mentors</span>
+    </h3>
+</doc-anchor-target>
+<p>Mentors are a great way for new developers to learn about participating in the OpenMRS community. We&#x27;re a very friendly group of people, and there are plenty of people who, not too long ago, were new to our project just like you. They can help you find interesting work, answer questions about getting your environment set up, or help connect you to other people in the community who share your interests.</p>
+<p>The easiest way to find a mentor is to join the community conversations at <a href="https://talk.openmrs.org">OpenMRS Talk</a>. If you haven&#x27;t already, make a post in the <a href="https://talk.openmrs.org/t/welcome-please-introduce-yourself/">Welcome - please introduce yourself!</a> topic, providing a short description of what interests you and some of your goals with OpenMRS. If you get stuck or have issues at any time, send an e-mail to our community management team at <a href="mailto:community@openmrs.org">community@openmrs.org</a> and they will help answer any questions you have.</p>
+<p>The OpenMRS community also regularly participates in formal mentoring programs. <a href="https://summerofcode.withgoogle.com">Google Summer of Code (GSoC)</a> is a summer (in the northern hemisphere) program for university students age 18 and over, offering a stipend to do development work on open source projects such as OpenMRS. Applications generally open each spring. <a href="https://gnome.org/opw/">The FOSS Outreach Program for Women (OPW)</a>is a program for all women age 18 and over that offers 3-month projects on development, documentation, project management, and other tasks in open source projects. Check out the web sites for both programs to learn more about them.</p>
+<doc-anchor-target id="forming-questions">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#forming-questions">#</doc-anchor-trigger>
+        <span>Forming Questions</span>
+    </h3>
+</doc-anchor-target>
+<p>One of the greatest things about a free and open source software project is the large community of developers, contributors, and users available to help you find answers to questions or inspire you.</p>
+<p>Our project has been around many years, so there is a lot of reference material available to understand why certain design decisions were made. Some of this material is current and much of it can be useful for a historical perspective. When developing questions to ask others in the community, it&#x27;s important to do some background research first to make sure that there isn&#x27;t already a readily-available answer.</p>
+<doc-anchor-target id="communicate-publicly--productively">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#communicate-publicly--productively">#</doc-anchor-trigger>
+        <span>Communicate Publicly &amp; Productively</span>
+    </h3>
+</doc-anchor-target>
+<p>In an open source project, all decisions happen in public. This means you should avoid private conversations such as instant messages, phone calls, and face-to-face meetings -- particularly when brainstorming or making decisions about community software design. We have many different public tools available for our community to support these conversations and those tools are described in detail elsewhere in this book. Ensuring that decisions are made in public venues maximizes participation and exposes those decisions to as many brilliant minds as possible. Try not to make decisions in private, or you might miss out on interesting ideas.</p>
+<p>Because we&#x27;re a large project, much written communication gets generated every day for other developers to read. To help, try to do your part in maintaining a high signal-to-noise ratio on mailing lists or other communication tools. Think before you post a message, and make sure what you&#x27;re writing adds value to the conversation. Responses like &quot;me too!&quot; or &quot;+1&quot; are rarely productive.</p>
+<doc-anchor-target id="avoid-bikeshedding">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#avoid-bikeshedding">#</doc-anchor-trigger>
+        <span>Avoid Bikeshedding</span>
+    </h3>
+</doc-anchor-target>
+<p>Although we encourage public discussions about our software design, it&#x27;s also important to avoid non-productive conversations about trivial details. This type of anti-pattern best described by the concept of <a href="https://en.wiktionary.org/wiki/bikeshedding">bikeshedding</a>, which gets its name from a 1960s book about management. In the book, C. Northcote Parkinson described how it might be often easier to get approval for an expensive nuclear power plant than it could be to discuss what color to paint a bike shed. Everyone feels they have a valid opinion of what color to paint the bike shed, but only certain qualified people can comment on the design of a reactor. Don&#x27;t let yourself fall into this trap -- avoid these wasteful conversations on trivial topics.</p>
+<p>See <a href="http://om.rs/newdevbikeshed">http://om.rs/newdevbikeshed</a> for more information about bikeshedding.</p>
+<doc-anchor-target id="commit-early-and-often">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#commit-early-and-often">#</doc-anchor-trigger>
+        <span>Commit Early And Often</span>
+    </h3>
+</doc-anchor-target>
+<p>One of the biggest (and often most difficult) lessons for open source developers to learn is commit changes to your source code repository early and often. Don&#x27;t wait until you are finished with a project,or even a single feature. In the past, OpenMRS used the Subversion version control system which made this more painful. However, with DVCS systems like <a href="https://github.com">GitHub</a> in use now for most of our software, it&#x27;s much easier to get your work-in-progress published online as you go. There are a few reasons to embrace this behavior.</p>
+<ul>
+<li><p>First, by committing early you&#x27;ll have more chance for others to stumble across your work. They may have very valuable feedback or ideas that you might want to consider to make your project more useful. They may also have already written something very similar and may prevent you from duplicating effort.</p>
+</li>
+<li><p>By committing your work often, you&#x27;ll be protected in case of an accidental data loss. You&#x27;ll also be able to share your progress with others, so they can get a better idea how much work remains. If you&#x27;re committing code regularly and a lot of work remains, you might find someone to help you by squashing bugs or adding additional features.</p>
+</li>
+<li><p>Don&#x27;t be afraid that your work appears &quot;not ready&quot;. After all, it probably isn&#x27;t ready yet! In free &amp; open source projects, one of the most important practices is to share your work in progress. Make sure you do your part.</p>
+</li>
+</ul>
+<doc-anchor-target id="share--license-your-work">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#share--license-your-work">#</doc-anchor-trigger>
+        <span>Share &amp; License Your Work</span>
+    </h3>
+</doc-anchor-target>
+<p>We recommend naming your source code repository to include the word &quot;OpenMRS&quot; so others can more easily find your work. The OpenMRS community has a convention of naming repositories in the form &quot;openmrs-category-name&quot;. For modules, this takes the form &quot;openmrs-module-moduleid&quot;. For example, if you&#x27;re creating the FooBar module, you might name your repository &quot;openmrs-module-foobar&quot;. Similarly, when you&#x27;re at a point that you want to introduce your project or projects to others in the community, we strongly encourage you to do so! The easiest way to do this is to write a short description of your project along with links to more information,</p>
+<p>It&#x27;s also important to consider what type of license your work will have. If you don&#x27;t provide a license with your software, it might remain copyrighted and its use might still be restricted in ways which you may not intend. (The specifics of what would happen depend on the laws where you are.)</p>
+<p>Many different free and open source software licenses exist, and sometimes it can be hard to choose one. The creators of GitHub have created <a href="http://om.rs/newdevchoose">http://om.rs/newdevchoose</a> which is an easy way to compare some of the popular FOSS licenses currently in use.</p>
+<p>The OpenMRS core application is licensed under the <a href="https://www.mozilla.org/en-US/MPL/2.0/">Mozilla Public License (MPL) version 2,</a> along with a healthcare disclaimer (essentially a disclaimer for how the software is used in health care settings). We encourage use of this license for consistency across our community-developed software ecosystem and license compatibility between add-on modules; however, you are free to choose any license you wish. Just make sure to choose a license.</p>
+<doc-anchor-target id="summary">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>
+        <span>Summary</span>
+    </h2>
+</doc-anchor-target>
+<p>In this section, we reviewed some of the unique aspects of working together in an open source project like OpenMRS. In the next section, we&#x27;ll cover more details of the tools we use to do so. If at any time you have questions about how best to work cooperatively, ask a more senior member of the community for guidance, or write to a mailing list with your questions. You&#x27;ll find everyone very friendly and ready to help you be productive!</p>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                                <div class="flex flex-wrap items-center justify-between mt-14">
+                                    <a class="my-2.5 inline-flex items-center text-sm whitespace-nowrap text-blue-500 dark:text-blue-400 hover:text-blue-700 hover:underline" href="https://github.com/openmrs/openmrs-book-developer-manual/blob/main/Community/workingCooperatively.md" target="_blank" rel="noopener">
+                                        <svg class="mr-1.5" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M20 12c-.55 0-1 .45-1 1v7c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h7c.55 0 1-.45 1-1s-.45-1-1-1H4C2.35 3 1 4.35 1 6v14c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-7c0-.55-.45-1-1-1z" /><path d="M22.21 1.79c-1.18-1.18-3.24-1.18-4.41 0l-9.5 9.5c-.13.13-.22.29-.26.46l-1 4c-.08.34.01.7.26.95.18.2.44.3.7.3.08 0 .16-.01.24-.03l4-1c.18-.04.34-.13.46-.26l9.5-9.5c1.22-1.22 1.22-3.2.01-4.42zm-1.42 3l-9.3 9.3-2.11.53.53-2.11 9.3-9.3c.42-.42 1.16-.42 1.59 0 .43.43.43 1.15-.01 1.58z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        <span>Edit this page</span>
+                                    </a>
+                                </div>
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../kick_off/openmrs_today/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Open​MRS Today</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../community/collaborationtools/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Collaboration Tools</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2023 OpenMRS, Inc. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Working Cooperatively", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>

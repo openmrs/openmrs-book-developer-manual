@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devmanual.openmrs.org/sitemap.xml.gz
