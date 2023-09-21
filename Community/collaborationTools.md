@@ -1,5 +1,6 @@
 ---
 title: Collaboration Tools
+icon: tools
 ---
 
 ![_2013 OpenMRS Implementers Meeting, Eldoret, Kenya_](/assets/collaboration-tools.jpg)

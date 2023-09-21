@@ -1,5 +1,6 @@
 ---
 title: Development Process
+icon: gear
 ---
 
 ## Selecting Development Work

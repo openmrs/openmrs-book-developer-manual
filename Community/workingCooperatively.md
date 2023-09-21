@@ -1,5 +1,6 @@
 ---
 title: Working Cooperatively
+icon: people
 ---
 
 ![_OpenMRS design brainstorming session October 2013_](/assets/working-cooperatively.jpg)

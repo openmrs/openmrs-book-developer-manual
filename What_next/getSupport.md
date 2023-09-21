@@ -1,5 +1,6 @@
-<center><h1>Get Support</h1></center>
-*****************************************
+---
+icon: question
+---
 
 ## Asking Questions
 

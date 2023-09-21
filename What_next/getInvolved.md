@@ -1,5 +1,6 @@
 ---
 title: Get Involved
+icon: git-pull-request
 ---
 
 ![_The OpenMRS Community, Circa 2013_](/assets/OpenMRS-Community.jpg)

@@ -1,3 +1,3 @@
 ---
-icon: book
+icon: list-unordered
 ---

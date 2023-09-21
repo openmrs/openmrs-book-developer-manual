@@ -1,5 +1,6 @@
 ---
 title: OpenMRS Today
+icon: calendar
 ---
 ![_OpenMRS Atlas, October 2016_](/assets/openmrs_atlas_2016.png)
 

@@ -1,5 +1,6 @@
 ---
 title: Setting Up
+icon: play
 ---
 
 ![](/assets/get-set-up.jpg)

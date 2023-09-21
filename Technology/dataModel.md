@@ -1,5 +1,6 @@
 ---
 title: Data Model
+icon: database
 ---
 
 ![_OpenMRS data model version 1.9. Details at http://om.rs/datamodel_](/assets/openmrs_data_model_1.9.0_small.png)

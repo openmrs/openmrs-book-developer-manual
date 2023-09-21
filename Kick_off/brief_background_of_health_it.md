@@ -1,5 +1,6 @@
 ---
 title: Brief Background of Health IT &amp; Need for Health IT
+icon: info
 ---
 
 Before you get started as a developer in the OpenMRS project, you may find it useful to learn just a brief background of Health IT, what it is, and why it matters.

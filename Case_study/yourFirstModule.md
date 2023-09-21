@@ -1,5 +1,6 @@
 ---
 title: Creating Your First Module
+icon: milestone
 ---
 
 ## Amani Clinic Case Study

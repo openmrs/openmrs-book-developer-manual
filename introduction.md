@@ -1,3 +1,6 @@
+---
+icon: home
+---
 ![](/assets/OpenMRS-cross.png)
 <center><h1>Welcome To OpenMRS</h1></center>
 <center><h2>Write Code, Save Lives</h2></center>

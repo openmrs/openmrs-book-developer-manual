@@ -1,5 +1,6 @@
 ---
 title: Developer Checklist
+icon: checklist
 ---
 
 The OpenMRS community actively encourages members to grow as contributors by taking up more advanced roles within the community. Many of our dedicated volunteers began by working on introductory tickets, and went on to become senior contributors within the community, working on a wide range of tasks from core OpenMRS development to working on individual implementations.
