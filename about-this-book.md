@@ -12,3 +12,10 @@ In 2023, this book was translated into [Retype](https://retype.com/) format.
 ### Contribute
 
 This book is hosted on [GitHub](https://github.com/openmrs/openmrs-book-developer-manual) and your are welcome and encouraged to [help us improve it](CONTRIBUTING.md)!
+
+!!!warning NOTE
+The guide was written for OpenMRS 1.9 in 2012 and needs to be 
+updated. We would appreciate any help in updating the developer manual to 
+make it more relevant. For OpenMRS 3 frontend development, please see 
+[om.rs/o3docs](https://om.rs/o3docs)
+!!!
