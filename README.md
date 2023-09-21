@@ -1,12 +1,17 @@
-<center><img src="/assets/OpenMRS-cross.png"></center>
+![](/assets/OpenMRS-cross.png)
 <center><h1> Welcome To OpenMRS </h1></center>
 <center><h2> Write Code, Save Lives.</h2></center>
 
 This is the OpenMRS Developer Manual. It is an electronic book meant to serve as an introduction to [OpenMRS](https://openmrs.org) Development.
 
+!!!
+**NOTE**: The guide was written for OpenMRS 1.9 in 2012 and needs to be updated. We would appreciate any help in updating the 
+developer manual to make it more relevant. For OpenMRS 3 frontend development, please see [om.rs/o3docs](https://om.rs/o3docs)
+!!!
+
 ### View the Book
 
-You can view or download the manual at http://om.rs/devmanual ([PDF](http://om.rs/devmanualpdf))
+You can view or download the manual at http://om.rs/devmanual
 
 ### Book Source on GitHub
 
