@@ -149,7 +149,7 @@ public class Department extends BaseOpenmrsObject implements Serializable {
 
 #### Update Hibernate ORM File to Work With Your New Field
 
-In `department/api/src/main/resources/Department.hbm.xml`, uncomment the central block of code add new properties as shown below anywhere in the file. This lets Hibernate knows about the name and description fields you just created. Your file should look like the following:
+In `department/api/src/main/resources/Department.hbm.xml`, uncomment the central block of code add new properties as shown below anywhere in the file. This lets Hibernate know about the name and description fields you just created. Your file should look like the following:
 ```xml
  <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC
